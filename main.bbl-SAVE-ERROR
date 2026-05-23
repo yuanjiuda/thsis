@@ -1,0 +1,2665 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{ShuiXiaWuRenQianHangQiJiQunFaZhanXianZhuangJiGuanJianJiShuZongShuZhongGuoZhiWang}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=305be7965375e114a6965c245e1ffc9e}{%
+           family={{张伟}},
+           familyi={张\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=305be7965375e114a6965c245e1ffc9e}{%
+           family={{张伟}},
+           familyi={张\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \strng{namehash}{305be7965375e114a6965c245e1ffc9e}
+      \strng{fullhash}{305be7965375e114a6965c245e1ffc9e}
+      \strng{fullhashraw}{305be7965375e114a6965c245e1ffc9e}
+      \strng{bibnamehash}{305be7965375e114a6965c245e1ffc9e}
+      \strng{authorbibnamehash}{305be7965375e114a6965c245e1ffc9e}
+      \strng{authornamehash}{305be7965375e114a6965c245e1ffc9e}
+      \strng{authorfullhash}{305be7965375e114a6965c245e1ffc9e}
+      \strng{authorfullhashraw}{305be7965375e114a6965c245e1ffc9e}
+      \strng{nameabibnamehash}{305be7965375e114a6965c245e1ffc9e}
+      \strng{nameanamehash}{305be7965375e114a6965c245e1ffc9e}
+      \strng{nameafullhash}{305be7965375e114a6965c245e1ffc9e}
+      \strng{nameafullhashraw}{305be7965375e114a6965c245e1ffc9e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{中国知网}
+      \field{langid}{english}
+      \field{languageid}{chinese}
+      \field{lansortorder}{1}
+      \field{title}{水下无人潜航器集群发展现状及关键技术综述 - 中国知网}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{usera}{EB}
+      \field{userd}{chinese}
+      \field{userf}{chinese}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb J:\0_My_PC_NEW\J-平常不用\25-zotero-new-version-64bitwin\0-mydata\storage\X325Y8UM\[水下无人潜航器集群发展现状及关键技术综述]_张伟，王乃新，魏世琳，杜雪，严浙平.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://kns.cnki.net/kcms2/article/abstract
+      \endverb
+      \verb{url}
+      \verb https://kns.cnki.net/kcms2/article/abstract
+      \endverb
+      \keyw{ShuiXiaWuRenQianHangQiJiQunFaZhanXianZhuangJiGuanJianJiShuZongShuZhongGuoZhiWang}
+    \endentry
+    \entry{hoeherUnderwaterOpticalWireless2021}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=055c28345119ee22ebdce768976bd04e}{%
+           family={Hoeher},
+           familyi={H\bibinitperiod},
+           given={Peter\bibnamedelima Adam},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=c626b87c02a5fb69a4720269369ef8c1}{%
+           family={Sticklus},
+           familyi={S\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=941243f96f31250cd896aedd92888d1e}{%
+           family={Harlakin},
+           familyi={H\bibinitperiod},
+           given={Andrej},
+           giveni={A\bibinitperiod}}}%
+      }
+      \name{namea}{3}{}{%
+        {{hash=055c28345119ee22ebdce768976bd04e}{%
+           family={Hoeher},
+           familyi={H\bibinitperiod},
+           given={Peter\bibnamedelima Adam},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=c626b87c02a5fb69a4720269369ef8c1}{%
+           family={Sticklus},
+           familyi={S\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=941243f96f31250cd896aedd92888d1e}{%
+           family={Harlakin},
+           familyi={H\bibinitperiod},
+           given={Andrej},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{5688721bdf844b7af977af27f6a3cfe2}
+      \strng{fullhash}{7e2adac525eceeeab0a7faaa777c72dd}
+      \strng{fullhashraw}{7e2adac525eceeeab0a7faaa777c72dd}
+      \strng{bibnamehash}{7e2adac525eceeeab0a7faaa777c72dd}
+      \strng{authorbibnamehash}{7e2adac525eceeeab0a7faaa777c72dd}
+      \strng{authornamehash}{5688721bdf844b7af977af27f6a3cfe2}
+      \strng{authorfullhash}{7e2adac525eceeeab0a7faaa777c72dd}
+      \strng{authorfullhashraw}{7e2adac525eceeeab0a7faaa777c72dd}
+      \strng{nameabibnamehash}{7e2adac525eceeeab0a7faaa777c72dd}
+      \strng{nameanamehash}{5688721bdf844b7af977af27f6a3cfe2}
+      \strng{nameafullhash}{7e2adac525eceeeab0a7faaa777c72dd}
+      \strng{nameafullhashraw}{7e2adac525eceeeab0a7faaa777c72dd}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Underwater swarm robotics is an emerging topic. Compared to individual autonomous vehicles, high-capacity communication links are required between the mobile agents. In this tutorial, suitable communication technologies are studied, with emphasis on LED-based underwater optical wireless communications. A comprehensive overview about challenges, advances, and practical aspects of underwater swarm robotics employing optical wireless communications is provided. The tutorial includes the following topics: (1) Channel modeling fundamentals; (2) Physical layer transmission techniques for underwater optical wireless communications; (3) Data link layer aspects and hybrid transmission schemes; (4) Ambient light and interference suppression; and (5) Realization aspects. Finally, suggestions regarding future work are given. The tutorial is intended for readers with a background or interest in electrical and information engineering.}
+      \field{issn}{1553-877X, 2373-745X}
+      \field{journaltitle}{IEEE Commun. Surv. Tutorials}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{4}
+      \field{shorttitle}{Underwater {{Optical Wireless Communications}} in {{Swarm Robotics}}}
+      \field{title}{Underwater {{Optical Wireless Communications}} in {{Swarm Robotics}}: {{A Tutorial}}}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{23}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{2630\bibrangedash 2659}
+      \range{pages}{30}
+      \verb{doi}
+      \verb 10.1109/COMST.2021.3111984
+      \endverb
+      \verb{file}
+      \verb J:\0_My_PC_NEW\J-平常不用\25-zotero-new-version-64bitwin\0-mydata\storage\SZ4PJL25\Hoeher 等 - 2021 - Underwater Optical Wireless Communications in Swarm Robotics A Tutorial.pdf
+      \endverb
+      \keyw{hoeherUnderwaterOpticalWireless2021}
+    \endentry
+    \entry{liRecentProgressUnderwater2025}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=e24bcca01cf5890a6b9ac6ccb5b492f8}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Zhe},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=24073c79da6b0ebec78724d598bb73ae}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Weikun},
+           giveni={W\bibinitperiod}}}%
+        {{hash=98210c76ec641441f10ac28bc51b3f02}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Kai},
+           giveni={K\bibinitperiod}}}%
+        {{hash=2a6e5181a33b105a1761f868934f9740}{%
+           family={Fan},
+           familyi={F\bibinitperiod},
+           given={Dixia},
+           giveni={D\bibinitperiod}}}%
+        {{hash=ffc2a142a80c36a43e6f4feaf9456d83}{%
+           family={Cui},
+           familyi={C\bibinitperiod},
+           given={Weicheng},
+           giveni={W\bibinitperiod}}}%
+      }
+      \name{namea}{5}{}{%
+        {{hash=e24bcca01cf5890a6b9ac6ccb5b492f8}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Zhe},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=24073c79da6b0ebec78724d598bb73ae}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Weikun},
+           giveni={W\bibinitperiod}}}%
+        {{hash=98210c76ec641441f10ac28bc51b3f02}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Kai},
+           giveni={K\bibinitperiod}}}%
+        {{hash=2a6e5181a33b105a1761f868934f9740}{%
+           family={Fan},
+           familyi={F\bibinitperiod},
+           given={Dixia},
+           giveni={D\bibinitperiod}}}%
+        {{hash=ffc2a142a80c36a43e6f4feaf9456d83}{%
+           family={Cui},
+           familyi={C\bibinitperiod},
+           given={Weicheng},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{174a4fa97954025055c0c9138d6fd649}
+      \strng{fullhash}{32b58bfaf71cbbbd3d56112341619f64}
+      \strng{fullhashraw}{32b58bfaf71cbbbd3d56112341619f64}
+      \strng{bibnamehash}{3cd02d69c5280ad4a14d2cec8774ade1}
+      \strng{authorbibnamehash}{3cd02d69c5280ad4a14d2cec8774ade1}
+      \strng{authornamehash}{174a4fa97954025055c0c9138d6fd649}
+      \strng{authorfullhash}{32b58bfaf71cbbbd3d56112341619f64}
+      \strng{authorfullhashraw}{32b58bfaf71cbbbd3d56112341619f64}
+      \strng{nameabibnamehash}{3cd02d69c5280ad4a14d2cec8774ade1}
+      \strng{nameanamehash}{174a4fa97954025055c0c9138d6fd649}
+      \strng{nameafullhash}{32b58bfaf71cbbbd3d56112341619f64}
+      \strng{nameafullhashraw}{32b58bfaf71cbbbd3d56112341619f64}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The rapid advancement of underwater wireless communication technologies is critical to unlocking the full potential of marine resource exploration and environmental monitoring. This paper reviews recent progress in three primary modalities: underwater acoustic communication, radio frequency (RF) communication, and underwater optical wireless communication (UWOC), each designed to address specific challenges posed by complex underwater environments. Acoustic communication, while effective for long-range transmission, is constrained by ambient noise and high latency; recent innovations in noise reduction and data rate enhancement have notably improved its reliability. RF communication offers high-speed, short-range capabilities in shallow waters, but still faces challenges in hardware miniaturization and accurate channel modeling. UWOC has emerged as a promising solution, enabling multi-gigabit data rates over medium distances through advanced modulation techniques and turbulence mitigation. Additionally, bio-inspired approaches such as electric field communication provide energy-efficient and robust alternatives under turbid conditions. This paper further examines the practical integration of these technologies in underwater platforms, including autonomous underwater vehicles (AUVs), highlighting trade-offs between energy efficiency, system complexity, and communication performance. By synthesizing recent advancements, this review outlines the advantages and limitations of current underwater communication methods and their real-world applications, offering insights to guide the future development of underwater communication systems for robotic and vehicular platforms.}
+      \field{issn}{2077-1312}
+      \field{journaltitle}{Journal of Marine Science and Engineering}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{8}
+      \field{number}{8}
+      \field{title}{Recent {{Progress}} on {{Underwater Wireless Communication Methods}} and {{Applications}}}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{13}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1505}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/jmse13081505
+      \endverb
+      \verb{file}
+      \verb J:\0_My_PC_NEW\J-平常不用\25-zotero-new-version-64bitwin\0-mydata\storage\AEMPZ7G9\Li 等 - 2025 - Recent Progress on Underwater Wireless Communication Methods and Applications.pdf
+      \endverb
+      \keyw{liRecentProgressUnderwater2025}
+    \endentry
+    \entry{jungControlRealTimeMonitoring2025}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=08d46488533fccaefba6e4c3b9a4f4e5}{%
+           family={{Dongwook Jung}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=08d46488533fccaefba6e4c3b9a4f4e5}{%
+           family={{Dongwook Jung}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{08d46488533fccaefba6e4c3b9a4f4e5}
+      \strng{fullhash}{08d46488533fccaefba6e4c3b9a4f4e5}
+      \strng{fullhashraw}{08d46488533fccaefba6e4c3b9a4f4e5}
+      \strng{bibnamehash}{08d46488533fccaefba6e4c3b9a4f4e5}
+      \strng{authorbibnamehash}{08d46488533fccaefba6e4c3b9a4f4e5}
+      \strng{authornamehash}{08d46488533fccaefba6e4c3b9a4f4e5}
+      \strng{authorfullhash}{08d46488533fccaefba6e4c3b9a4f4e5}
+      \strng{authorfullhashraw}{08d46488533fccaefba6e4c3b9a4f4e5}
+      \strng{nameabibnamehash}{08d46488533fccaefba6e4c3b9a4f4e5}
+      \strng{nameanamehash}{08d46488533fccaefba6e4c3b9a4f4e5}
+      \strng{nameafullhash}{08d46488533fccaefba6e4c3b9a4f4e5}
+      \strng{nameafullhashraw}{08d46488533fccaefba6e4c3b9a4f4e5}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Real-time command and data transfer are essential for autonomous underwater vehicle (AUV) motion control in underwater missions. Due to the limitations of underwater acoustic communication, which has a low data rate, this paper introduces a new control structure using underwater wireless optical communication (UWOC) to enable effective real-time command and data transfer. In this control structure, control inputs for the AUV attitude from outside of the water are transferred to the AUV for motion control, while its orientation data and visual images from the AUV camera are sent to the control station outside the water via the UWOC system. For demonstrating the performance of control action and data monitoring, an AUV is built with a constructed UWOC system, two vertical thrusters, and two horizontal thrusters. For attitude control of the AUV, an attitude heading reference system (AHRS) and a depth sensor are installed. Bi-directional communication in the UWOC system is achieved using a return-to-zero (RZ) modulation scheme for faster, longer-range data transfer. A signal processor converts sensor data received from the transmitted data. Finally, the hovering control performance of the AUV equipped with the UWOC system was experimentally evaluated in a water tank, achieving average root mean square errors (RMSEs) of 4.82\textopenbullet{} in roll, 2.49\textopenbullet{} in pitch, and 1.99 mm in depth, while simultaneously transmitting real-time motion data at 21.2 FPS with VGA-resolution images (640 \texttimes{} 480 pixels) at a communication rate of 1 Mbps.}
+      \field{issn}{2076-3417}
+      \field{journaltitle}{Applied Sciences}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{5}
+      \field{number}{11}
+      \field{title}{Control and {{Real-Time Monitoring}} of {{Autonomous Underwater Vehicle Through Underwater Wireless Optical Communication}}}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{15}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{5910}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/app15115910
+      \endverb
+      \verb{file}
+      \verb J:\0_My_PC_NEW\J-平常不用\25-zotero-new-version-64bitwin\0-mydata\storage\BVPEWMX3\Jung 等 - 2025 - Control and Real-Time Monitoring of Autonomous Underwater Vehicle Through Underwater Wireless Optica.pdf
+      \endverb
+      \keyw{jungControlRealTimeMonitoring2025}
+    \endentry
+    \entry{wangEvolutionShortRangeOptical2023}{article}{}{}
+      \name{author}{9}{}{%
+        {{hash=9977c03c4025bd86cbe014ceb976aabe}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Ke},
+           giveni={K\bibinitperiod}}}%
+        {{hash=8ca0a3d5aa9f3a54c54dccc5ceea1754}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={Tingting},
+           giveni={T\bibinitperiod}}}%
+        {{hash=9e01da45a91da22b98a75da9aa0247ff}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Yitong},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=e8bfbbf7e8c7e73cac2134f23bd96c24}{%
+           family={Fang},
+           familyi={F\bibinitperiod},
+           given={Chengwei},
+           giveni={C\bibinitperiod}}}%
+        {{hash=e9a249f56141f8353b4e1cc31e2b5da1}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Jiayuan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=eeadfe68c0f63404cf816a3aaa667ae6}{%
+           family={Nirmalathas},
+           familyi={N\bibinitperiod},
+           given={Ampalavanapillai},
+           giveni={A\bibinitperiod}}}%
+        {{hash=2b156867933e790e6171505d28071102}{%
+           family={Lim},
+           familyi={L\bibinitperiod},
+           given={Christina},
+           giveni={C\bibinitperiod}}}%
+        {{hash=9295c148da85f18702ac279f950105a3}{%
+           family={Wong},
+           familyi={W\bibinitperiod},
+           given={Elaine},
+           giveni={E\bibinitperiod}}}%
+        {{hash=1d626a8ae0426ec3fedd9d28c67487cd}{%
+           family={Kandeepan},
+           familyi={K\bibinitperiod},
+           given={Sithamparanathan},
+           giveni={S\bibinitperiod}}}%
+      }
+      \name{namea}{9}{}{%
+        {{hash=9977c03c4025bd86cbe014ceb976aabe}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Ke},
+           giveni={K\bibinitperiod}}}%
+        {{hash=8ca0a3d5aa9f3a54c54dccc5ceea1754}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={Tingting},
+           giveni={T\bibinitperiod}}}%
+        {{hash=9e01da45a91da22b98a75da9aa0247ff}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Yitong},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=e8bfbbf7e8c7e73cac2134f23bd96c24}{%
+           family={Fang},
+           familyi={F\bibinitperiod},
+           given={Chengwei},
+           giveni={C\bibinitperiod}}}%
+        {{hash=e9a249f56141f8353b4e1cc31e2b5da1}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Jiayuan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=eeadfe68c0f63404cf816a3aaa667ae6}{%
+           family={Nirmalathas},
+           familyi={N\bibinitperiod},
+           given={Ampalavanapillai},
+           giveni={A\bibinitperiod}}}%
+        {{hash=2b156867933e790e6171505d28071102}{%
+           family={Lim},
+           familyi={L\bibinitperiod},
+           given={Christina},
+           giveni={C\bibinitperiod}}}%
+        {{hash=9295c148da85f18702ac279f950105a3}{%
+           family={Wong},
+           familyi={W\bibinitperiod},
+           given={Elaine},
+           giveni={E\bibinitperiod}}}%
+        {{hash=1d626a8ae0426ec3fedd9d28c67487cd}{%
+           family={Kandeepan},
+           familyi={K\bibinitperiod},
+           given={Sithamparanathan},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{e15cb31d7d0d0de4490b56433c9a75fb}
+      \strng{fullhash}{53bd12dab88069ce4f77fb14044f056d}
+      \strng{fullhashraw}{53bd12dab88069ce4f77fb14044f056d}
+      \strng{bibnamehash}{1cb4ec4b95bd94d9454f9a8af6c014f2}
+      \strng{authorbibnamehash}{1cb4ec4b95bd94d9454f9a8af6c014f2}
+      \strng{authornamehash}{e15cb31d7d0d0de4490b56433c9a75fb}
+      \strng{authorfullhash}{53bd12dab88069ce4f77fb14044f056d}
+      \strng{authorfullhashraw}{53bd12dab88069ce4f77fb14044f056d}
+      \strng{nameabibnamehash}{1cb4ec4b95bd94d9454f9a8af6c014f2}
+      \strng{nameanamehash}{e15cb31d7d0d0de4490b56433c9a75fb}
+      \strng{nameafullhash}{53bd12dab88069ce4f77fb14044f056d}
+      \strng{nameafullhashraw}{53bd12dab88069ce4f77fb14044f056d}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The optical wireless communication (OWC) technology explores the broad unregulated optical spectrum to provide high-speed wireless communications, and the visible, ultraviolet and near-infrared wavelength ranges all have been investigated. Compared with the conventional radio frequency (RF) band, the spectrum in OWC systems is much less congested and the interference is much lower. The OWC technology also provides enhanced physical layer security due to the natural confinement of optical beams that makes it difficult to intercept the transmitted signal. Hence, the OWC technology has been widely studied and considered as a promising candidate in future beyond-5G communications. The OWC technology has been considered for both long-range and short-range applications, and in this paper we will introduce the fundamentals and recent developments of short-range OWC systems. In particular, we will focus on the key short-range OWC applications in indoor personal or local area communications, underwater wireless communications, wireless data center networks, and vehicular communications. We will also introduce some recent widely studied advanced techniques to boost the performance of short-range OWC systems, including the spatial domain diversity, multiplexing and modulation principles to improve the system robustness and data rate, and the machine learning algorithms and hardware accelerators to suppress both linear and nonlinear effects to improve OWC signal quality and bit-error-rate performance.}
+      \field{issn}{0733-8724, 1558-2213}
+      \field{journaltitle}{J. Lightw. Technol.}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{2}
+      \field{number}{4}
+      \field{title}{Evolution of {{Short-Range Optical Wireless Communications}}}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{41}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1019\bibrangedash 1040}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1109/JLT.2022.3215590
+      \endverb
+      \verb{file}
+      \verb J:\0_My_PC_NEW\J-平常不用\25-zotero-new-version-64bitwin\0-mydata\storage\5WMLE5GK\Wang 等 - 2023 - Evolution of Short-Range Optical Wireless Communications.pdf
+      \endverb
+      \keyw{wangEvolutionShortRangeOptical2023}
+    \endentry
+    \entry{kaushalUnderwaterOpticalWireless2016a}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=2e0a933df3de610b65a5fd93bf4c4ea3}{%
+           family={Kaushal},
+           familyi={K\bibinitperiod},
+           given={Hemani},
+           giveni={H\bibinitperiod}}}%
+        {{hash=558906a26f57972496e02c577e20963c}{%
+           family={Kaddoum},
+           familyi={K\bibinitperiod},
+           given={Georges},
+           giveni={G\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=2e0a933df3de610b65a5fd93bf4c4ea3}{%
+           family={Kaushal},
+           familyi={K\bibinitperiod},
+           given={Hemani},
+           giveni={H\bibinitperiod}}}%
+        {{hash=558906a26f57972496e02c577e20963c}{%
+           family={Kaddoum},
+           familyi={K\bibinitperiod},
+           given={Georges},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{9a678ee271af39cd15be45b7e9909b00}
+      \strng{fullhash}{15c29021a6dce8545cf898855828d28c}
+      \strng{fullhashraw}{15c29021a6dce8545cf898855828d28c}
+      \strng{bibnamehash}{15c29021a6dce8545cf898855828d28c}
+      \strng{authorbibnamehash}{15c29021a6dce8545cf898855828d28c}
+      \strng{authornamehash}{9a678ee271af39cd15be45b7e9909b00}
+      \strng{authorfullhash}{15c29021a6dce8545cf898855828d28c}
+      \strng{authorfullhashraw}{15c29021a6dce8545cf898855828d28c}
+      \strng{nameabibnamehash}{15c29021a6dce8545cf898855828d28c}
+      \strng{nameanamehash}{9a678ee271af39cd15be45b7e9909b00}
+      \strng{nameafullhash}{15c29021a6dce8545cf898855828d28c}
+      \strng{nameafullhashraw}{15c29021a6dce8545cf898855828d28c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Underwater wireless information transfer is of great interest to the military, industry, and the scientific community, as it plays an important role in tactical surveillance, pollution monitoring, oil control and maintenance, offshore explorations, climate change monitoring, and oceanography research. In order to facilitate all these activities, there is an increase in the number of unmanned vehicles or devices deployed underwater, which require high bandwidth and high capacity for information transfer underwater. Although tremendous progress has been made in the field of acoustic communication underwater, however, it is limited by bandwidth. All this has led to the proliferation of underwater optical wireless communication (UOWC), as it provides higher data rates than the traditional acoustic communication systems with significantly lower power consumption and simpler computational complexities for short-range wireless links. UOWC has many potential applications ranging from deep oceans to coastal waters. However, the biggest challenge for underwater wireless communication originates from the fundamental characteristics of ocean or sea water; addressing these challenges requires a thorough understanding of complex physio-chemical biological systems. In this paper, the main focus is to understand the feasibility and the reliability of high data rate underwater optical links due to various propagation phenomena that impact the performance of the system. This paper provides an exhaustive overview of recent advances in UOWC. Channel characterization, modulation schemes, coding techniques, and various sources of noise which are specific to UOWC are discussed. This paper not only provides exhaustive research in underwater optical communication but also aims to provide the development of new ideas that would help in the growth of future underwater communication. A hybrid approach to an acousto-optic communication system is presented that complements the existing acoustic system, resulting in high data rates, low latency, and an energy-efficient system.}
+      \field{issn}{2169-3536}
+      \field{journaltitle}{IEEE Access}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Underwater {{Optical Wireless Communication}}}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{4}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1518\bibrangedash 1547}
+      \range{pages}{30}
+      \verb{doi}
+      \verb 10.1109/ACCESS.2016.2552538
+      \endverb
+      \verb{file}
+      \verb J:\0_My_PC_NEW\J-平常不用\25-zotero-new-version-64bitwin\0-mydata\storage\Y2K7KU7A\Kaushal和Kaddoum - 2016 - Underwater Optical Wireless Communication.pdf
+      \endverb
+      \keyw{kaushalUnderwaterOpticalWireless2016a}
+    \endentry
+    \entry{departmentofphysicsfacultyofscienceskingabdulazizuniversityjeddah-21589kingdomofsaudiarabiaUnderwaterOpticalCommunications2021a}{article}{}{}
+      \name{author}{19}{}{%
+        {{hash=6846a76ef399cedfc85342a16dac8c1d}{%
+           family={{Department of Physics, Faculty of Sciences, King Abdulaziz University, Jeddah-21589, Kingdom of Saudi Arabia}},
+           familyi={D\bibinitperiod}}}%
+        {{hash=339f3e62332e405c56cfc912ec762930}{%
+           family={{Al-Zhrani}},
+           familyi={A\bibinitperiod},
+           given={Saleha},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ecf296f566fb338e158eb3402a9f0dac}{%
+           family={{Physics Department, Umm Al-Qura University, Al-Qunfudhah University College, Al-Qunfudhah 21912, Kingdom of Saudi Arabia}},
+           familyi={P\bibinitperiod}}}%
+        {{hash=6baba265520a11c98b66213475c8fa8a}{%
+           family={Bedaiwi},
+           familyi={B\bibinitperiod},
+           given={Nada\bibnamedelima M.},
+           giveni={N\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=6846a76ef399cedfc85342a16dac8c1d}{%
+           family={{Department of Physics, Faculty of Sciences, King Abdulaziz University, Jeddah-21589, Kingdom of Saudi Arabia}},
+           familyi={D\bibinitperiod}}}%
+        {{hash=d0ccc8621a1eebb3832d54a475be17bd}{%
+           family={{Department of Physics, University of Tabuk, Duba University College, Tabuk-71491, Kingdom of Saudi Arabia}},
+           familyi={D\bibinitperiod}}}%
+        {{hash=e2274222fd843188d0ad9d28ffb9186f}{%
+           family={{El-Ramli}},
+           familyi={E\bibinitperiod},
+           given={Intesar\bibnamedelima F},
+           giveni={I\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=c46b226a1e38d95bfda29012053415d1}{%
+           family={{INToo Solutions, 202-6940 East Blvd, Vancouver, BC, V6M 3V5}},
+           familyi={I\bibinitperiod}}}%
+        {{hash=230f6e6f62264fc55718ed1399094e79}{%
+           family={Barasheed},
+           familyi={B\bibinitperiod},
+           given={Abeer\bibnamedelima Z.},
+           giveni={A\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
+        {{hash=6846a76ef399cedfc85342a16dac8c1d}{%
+           family={{Department of Physics, Faculty of Sciences, King Abdulaziz University, Jeddah-21589, Kingdom of Saudi Arabia}},
+           familyi={D\bibinitperiod}}}%
+        {{hash=0b05fca0188bf984ffab73d3108e1e4f}{%
+           family={Abduldaiem},
+           familyi={A\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod}}}%
+        {{hash=6846a76ef399cedfc85342a16dac8c1d}{%
+           family={{Department of Physics, Faculty of Sciences, King Abdulaziz University, Jeddah-21589, Kingdom of Saudi Arabia}},
+           familyi={D\bibinitperiod}}}%
+        {{hash=670f2c98bda845b06535db3426bd7df5}{%
+           family={{Physics Department, Faculty of Science, Zagazig University, Zagazig, Egypt.}},
+           familyi={P\bibinitperiod}}}%
+        {{hash=b75871dbf1d19b7c3a4e5be2c4b95c3a}{%
+           family={{Al-Hadeethi}},
+           familyi={A\bibinitperiod},
+           given={Yas},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=6846a76ef399cedfc85342a16dac8c1d}{%
+           family={{Department of Physics, Faculty of Sciences, King Abdulaziz University, Jeddah-21589, Kingdom of Saudi Arabia}},
+           familyi={D\bibinitperiod}}}%
+        {{hash=fde1dd18ac624b752d76f6b5bc0465f3}{%
+           family={{Lithography in Devices Fabrication and Development Research Group, Deanship of Scientific Research, King Abdulaziz University, Jeddah-21589, Kingdom of Saudi Arabia}},
+           familyi={L\bibinitperiod}}}%
+        {{hash=944dde8554c53aa697219e8f36f13158}{%
+           family={Umar},
+           familyi={U\bibinitperiod},
+           given={Ahmad},
+           giveni={A\bibinitperiod}}}%
+        {{hash=71c44e5493b7e88c193713fb2efde043}{%
+           family={{Department of Chemistry, Faculty of Science and Arts, Najran University, Najran-11001, Kingdom of Saudi Arabia}},
+           familyi={D\bibinitperiod}}}%
+        {{hash=1dfa5341616c1dc325403459303f0fb8}{%
+           family={{Promising Centre for Sensors and Electronic Devices (PCSED), Najran, University, Najran-11001, Kingdom of Saudi Arabia}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \name{namea}{19}{}{%
+        {{hash=6846a76ef399cedfc85342a16dac8c1d}{%
+           family={{Department of Physics, Faculty of Sciences, King Abdulaziz University, Jeddah-21589, Kingdom of Saudi Arabia}},
+           familyi={D\bibinitperiod}}}%
+        {{hash=339f3e62332e405c56cfc912ec762930}{%
+           family={{Al-Zhrani}},
+           familyi={A\bibinitperiod},
+           given={Saleha},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ecf296f566fb338e158eb3402a9f0dac}{%
+           family={{Physics Department, Umm Al-Qura University, Al-Qunfudhah University College, Al-Qunfudhah 21912, Kingdom of Saudi Arabia}},
+           familyi={P\bibinitperiod}}}%
+        {{hash=6baba265520a11c98b66213475c8fa8a}{%
+           family={Bedaiwi},
+           familyi={B\bibinitperiod},
+           given={Nada\bibnamedelima M.},
+           giveni={N\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=6846a76ef399cedfc85342a16dac8c1d}{%
+           family={{Department of Physics, Faculty of Sciences, King Abdulaziz University, Jeddah-21589, Kingdom of Saudi Arabia}},
+           familyi={D\bibinitperiod}}}%
+        {{hash=d0ccc8621a1eebb3832d54a475be17bd}{%
+           family={{Department of Physics, University of Tabuk, Duba University College, Tabuk-71491, Kingdom of Saudi Arabia}},
+           familyi={D\bibinitperiod}}}%
+        {{hash=e2274222fd843188d0ad9d28ffb9186f}{%
+           family={{El-Ramli}},
+           familyi={E\bibinitperiod},
+           given={Intesar\bibnamedelima F},
+           giveni={I\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=c46b226a1e38d95bfda29012053415d1}{%
+           family={{INToo Solutions, 202-6940 East Blvd, Vancouver, BC, V6M 3V5}},
+           familyi={I\bibinitperiod}}}%
+        {{hash=230f6e6f62264fc55718ed1399094e79}{%
+           family={Barasheed},
+           familyi={B\bibinitperiod},
+           given={Abeer\bibnamedelima Z.},
+           giveni={A\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
+        {{hash=6846a76ef399cedfc85342a16dac8c1d}{%
+           family={{Department of Physics, Faculty of Sciences, King Abdulaziz University, Jeddah-21589, Kingdom of Saudi Arabia}},
+           familyi={D\bibinitperiod}}}%
+        {{hash=0b05fca0188bf984ffab73d3108e1e4f}{%
+           family={Abduldaiem},
+           familyi={A\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod}}}%
+        {{hash=6846a76ef399cedfc85342a16dac8c1d}{%
+           family={{Department of Physics, Faculty of Sciences, King Abdulaziz University, Jeddah-21589, Kingdom of Saudi Arabia}},
+           familyi={D\bibinitperiod}}}%
+        {{hash=670f2c98bda845b06535db3426bd7df5}{%
+           family={{Physics Department, Faculty of Science, Zagazig University, Zagazig, Egypt.}},
+           familyi={P\bibinitperiod}}}%
+        {{hash=b75871dbf1d19b7c3a4e5be2c4b95c3a}{%
+           family={{Al-Hadeethi}},
+           familyi={A\bibinitperiod},
+           given={Yas},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=6846a76ef399cedfc85342a16dac8c1d}{%
+           family={{Department of Physics, Faculty of Sciences, King Abdulaziz University, Jeddah-21589, Kingdom of Saudi Arabia}},
+           familyi={D\bibinitperiod}}}%
+        {{hash=fde1dd18ac624b752d76f6b5bc0465f3}{%
+           family={{Lithography in Devices Fabrication and Development Research Group, Deanship of Scientific Research, King Abdulaziz University, Jeddah-21589, Kingdom of Saudi Arabia}},
+           familyi={L\bibinitperiod}}}%
+        {{hash=944dde8554c53aa697219e8f36f13158}{%
+           family={Umar},
+           familyi={U\bibinitperiod},
+           given={Ahmad},
+           giveni={A\bibinitperiod}}}%
+        {{hash=71c44e5493b7e88c193713fb2efde043}{%
+           family={{Department of Chemistry, Faculty of Science and Arts, Najran University, Najran-11001, Kingdom of Saudi Arabia}},
+           familyi={D\bibinitperiod}}}%
+        {{hash=1dfa5341616c1dc325403459303f0fb8}{%
+           family={{Promising Centre for Sensors and Electronic Devices (PCSED), Najran, University, Najran-11001, Kingdom of Saudi Arabia}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{4b51b0b5e5ec559c08a081496ab826b4}
+      \strng{fullhash}{d3cd3507114ecf6bd1a8972a6d5c664f}
+      \strng{fullhashraw}{d3cd3507114ecf6bd1a8972a6d5c664f}
+      \strng{bibnamehash}{c3f27d5115bef98b09ef61983f68bca0}
+      \strng{authorbibnamehash}{c3f27d5115bef98b09ef61983f68bca0}
+      \strng{authornamehash}{4b51b0b5e5ec559c08a081496ab826b4}
+      \strng{authorfullhash}{d3cd3507114ecf6bd1a8972a6d5c664f}
+      \strng{authorfullhashraw}{d3cd3507114ecf6bd1a8972a6d5c664f}
+      \strng{nameabibnamehash}{c3f27d5115bef98b09ef61983f68bca0}
+      \strng{nameanamehash}{4b51b0b5e5ec559c08a081496ab826b4}
+      \strng{nameafullhash}{d3cd3507114ecf6bd1a8972a6d5c664f}
+      \strng{nameafullhashraw}{d3cd3507114ecf6bd1a8972a6d5c664f}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Even though most of the Earth's area is sheltered by the hydrosphere, the underwater world is nonetheless a challenging puzzle that has drawn the attention of scientists and researchers around the globe. Numerous theoretical and experimental research has been conducted to attain a safe and effective means of communication. This is crucial to facilitate the implementation of critical industrial, military and security applications and to guarantee the management of marine resources sustainably. Underwater communication technologies have come a long way as they have been implemented either utilizing wired and wireless techniques, through employing acoustic waves or electromagnetic waves (in the radio-frequency spectrum or the optical spectrum). Even though acoustic communication realizes long communication ranges in Km, its limited data rate, its low speed, and its undesirable impact on the aquatic environment have all led to the realization of electromagnetic waves-based communication. Electromagnetic waves offer a high data rate and high-speed communication. Moreover, underwater radio frequency communications maintain a smooth transition between water and air, and they are unaffected by the turbidity properties of water. However, they come at a huge cost. Intriguingly, wireless communications in the optical spectrum have outperformed all the above techniques. This is owing to its high bandwidth and low cost. For that reason, we focus this review on the different facets of the underwater optical wireless communications (UOWC) field, where we present an overview of the most important communication techniques and highlight their drawbacks and advantages. We also review the most basic physical processes that influence the light propagation and modulation underwater along with the coding techniques. We then discuss the link configurations and the system design, and we provide a summary of the most prominent studies from 1992 to the present.}
+      \field{issn}{2576988X, 25769898}
+      \field{journaltitle}{Engineered Science}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{shorttitle}{Underwater {{Optical Communications}}}
+      \field{title}{Underwater {{Optical Communications}}: {{A Brief Overview}} and {{Recent Developments}}}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.30919/es8d574
+      \endverb
+      \verb{file}
+      \verb J:\0_My_PC_NEW\J-平常不用\25-zotero-new-version-64bitwin\0-mydata\storage\9MV4XBLE\[Underwater Optical Communications_ A Brief Overview and Recent Developments]_Chinese User.pdf
+      \endverb
+      \keyw{departmentofphysicsfacultyofscienceskingabdulazizuniversityjeddah-21589kingdomofsaudiarabiaUnderwaterOpticalCommunications2021a}
+    \endentry
+    \entry{zengSurveyUnderwaterOptical2017}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=5ec1e1cfbb6bf4a5fc8a4f556abdb10f}{%
+           family={Zeng},
+           familyi={Z\bibinitperiod},
+           given={Zhaoquan},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=b2cf8cfb2eaac39e36ae47baf3c58cad}{%
+           family={Fu},
+           familyi={F\bibinitperiod},
+           given={Shu},
+           giveni={S\bibinitperiod}}}%
+        {{hash=42707036474ba48d90cb99d5e717d5a2}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Huihui},
+           giveni={H\bibinitperiod}}}%
+        {{hash=2502fed8988d952e189c8dd501727bda}{%
+           family={Dong},
+           familyi={D\bibinitperiod},
+           given={Yuhan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=45d68ce934f5fde1407bb3e5039efea9}{%
+           family={Cheng},
+           familyi={C\bibinitperiod},
+           given={Julian},
+           giveni={J\bibinitperiod}}}%
+      }
+      \name{namea}{5}{}{%
+        {{hash=5ec1e1cfbb6bf4a5fc8a4f556abdb10f}{%
+           family={Zeng},
+           familyi={Z\bibinitperiod},
+           given={Zhaoquan},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=b2cf8cfb2eaac39e36ae47baf3c58cad}{%
+           family={Fu},
+           familyi={F\bibinitperiod},
+           given={Shu},
+           giveni={S\bibinitperiod}}}%
+        {{hash=42707036474ba48d90cb99d5e717d5a2}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Huihui},
+           giveni={H\bibinitperiod}}}%
+        {{hash=2502fed8988d952e189c8dd501727bda}{%
+           family={Dong},
+           familyi={D\bibinitperiod},
+           given={Yuhan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=45d68ce934f5fde1407bb3e5039efea9}{%
+           family={Cheng},
+           familyi={C\bibinitperiod},
+           given={Julian},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{4adf8eab7b671ed336318391e9b4a31f}
+      \strng{fullhash}{4513d697e0b965a7cdf4986872eeac37}
+      \strng{fullhashraw}{4513d697e0b965a7cdf4986872eeac37}
+      \strng{bibnamehash}{016f5de09b01a6de06da99f4efb7de0c}
+      \strng{authorbibnamehash}{016f5de09b01a6de06da99f4efb7de0c}
+      \strng{authornamehash}{4adf8eab7b671ed336318391e9b4a31f}
+      \strng{authorfullhash}{4513d697e0b965a7cdf4986872eeac37}
+      \strng{authorfullhashraw}{4513d697e0b965a7cdf4986872eeac37}
+      \strng{nameabibnamehash}{016f5de09b01a6de06da99f4efb7de0c}
+      \strng{nameanamehash}{4adf8eab7b671ed336318391e9b4a31f}
+      \strng{nameafullhash}{4513d697e0b965a7cdf4986872eeac37}
+      \strng{nameafullhashraw}{4513d697e0b965a7cdf4986872eeac37}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Underwater wireless communications refer to data transmission in unguided water environment through wireless carriers, i.e., radio-frequency (RF) wave, acoustic wave, and optical wave. In comparison to RF and acoustic counterparts, underwater optical wireless communication (UOWC) can provide a much higher transmission bandwidth and much higher data rate. Therefore, we focus, in this paper, on the UOWC that employs optical wave as the transmission carrier. In recent years, many potential applications of UOWC systems have been proposed for environmental monitoring, offshore exploration, disaster precaution, and military operations. However, UOWC systems also suffer from severe absorption and scattering introduced by underwater channels. In order to overcome these technical barriers, several new system design approaches, which are different from the conventional terrestrial free-space optical communication, have been explored in recent years. We provide a comprehensive and exhaustive survey of the state-of-the-art UOWC research in three aspects: 1) channel characterization; 2) modulation; and 3) coding techniques, together with the practical implementations of UOWC.}
+      \field{issn}{1553-877X}
+      \field{journaltitle}{IEEE Commun. Surv. Tutorials}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{1}
+      \field{title}{A {{Survey}} of {{Underwater Optical Wireless Communications}}}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{19}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{204\bibrangedash 238}
+      \range{pages}{35}
+      \verb{doi}
+      \verb 10.1109/COMST.2016.2618841
+      \endverb
+      \verb{file}
+      \verb J:\0_My_PC_NEW\J-平常不用\25-zotero-new-version-64bitwin\0-mydata\storage\ZY2G2V4R\Zeng 等 - 2017 - A Survey of Underwater Optical Wireless Communications.pdf
+      \endverb
+      \keyw{zengSurveyUnderwaterOptical2017}
+    \endentry
+    \entry{hamdullahModelingOptimizationNLOS2026}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=a762736ace03785d81cc85f086d52188}{%
+           family={Hamdullah},
+           familyi={H\bibinitperiod},
+           given={Noor\bibnamedelima Abdulqader},
+           giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=ae86e01037ceaf0ea9ea11340c9a970c}{%
+           family={Çevik},
+           familyi={Ç\bibinitperiod},
+           given={Mesut},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ca8321c0f1df88fdb49a699f31d63913}{%
+           family={Farhan},
+           familyi={F\bibinitperiod},
+           given={Hameed\bibnamedelima Mutlag},
+           giveni={H\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=7d61c2b12e5b272b91d9e3089502cba2}{%
+           family={Duru},
+           familyi={D\bibinitperiod},
+           given={İzzet\bibnamedelima Paruğ},
+           giveni={İ\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \name{namea}{4}{}{%
+        {{hash=a762736ace03785d81cc85f086d52188}{%
+           family={Hamdullah},
+           familyi={H\bibinitperiod},
+           given={Noor\bibnamedelima Abdulqader},
+           giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=ae86e01037ceaf0ea9ea11340c9a970c}{%
+           family={Çevik},
+           familyi={Ç\bibinitperiod},
+           given={Mesut},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ca8321c0f1df88fdb49a699f31d63913}{%
+           family={Farhan},
+           familyi={F\bibinitperiod},
+           given={Hameed\bibnamedelima Mutlag},
+           giveni={H\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=7d61c2b12e5b272b91d9e3089502cba2}{%
+           family={Duru},
+           familyi={D\bibinitperiod},
+           given={İzzet\bibnamedelima Paruğ},
+           giveni={İ\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{7b8e12087c54026e2f5e21c38c13786e}
+      \strng{fullhash}{616a73ecd3a63ac9db5a528fd9c69ca0}
+      \strng{fullhashraw}{616a73ecd3a63ac9db5a528fd9c69ca0}
+      \strng{bibnamehash}{865ab8447754de48e99152223a3459cc}
+      \strng{authorbibnamehash}{865ab8447754de48e99152223a3459cc}
+      \strng{authornamehash}{7b8e12087c54026e2f5e21c38c13786e}
+      \strng{authorfullhash}{616a73ecd3a63ac9db5a528fd9c69ca0}
+      \strng{authorfullhashraw}{616a73ecd3a63ac9db5a528fd9c69ca0}
+      \strng{nameabibnamehash}{865ab8447754de48e99152223a3459cc}
+      \strng{nameanamehash}{7b8e12087c54026e2f5e21c38c13786e}
+      \strng{nameafullhash}{616a73ecd3a63ac9db5a528fd9c69ca0}
+      \strng{nameafullhashraw}{616a73ecd3a63ac9db5a528fd9c69ca0}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Due to increasing human activities underwater, there is a growing demand for high-speed underwater optical communication (UOWC) data links for security surveillance, environmental monitoring, pipeline inspection, and other applications. Line-of-sight communication is impossible under certain conditions due to misalignment, physical obstructions, irregular usage, and difficulty adjusting the receiver orientation, especially when used in environments with mobile users or submerged sensor networks. Therefore, non-line-of-sight (NLOS) optical communication is used in this study. Advanced modulation schemes---quadrature amplitude modulation and orthogonal frequency-division multiplexing (QAMOFDM)---were used to transmit the signal underwater between two network nodes. QAM increases the data transfer rate, while OFDM reduces dispersion and inter-symbol interference (ISI). The proposed UOWC system is investigated using a 532 nm green laser diode (LD). Reliable high-speed data transmission of up to 15 Gbps is achieved over horizontal distances of 134 m, 43 m, 21 m, and 5 m in four different aquatic environments---pure water (PW), clear ocean (CLO), coastal ocean (COO), and harbor II (HarII), respectively. The system achieves effectively error-free performance within the simulation duration (BER {$<$} 10-9), with a received optical signal power of approximately -41.5 dBm. Clear constellation patterns and low BER values are observed, confirming the robustness of the proposed architecture. Despite the limitations imposed by non-line-of-sight (NLOS) communication and the diversity aquatic environments, our proposed architecture excels at underwater long-distance data transmission at high speeds.}
+      \field{issn}{2304-6732}
+      \field{journaltitle}{Photonics}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Modeling and {{Optimization}} of {{NLOS Underwater Optical Channels Using QAM-OFDM Technique}}}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{13}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{99}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/photonics13010099
+      \endverb
+      \verb{file}
+      \verb J:\0_My_PC_NEW\J-平常不用\25-zotero-new-version-64bitwin\0-mydata\storage\MNUUFFJ3\[Modeling and Optimization of NLOS Underwater Optical Channels Using QAM-OFDM Technique]_Noor Abdulqader Hamdullah.pdf
+      \endverb
+      \keyw{hamdullahModelingOptimizationNLOS2026}
+    \endentry
+    \entry{jaruwatanadilokUnderwaterWirelessOptical2008}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=3060e5a9a3acb7f99d0bc9b91c84422e}{%
+           family={Jaruwatanadilok},
+           familyi={J\bibinitperiod},
+           given={Sermsak},
+           giveni={S\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=3060e5a9a3acb7f99d0bc9b91c84422e}{%
+           family={Jaruwatanadilok},
+           familyi={J\bibinitperiod},
+           given={Sermsak},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{3060e5a9a3acb7f99d0bc9b91c84422e}
+      \strng{fullhash}{3060e5a9a3acb7f99d0bc9b91c84422e}
+      \strng{fullhashraw}{3060e5a9a3acb7f99d0bc9b91c84422e}
+      \strng{bibnamehash}{3060e5a9a3acb7f99d0bc9b91c84422e}
+      \strng{authorbibnamehash}{3060e5a9a3acb7f99d0bc9b91c84422e}
+      \strng{authornamehash}{3060e5a9a3acb7f99d0bc9b91c84422e}
+      \strng{authorfullhash}{3060e5a9a3acb7f99d0bc9b91c84422e}
+      \strng{authorfullhashraw}{3060e5a9a3acb7f99d0bc9b91c84422e}
+      \strng{nameabibnamehash}{3060e5a9a3acb7f99d0bc9b91c84422e}
+      \strng{nameanamehash}{3060e5a9a3acb7f99d0bc9b91c84422e}
+      \strng{nameafullhash}{3060e5a9a3acb7f99d0bc9b91c84422e}
+      \strng{nameafullhashraw}{3060e5a9a3acb7f99d0bc9b91c84422e}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper presents the modeling of an underwater wireless optical communication channel using the vector radiative transfer theory. The vector radiative transfer equation captures the multiple scattering nature of natural water, and also includes the polarization behavior of light. Light propagation in an underwater environment encounters scattering effect creating dispersion which introduces inter-symbol-interference to the data communication. The attenuation effect further reduces the signal to noise ratio. Both scattering and absorption have adverse effects on underwater data communication. Using a channel model based on radiative transfer theory, we can quantify the scattering effect as a function of distance and bit rate by numerical Monte Carlo simulations. We also investigate the polarization behavior of light in the underwater environment, showing the significance of the cross-polarization component when the light encounters more scattering.}
+      \field{issn}{0733-8716}
+      \field{journaltitle}{IEEE J. Sel. Areas Commun.}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{12}
+      \field{number}{9}
+      \field{title}{Underwater {{Wireless Optical Communication Channel Modeling}} and {{Performance Evaluation}} Using {{Vector Radiative Transfer Theory}}}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{26}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1620\bibrangedash 1627}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/JSAC.2008.081202
+      \endverb
+      \verb{file}
+      \verb J:\0_My_PC_NEW\J-平常不用\25-zotero-new-version-64bitwin\0-mydata\storage\4F8EGQLC\Underwater wireless optical communication channel modeling and performance evaluation using vector radiative transfer theory.pdf
+      \endverb
+      \keyw{jaruwatanadilokUnderwaterWirelessOptical2008}
+    \endentry
+    \entry{zhuDopplerResistantOrthogonalChirp2022}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=eab0eb3cb3bcc2a1d562d643098bef5c}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Peibin},
+           giveni={P\bibinitperiod}}}%
+        {{hash=3c5d8e775ddb083ce5fb01eadc0c1f00}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Guangsong},
+           giveni={G\bibinitperiod}}}%
+        {{hash=99df4ae2195c89a9a8b6c534a904dbce}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Wen},
+           giveni={W\bibinitperiod}}}%
+        {{hash=48cc8678bcac5820998fd920f167d7f6}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Xiaomei},
+           giveni={X\bibinitperiod}}}%
+        {{hash=f2a7c1f027d1435210ae5e5fde24cb04}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Yougan},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \name{namea}{5}{}{%
+        {{hash=eab0eb3cb3bcc2a1d562d643098bef5c}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Peibin},
+           giveni={P\bibinitperiod}}}%
+        {{hash=3c5d8e775ddb083ce5fb01eadc0c1f00}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Guangsong},
+           giveni={G\bibinitperiod}}}%
+        {{hash=99df4ae2195c89a9a8b6c534a904dbce}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Wen},
+           giveni={W\bibinitperiod}}}%
+        {{hash=48cc8678bcac5820998fd920f167d7f6}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Xiaomei},
+           giveni={X\bibinitperiod}}}%
+        {{hash=f2a7c1f027d1435210ae5e5fde24cb04}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Yougan},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{ec8bd7efa6879fc4627b7698ea7c86e5}
+      \strng{fullhash}{0118de7326e8a905fb4af6d295dfa9b2}
+      \strng{fullhashraw}{0118de7326e8a905fb4af6d295dfa9b2}
+      \strng{bibnamehash}{dbab6b21b2fd147efc8449a70288bebc}
+      \strng{authorbibnamehash}{dbab6b21b2fd147efc8449a70288bebc}
+      \strng{authornamehash}{ec8bd7efa6879fc4627b7698ea7c86e5}
+      \strng{authorfullhash}{0118de7326e8a905fb4af6d295dfa9b2}
+      \strng{authorfullhashraw}{0118de7326e8a905fb4af6d295dfa9b2}
+      \strng{nameabibnamehash}{dbab6b21b2fd147efc8449a70288bebc}
+      \strng{nameanamehash}{ec8bd7efa6879fc4627b7698ea7c86e5}
+      \strng{nameafullhash}{0118de7326e8a905fb4af6d295dfa9b2}
+      \strng{nameafullhashraw}{0118de7326e8a905fb4af6d295dfa9b2}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Mobile underwater acoustic communication technology has been widely employed in marine measurement and offshore engineering. The irregular relative motion between the transmitter and receiver causes time-varying Doppler shifts, which can cause severe inter-carrier interference (ICI) and thus affect the performance of orthogonal chirp division multiplexing (OCDM) communication. Conventional techniques such as resampling and residual carrier frequency offset can only handle constant Doppler frequency shift. In this paper, we propose a new method for handling time-varying Doppler shifts by adding multiplex resampling to OCDM communications. This method extends the resampling range based on the measured Doppler standard deviation and thus reduces the bit error rate (BER) in mobile underwater acoustic communications. The application of the variable number of branches in multiplex resampling reduces the computational complexity and saves the computational cost by approximately 30\% compared with the fixed number of branches. We detail the implementation and parameter selection of the Doppler-resistant OCDM in mobile underwater acoustic communication, and compare the performance of multiplex resampling and single resampling by simulation and actual measurement in Qiandao Lake. The BER and frame error ratio (FER) results verify the feasibility of the proposed method and the superiority of its anti-time-varying Doppler shifts performance.}
+      \field{issn}{2169-3536}
+      \field{journaltitle}{IEEE Access}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Doppler-{{Resistant Orthogonal Chirp Division Multiplexing With Multiplex Resampling}} for {{Mobile Underwater Acoustic Communication}}}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{10}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{55151\bibrangedash 55163}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1109/ACCESS.2022.3176824
+      \endverb
+      \verb{file}
+      \verb J:\0_My_PC_NEW\J-平常不用\25-zotero-new-version-64bitwin\0-mydata\storage\WQ6EZESN\[Doppler-Resistant Orthogonal Chirp Division Multiplexing With Multiplex Resampling for Mobile Underwater Acoustic Commun]_PEIBIN ZHU.pdf
+      \endverb
+      \keyw{zhuDopplerResistantOrthogonalChirp2022}
+    \endentry
+    \entry{armstrongOFDMOpticalCommunications2009}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=84958c6eaaf5d13c13826e859441cb09}{%
+           family={Armstrong},
+           familyi={A\bibinitperiod},
+           given={Jean},
+           giveni={J\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=84958c6eaaf5d13c13826e859441cb09}{%
+           family={Armstrong},
+           familyi={A\bibinitperiod},
+           given={Jean},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{84958c6eaaf5d13c13826e859441cb09}
+      \strng{fullhash}{84958c6eaaf5d13c13826e859441cb09}
+      \strng{fullhashraw}{84958c6eaaf5d13c13826e859441cb09}
+      \strng{bibnamehash}{84958c6eaaf5d13c13826e859441cb09}
+      \strng{authorbibnamehash}{84958c6eaaf5d13c13826e859441cb09}
+      \strng{authornamehash}{84958c6eaaf5d13c13826e859441cb09}
+      \strng{authorfullhash}{84958c6eaaf5d13c13826e859441cb09}
+      \strng{authorfullhashraw}{84958c6eaaf5d13c13826e859441cb09}
+      \strng{nameabibnamehash}{84958c6eaaf5d13c13826e859441cb09}
+      \strng{nameanamehash}{84958c6eaaf5d13c13826e859441cb09}
+      \strng{nameafullhash}{84958c6eaaf5d13c13826e859441cb09}
+      \strng{nameafullhashraw}{84958c6eaaf5d13c13826e859441cb09}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Orthogonal frequency division multiplexing (OFDM) is a modulation technique which is now used in most new and emerging broadband wired and wireless communication systems because it is an effective solution to intersymbol interference caused by a dispersive channel. Very recently a number of researchers have shown that OFDM is also a promising technology for optical communications. This paper gives a tutorial overview of OFDM highlighting the aspects that are likely to be important in optical applications. To achieve good performance in optical systems OFDM must be adapted in various ways. The constraints imposed by single mode optical fiber, multimode optical fiber and optical wireless are discussed and the new forms of optical OFDM which have been developed are outlined. The main drawbacks of OFDM are its high peak to average power ratio and its sensitivity to phase noise and frequency offset. The impairments that these cause are described and their implications for optical systems discussed.}
+      \field{issn}{0733-8724}
+      \field{journaltitle}{J. Lightw. Technol.}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{2}
+      \field{number}{3}
+      \field{title}{{OFDM} for optical communications}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{27}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{189\bibrangedash 204}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1109/JLT.2008.2010061
+      \endverb
+      \verb{file}
+      \verb J:\0_My_PC_NEW\J-平常不用\25-zotero-new-version-64bitwin\0-mydata\storage\TSZURMLK\[OFDM for Optical Communications]_Jean Armstrong.pdf
+      \endverb
+      \keyw{armstrongOFDMOpticalCommunications2009}
+    \endentry
+    \entry{yangAdvancementsUnderwaterOptical2024}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=1bb24ff7c0b9ccb45a7cfd3131ae0fc9}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Liwei},
+           giveni={L\bibinitperiod}}}%
+        {{hash=4fc75885269b0e265c453668f4dcb1d6}{%
+           family={Bi},
+           familyi={B\bibinitperiod},
+           given={Zeyang},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=637831831f0083bb93477c09b8822b10}{%
+           family={Liang},
+           familyi={L\bibinitperiod},
+           given={Xue},
+           giveni={X\bibinitperiod}}}%
+        {{hash=61e835c318bfd8e4c66db436119abe19}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Lihao},
+           giveni={L\bibinitperiod}}}%
+        {{hash=9e731d976dc6e9cd20258fa73dca9924}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Jiade},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1650b105f1004cd1b2e65ae38b219ec2}{%
+           family={Peng},
+           familyi={P\bibinitperiod},
+           given={Jingyi},
+           giveni={J\bibinitperiod}}}%
+      }
+      \name{namea}{6}{}{%
+        {{hash=1bb24ff7c0b9ccb45a7cfd3131ae0fc9}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Liwei},
+           giveni={L\bibinitperiod}}}%
+        {{hash=4fc75885269b0e265c453668f4dcb1d6}{%
+           family={Bi},
+           familyi={B\bibinitperiod},
+           given={Zeyang},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=637831831f0083bb93477c09b8822b10}{%
+           family={Liang},
+           familyi={L\bibinitperiod},
+           given={Xue},
+           giveni={X\bibinitperiod}}}%
+        {{hash=61e835c318bfd8e4c66db436119abe19}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Lihao},
+           giveni={L\bibinitperiod}}}%
+        {{hash=9e731d976dc6e9cd20258fa73dca9924}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Jiade},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1650b105f1004cd1b2e65ae38b219ec2}{%
+           family={Peng},
+           familyi={P\bibinitperiod},
+           given={Jingyi},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{d0e0a9810966138cdcdc064566b3a788}
+      \strng{fullhash}{f490415b70bb1e766c05b1682196110c}
+      \strng{fullhashraw}{f490415b70bb1e766c05b1682196110c}
+      \strng{bibnamehash}{5d88cec12bda579ad676f3cae91a544c}
+      \strng{authorbibnamehash}{5d88cec12bda579ad676f3cae91a544c}
+      \strng{authornamehash}{d0e0a9810966138cdcdc064566b3a788}
+      \strng{authorfullhash}{f490415b70bb1e766c05b1682196110c}
+      \strng{authorfullhashraw}{f490415b70bb1e766c05b1682196110c}
+      \strng{nameabibnamehash}{5d88cec12bda579ad676f3cae91a544c}
+      \strng{nameanamehash}{d0e0a9810966138cdcdc064566b3a788}
+      \strng{nameafullhash}{f490415b70bb1e766c05b1682196110c}
+      \strng{nameafullhashraw}{f490415b70bb1e766c05b1682196110c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Compared to underwater radio waves and acoustic communication technology, underwater optical communication technology has emerged as a technical means of underwater data and information transmission. Due to the complexity and volatility of the channel environment and the various factors that affect optical data transmission, there is no standard theoretical model for underwater optical wireless communication (UOWC). This work systematically evaluated and validated several optical attenuation models, leading to the development of an approach that significantly improves the accuracy of optical signal behavior prediction in underwater environments. The simulations using the Monte Carlo algorithm revealed critical insights into signal propagation, enabling more precise modeling of UOWC channels under varying conditions. We developed and validated a novel PTS-Clipping technique that effectively reduces PAPR by up to 15\%, outperforming traditional methods and maintaining system efficiency. The novel PTS-Clipping approach achieved a reduction in OFDM signal PAPR from 11.861 dB to as low as 10.228 dB, demonstrating superior performance, particularly in high-order modulation schemes like 16-QAM, where signal integrity is critical. Theoretical analysis is combined with simulation experiments to promote a more robust and efficient UOWC system.}
+      \field{issn}{1943-0655, 1943-0647}
+      \field{journaltitle}{IEEE Photonics Journal}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{10}
+      \field{number}{5}
+      \field{shorttitle}{Advancements in {{Underwater Optical Wireless Communication}}}
+      \field{title}{Advancements in {{Underwater Optical Wireless Communication}}: {{Channel Modeling}}, {{PAPR Reduction}}, and {{Simulations With OFDM}}}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{16}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 8}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/JPHOT.2024.3475448
+      \endverb
+      \verb{file}
+      \verb J:\0_My_PC_NEW\J-平常不用\25-zotero-new-version-64bitwin\0-mydata\storage\S2YCR9MW\Yang 等 - 2024 - Advancements in Underwater Optical Wireless Communication Channel Modeling, PAPR Reduction, and Sim.pdf
+      \endverb
+      \keyw{yangAdvancementsUnderwaterOptical2024}
+    \endentry
+    \entry{bemaniAFDMFullDiversity2021}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=e6b2d6ee05e8eae5ef1e8c47ed58d2a2}{%
+           family={Bemani},
+           familyi={B\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod}}}%
+        {{hash=12db9729320ad2a40145d02d34ede229}{%
+           family={Ksairi},
+           familyi={K\bibinitperiod},
+           given={Nassar},
+           giveni={N\bibinitperiod}}}%
+        {{hash=15656cbe365762a40009ab6155b3b3f6}{%
+           family={Kountouris},
+           familyi={K\bibinitperiod},
+           given={Marios},
+           giveni={M\bibinitperiod}}}%
+      }
+      \name{namea}{3}{}{%
+        {{hash=e6b2d6ee05e8eae5ef1e8c47ed58d2a2}{%
+           family={Bemani},
+           familyi={B\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod}}}%
+        {{hash=12db9729320ad2a40145d02d34ede229}{%
+           family={Ksairi},
+           familyi={K\bibinitperiod},
+           given={Nassar},
+           giveni={N\bibinitperiod}}}%
+        {{hash=15656cbe365762a40009ab6155b3b3f6}{%
+           family={Kountouris},
+           familyi={K\bibinitperiod},
+           given={Marios},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{location}{1}{%
+        {Montreal, QC, Canada}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{a13d8ad3267a62809a5192d51da9318b}
+      \strng{fullhash}{9dbe9733889bb0b24cb1978b88e9a1f8}
+      \strng{fullhashraw}{9dbe9733889bb0b24cb1978b88e9a1f8}
+      \strng{bibnamehash}{9dbe9733889bb0b24cb1978b88e9a1f8}
+      \strng{authorbibnamehash}{9dbe9733889bb0b24cb1978b88e9a1f8}
+      \strng{authornamehash}{a13d8ad3267a62809a5192d51da9318b}
+      \strng{authorfullhash}{9dbe9733889bb0b24cb1978b88e9a1f8}
+      \strng{authorfullhashraw}{9dbe9733889bb0b24cb1978b88e9a1f8}
+      \strng{nameabibnamehash}{9dbe9733889bb0b24cb1978b88e9a1f8}
+      \strng{nameanamehash}{a13d8ad3267a62809a5192d51da9318b}
+      \strng{nameafullhash}{9dbe9733889bb0b24cb1978b88e9a1f8}
+      \strng{nameafullhashraw}{9dbe9733889bb0b24cb1978b88e9a1f8}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{We present Affine Frequency Division Multiplexing (AFDM), a new chirp-based multicarrier transceiver scheme for high mobility communications in next-generation wireless systems. AFDM is based on discrete affine Fourier transform (DAFT), a generalization of discrete Fourier transform characterized with two parameters that can be adapted to better cope with doubly dispersive channels. Based on the derived input-output relation, the DAFT parameters underlying AFDM are set in such a way to avoid that time domain channel paths with distinct delays or Doppler frequency shifts overlap in the DAFT domain. The resulting DAFT domain impulse response thus conveys a full delay-Doppler representation of the channel. We show that AFDM can achieve the full diversity of linear time-varying (LTV) channels. Our analytical results are validated through numerical simulations, which evince that AFDM outperforms state-of-theart multicarrier schemes in terms of bit error rate (BER) in doubly dispersive channels.}
+      \field{booktitle}{2021 {{IEEE International Conference}} on {{Communications Workshops}} ({{ICC Workshops}})}
+      \field{isbn}{978-1-7281-9441-7}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{6}
+      \field{shorttitle}{{{AFDM}}}
+      \field{title}{{{AFDM}}: a full diversity next generation waveform for high mobility communications}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{usera}{C}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 6}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/ICCWorkshops50388.2021.9473655
+      \endverb
+      \verb{file}
+      \verb J:\0_My_PC_NEW\J-平常不用\25-zotero-new-version-64bitwin\0-mydata\storage\YB4LEEG5\Bemani 等 - 2021 - AFDM A Full Diversity Next Generation Waveform for High Mobility Communications.pdf
+      \endverb
+      \keyw{bemaniAFDMFullDiversity2021}
+    \endentry
+    \entry{dissanayakeComparisonACOOFDMDCOOFDM2013}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=8f31d31c6554f7bcbe10bb06999dc7f0}{%
+           family={Dissanayake},
+           familyi={D\bibinitperiod},
+           given={Sarangi\bibnamedelima Devasmitha},
+           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=84958c6eaaf5d13c13826e859441cb09}{%
+           family={Armstrong},
+           familyi={A\bibinitperiod},
+           given={Jean},
+           giveni={J\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=8f31d31c6554f7bcbe10bb06999dc7f0}{%
+           family={Dissanayake},
+           familyi={D\bibinitperiod},
+           given={Sarangi\bibnamedelima Devasmitha},
+           giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=84958c6eaaf5d13c13826e859441cb09}{%
+           family={Armstrong},
+           familyi={A\bibinitperiod},
+           given={Jean},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{efe40fa983b797c37400d4d41881b5a4}
+      \strng{fullhash}{ad9abe3364b33c2624441821ac2b29bf}
+      \strng{fullhashraw}{ad9abe3364b33c2624441821ac2b29bf}
+      \strng{bibnamehash}{ad9abe3364b33c2624441821ac2b29bf}
+      \strng{authorbibnamehash}{ad9abe3364b33c2624441821ac2b29bf}
+      \strng{authornamehash}{efe40fa983b797c37400d4d41881b5a4}
+      \strng{authorfullhash}{ad9abe3364b33c2624441821ac2b29bf}
+      \strng{authorfullhashraw}{ad9abe3364b33c2624441821ac2b29bf}
+      \strng{nameabibnamehash}{ad9abe3364b33c2624441821ac2b29bf}
+      \strng{nameanamehash}{efe40fa983b797c37400d4d41881b5a4}
+      \strng{nameafullhash}{ad9abe3364b33c2624441821ac2b29bf}
+      \strng{nameafullhashraw}{ad9abe3364b33c2624441821ac2b29bf}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper, three forms of orthogonal frequency division multiplexing (OFDM) designed for intensity modulated/direct detection (IM/DD) optical systems are compared. These are asymmetrically clipped optical OFDM (ACO-OFDM), DC biased optical OFDM (DCO-OFDM) and asymmetrically clipped DC biased optical OFDM (ADO-OFDM). ADO-OFDM is a new technique that combines aspects of ACO-OFDM and DCO-OFDM by simultaneously transmitting ACO-OFDM on the odd subcarriers and DCO-OFDM on the even subcarriers. The odd subcarriers are demodulated as in a conventional ACO-OFDM receiver and the even subcarriers are demodulated using a form of interference cancellation. ADO-OFDM is shown to be more optically power efficient than conventional ACO-OFDM and DCO-OFDM, for some bit rate/normalized bandwidths. It is also shown that by varying the proportion of optical power on the ACO-OFDM component, the DC bias level of DCO-OFDM and the constellations sent on the odd and even subcarriers, the optical power efficiency of ADOOFDM can be changed.}
+      \field{issn}{0733-8724, 1558-2213}
+      \field{journaltitle}{J. Lightw. Technol.}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{4}
+      \field{number}{7}
+      \field{title}{Comparison of {{ACO-OFDM}}, {{DCO-OFDM}} and {{ADO-OFDM}} in {{IM}}/{{DD}} systems}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{31}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1063\bibrangedash 1072}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/JLT.2013.2241731
+      \endverb
+      \verb{file}
+      \verb J:\0_My_PC_NEW\J-平常不用\25-zotero-new-version-64bitwin\0-mydata\storage\VXB44EDM\Dissanayake和Armstrong - 2013 - Comparison of ACO-OFDM, DCO-OFDM and ADO-OFDM in IMDD Systems.pdf
+      \endverb
+      \keyw{dissanayakeComparisonACOOFDMDCOOFDM2013}
+    \endentry
+    \entry{essalihOpticalOFDMSiPMBased2020}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=82e3755614f31c4facc47c7d23f4fc14}{%
+           family={Essalih},
+           familyi={E\bibinitperiod},
+           given={Taha},
+           giveni={T\bibinitperiod}}}%
+        {{hash=b8184f11adf9aafe43dda74bb70814d9}{%
+           family={Khalighi},
+           familyi={K\bibinitperiod},
+           given={Mohammad\bibnamedelima Ali},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=87cfe38826d3dde41562050fa5bbd712}{%
+           family={Hranilovic},
+           familyi={H\bibinitperiod},
+           given={Steve},
+           giveni={S\bibinitperiod}}}%
+        {{hash=02ec0aa28f21bd097f386d9d36f0383e}{%
+           family={Akhouayri},
+           familyi={A\bibinitperiod},
+           given={Hassan},
+           giveni={H\bibinitperiod}}}%
+      }
+      \name{namea}{4}{}{%
+        {{hash=82e3755614f31c4facc47c7d23f4fc14}{%
+           family={Essalih},
+           familyi={E\bibinitperiod},
+           given={Taha},
+           giveni={T\bibinitperiod}}}%
+        {{hash=b8184f11adf9aafe43dda74bb70814d9}{%
+           family={Khalighi},
+           familyi={K\bibinitperiod},
+           given={Mohammad\bibnamedelima Ali},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=87cfe38826d3dde41562050fa5bbd712}{%
+           family={Hranilovic},
+           familyi={H\bibinitperiod},
+           given={Steve},
+           giveni={S\bibinitperiod}}}%
+        {{hash=02ec0aa28f21bd097f386d9d36f0383e}{%
+           family={Akhouayri},
+           familyi={A\bibinitperiod},
+           given={Hassan},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{478f18d80fc841a30ba962ab49b84b87}
+      \strng{fullhash}{37739a6d1f8752d1f4a44ff8fb25b02b}
+      \strng{fullhashraw}{37739a6d1f8752d1f4a44ff8fb25b02b}
+      \strng{bibnamehash}{e47aae73b12d057492e47f491b7485f0}
+      \strng{authorbibnamehash}{e47aae73b12d057492e47f491b7485f0}
+      \strng{authornamehash}{478f18d80fc841a30ba962ab49b84b87}
+      \strng{authorfullhash}{37739a6d1f8752d1f4a44ff8fb25b02b}
+      \strng{authorfullhashraw}{37739a6d1f8752d1f4a44ff8fb25b02b}
+      \strng{nameabibnamehash}{e47aae73b12d057492e47f491b7485f0}
+      \strng{nameanamehash}{478f18d80fc841a30ba962ab49b84b87}
+      \strng{nameafullhash}{37739a6d1f8752d1f4a44ff8fb25b02b}
+      \strng{nameafullhashraw}{37739a6d1f8752d1f4a44ff8fb25b02b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Underwater optical wireless systems have dual requirements of high data rates and long ranges in harsh scattering and attenuation conditions. In this paper, we investigate the advantages and limitations of optical orthogonal frequency-division multiplexing (O-OFDM) signaling when a silicon photo-multiplier (SiPM) is used at the receiver in order to ensure high sensitivity. Considering a light-emitting diode (LED) transmitter and taking into account the limited dynamic range imposed by the transmitter and the SiPM receiver, we study the performance of three popular O-OFDM schemes, i.e., DC-biased, asymmetrically-clipped, and layered asymmetrically-clipped O-OFDM (DCO-, ACO-, and LACO-OFDM, respectively). We consider a constraint on transmit electrical power PTxe and take into account the required DC bias for the three considered schemes in practice, showing the undeniable advantage of ACO- and LACO-OFDM in terms of energy efficiency. For instance, for the considered SiPM and LED components, a spectral efficiency of {$\sim$}1 bps/Hz with a data rate of 20 Mbps, a link range of 70 m, and a target bit-error-rate (BER) of 10-3, ACO and LACO allow a reduction of about 10 and 6 mW, respectively, in the required PTxe, compared to DCO-OFDM. Meanwhile, we show that when relaxing the PTxe constraint, DCO-OFDM offers the largest operational link range within which a target BER can be achieved. For instance, for a target BER of 10-3 and a data rate of 20 Mbps, and considering PTxe of 185, 80, and 50 mW for DCO-, LACO-, and ACO-OFDM, respectively, the corresponding intervals of operational link range are about 81, 74.3, and 73.8 m. Lastly, we show that LACO-OFDM makes a good compromise between energy efficiency and operational range flexibility, although requiring a higher computational complexity and imposing a longer latency at the receiver.}
+      \field{issn}{1424-8220}
+      \field{journaltitle}{Sensors}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{10}
+      \field{number}{21}
+      \field{title}{Optical {{OFDM}} for {{SiPM-Based Underwater Optical Wireless Communication Links}}}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{20}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{6057}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/s20216057
+      \endverb
+      \verb{file}
+      \verb J:\0_My_PC_NEW\J-平常不用\25-zotero-new-version-64bitwin\0-mydata\storage\AVYJ2YUC\Essalih 等 - 2020 - Optical OFDM for SiPM-Based Underwater Optical Wireless Communication Links.pdf
+      \endverb
+      \keyw{essalihOpticalOFDMSiPMBased2020}
+    \endentry
+    \entry{fernandoFlipOFDMUnipolarCommunication2011}{misc}{}{}
+      \name{author}{3}{}{%
+        {{hash=6a679e7cdaf220507d2f8bb1040da465}{%
+           family={Fernando},
+           familyi={F\bibinitperiod},
+           given={Nirmal},
+           giveni={N\bibinitperiod}}}%
+        {{hash=deaaf8d3e3d256d875d2830d880fb12d}{%
+           family={Hong},
+           familyi={H\bibinitperiod},
+           given={Yi},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=b8199b2d453e18a344d5bc134d7ea79d}{%
+           family={Viterbo},
+           familyi={V\bibinitperiod},
+           given={Emanuele},
+           giveni={E\bibinitperiod}}}%
+      }
+      \name{namea}{3}{}{%
+        {{hash=6a679e7cdaf220507d2f8bb1040da465}{%
+           family={Fernando},
+           familyi={F\bibinitperiod},
+           given={Nirmal},
+           giveni={N\bibinitperiod}}}%
+        {{hash=deaaf8d3e3d256d875d2830d880fb12d}{%
+           family={Hong},
+           familyi={H\bibinitperiod},
+           given={Yi},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=b8199b2d453e18a344d5bc134d7ea79d}{%
+           family={Viterbo},
+           familyi={V\bibinitperiod},
+           given={Emanuele},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{363c9c8d818f41412e24310f3d09f2ad}
+      \strng{fullhash}{45408422a0d9ef3e9b2e34d051586e4e}
+      \strng{fullhashraw}{45408422a0d9ef3e9b2e34d051586e4e}
+      \strng{bibnamehash}{45408422a0d9ef3e9b2e34d051586e4e}
+      \strng{authorbibnamehash}{45408422a0d9ef3e9b2e34d051586e4e}
+      \strng{authornamehash}{363c9c8d818f41412e24310f3d09f2ad}
+      \strng{authorfullhash}{45408422a0d9ef3e9b2e34d051586e4e}
+      \strng{authorfullhashraw}{45408422a0d9ef3e9b2e34d051586e4e}
+      \strng{nameabibnamehash}{45408422a0d9ef3e9b2e34d051586e4e}
+      \strng{nameanamehash}{363c9c8d818f41412e24310f3d09f2ad}
+      \strng{nameafullhash}{45408422a0d9ef3e9b2e34d051586e4e}
+      \strng{nameafullhashraw}{45408422a0d9ef3e9b2e34d051586e4e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Unipolar communications systems can transmit information using only real and positive signals. This includes a variety of physical channels ranging from optical (fiber or free-space), to RF wireless using amplitude modulation with non-coherent reception, to baseband single wire communications. Unipolar OFDM techniques enable to efficiently compensate frequency selective distortion in the unipolar communication systems. One of the leading examples of unipolar OFDM is asymmetric clipped optical OFDM (ACO-OFDM) originally proposed for optical communications. Flip-OFDM is an alternative approach that was proposed in a patent, but its performance and full potentials have never been investigated in the literature. In this paper, we first compare Flip-OFDM and ACO-OFDM, and show that both techniques have the same performance but different complexities (Flip-OFDM offers 50\% saving). We then propose a new detection scheme, which enables to reduce the noise at the Flip-OFDM receiver by almost 3dB. The analytical performance of the noise filtering schemes is supported by the simulation results.}
+      \field{eprintclass}{cs}
+      \field{eprinttype}{arXiv}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{12}
+      \field{number}{arXiv:1112.0057}
+      \field{title}{Flip-{{OFDM}} for {{Unipolar Communication Systems}}}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{usera}{Z}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.1112.0057
+      \endverb
+      \verb{eprint}
+      \verb 1112.0057
+      \endverb
+      \verb{file}
+      \verb J:\0_My_PC_NEW\J-平常不用\25-zotero-new-version-64bitwin\0-mydata\storage\5SADGYXK\Fernando 等 - 2011 - Flip-OFDM for Unipolar Communication Systems.pdf
+      \endverb
+      \keyw{Computer Science - Information Theory}
+    \endentry
+    \entry{taoAffineFrequencyDivision2025}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=4a1d3a6e79540c83a0754bb95220d3a1}{%
+           family={Tao},
+           familyi={T\bibinitperiod},
+           given={Yiwei},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=9ee51ecb17f1cdf7716fed0a669baa90}{%
+           family={Wen},
+           familyi={W\bibinitperiod},
+           given={Miaowen},
+           giveni={M\bibinitperiod}}}%
+        {{hash=acc6b8a77002de053d37c6ccefb6c5f1}{%
+           family={Ge},
+           familyi={G\bibinitperiod},
+           given={Yao},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=bc20e54573d2db853852f86802ab83de}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=e5a79ffd7726779d1975e4bec82a9cf9}{%
+           family={Basar},
+           familyi={B\bibinitperiod},
+           given={Ertugrul},
+           giveni={E\bibinitperiod}}}%
+        {{hash=6100d663f6de8bbc21aa2715874dd980}{%
+           family={{Al-Dhahir}},
+           familyi={A\bibinitperiod},
+           given={Naofal},
+           giveni={N\bibinitperiod}}}%
+      }
+      \name{namea}{6}{}{%
+        {{hash=4a1d3a6e79540c83a0754bb95220d3a1}{%
+           family={Tao},
+           familyi={T\bibinitperiod},
+           given={Yiwei},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=9ee51ecb17f1cdf7716fed0a669baa90}{%
+           family={Wen},
+           familyi={W\bibinitperiod},
+           given={Miaowen},
+           giveni={M\bibinitperiod}}}%
+        {{hash=acc6b8a77002de053d37c6ccefb6c5f1}{%
+           family={Ge},
+           familyi={G\bibinitperiod},
+           given={Yao},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=bc20e54573d2db853852f86802ab83de}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=e5a79ffd7726779d1975e4bec82a9cf9}{%
+           family={Basar},
+           familyi={B\bibinitperiod},
+           given={Ertugrul},
+           giveni={E\bibinitperiod}}}%
+        {{hash=6100d663f6de8bbc21aa2715874dd980}{%
+           family={{Al-Dhahir}},
+           familyi={A\bibinitperiod},
+           given={Naofal},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{f81de3a142dd5b324fd055a81cb43866}
+      \strng{fullhash}{4bbbb420fdc9518748f4f3739ad5420c}
+      \strng{fullhashraw}{4bbbb420fdc9518748f4f3739ad5420c}
+      \strng{bibnamehash}{b87723ff933890b4ed5d80fcf14fc719}
+      \strng{authorbibnamehash}{b87723ff933890b4ed5d80fcf14fc719}
+      \strng{authornamehash}{f81de3a142dd5b324fd055a81cb43866}
+      \strng{authorfullhash}{4bbbb420fdc9518748f4f3739ad5420c}
+      \strng{authorfullhashraw}{4bbbb420fdc9518748f4f3739ad5420c}
+      \strng{nameabibnamehash}{b87723ff933890b4ed5d80fcf14fc719}
+      \strng{nameanamehash}{f81de3a142dd5b324fd055a81cb43866}
+      \strng{nameafullhash}{4bbbb420fdc9518748f4f3739ad5420c}
+      \strng{nameafullhashraw}{4bbbb420fdc9518748f4f3739ad5420c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{0733-8716, 1558-0008}
+      \field{journaltitle}{IEEE J. Sel. Areas Commun.}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{4}
+      \field{number}{4}
+      \field{shorttitle}{Affine {{Frequency Division Multiplexing With Index Modulation}}}
+      \field{title}{Affine {{Frequency Division Multiplexing With Index Modulation}}: {{Full Diversity Condition}}, {{Performance Analysis}}, and {{Low-Complexity Detection}}}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{43}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1041\bibrangedash 1055}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1109/JSAC.2025.3531561
+      \endverb
+      \verb{file}
+      \verb J:\0_My_PC_NEW\J-平常不用\25-zotero-new-version-64bitwin\0-mydata\storage\32GDRY8S\Tao 等 - 2025 - Affine Frequency Division Multiplexing With Index Modulation Full Diversity Condition, Performance.pdf
+      \endverb
+      \keyw{taoAffineFrequencyDivision2025}
+    \endentry
+    \entry{MianXiangUUVJiQunYingYongDeShuiXiaWuXianGuangTongXinGuanJianJiShu2025}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=a9b3027e61da790b7ab1ad1c086e2b23}{%
+           family={{朱云周}},
+           familyi={朱\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=a9b3027e61da790b7ab1ad1c086e2b23}{%
+           family={{朱云周}},
+           familyi={朱\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \strng{namehash}{a9b3027e61da790b7ab1ad1c086e2b23}
+      \strng{fullhash}{a9b3027e61da790b7ab1ad1c086e2b23}
+      \strng{fullhashraw}{a9b3027e61da790b7ab1ad1c086e2b23}
+      \strng{bibnamehash}{a9b3027e61da790b7ab1ad1c086e2b23}
+      \strng{authorbibnamehash}{a9b3027e61da790b7ab1ad1c086e2b23}
+      \strng{authornamehash}{a9b3027e61da790b7ab1ad1c086e2b23}
+      \strng{authorfullhash}{a9b3027e61da790b7ab1ad1c086e2b23}
+      \strng{authorfullhashraw}{a9b3027e61da790b7ab1ad1c086e2b23}
+      \strng{nameabibnamehash}{a9b3027e61da790b7ab1ad1c086e2b23}
+      \strng{nameanamehash}{a9b3027e61da790b7ab1ad1c086e2b23}
+      \strng{nameafullhash}{a9b3027e61da790b7ab1ad1c086e2b23}
+      \strng{nameafullhashraw}{a9b3027e61da790b7ab1ad1c086e2b23}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{无人水下航行器(UUV)集群协同是未来海洋任务的核心能力, 其实现高度依赖于稳定、高效的水下通信技术。水下无线光通信(UWOC)以其高带宽、低延迟等优势, 成为中近距离水下互联的理想解决方案, 然而UUV高速运动引起的动态对准困难与信道衰落问题严重制约了其实际应用。针对上述问题, 文中面向UUV集群的``动中通''需求, 提出了一种集成化UWOC系统框架, 通过宽角域周视大功率发射与多路分集高灵敏度接收的协同设计, 突破运动条件下链路维持与信号稳定接收的技术瓶颈。基于该框架研制原理样机, 并开展系列实验验证。结果表明: 在15.5 m距离、衰减系数约0.54 m\textsuperscript{-1}的水质中, 系统可实现2 Mbit/s速率的稳定通信(比特误码率小于10\textsuperscript{-3}); 在10 m距离、衰减系数约0.85 m\textsuperscript{-1}水质及5 kn 航速条件下, 丢包率低于2\%。研究结果实现了UWOC技术在高机动、多自由度回转体UUV平台上的初步应用, 为UUV集群协同控制与高速信息交互提供了有效的技术支撑。}
+      \field{journaltitle}{水下无人系统学报}
+      \field{langid}{chinese}
+      \field{languageid}{chinese}
+      \field{lansortorder}{1}
+      \field{number}{5}
+      \field{title}{{面向UUV集群应用的水下无线光通信关键技术}}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{usera}{J}
+      \field{userd}{chinese}
+      \field{userf}{chinese}
+      \field{volume}{33}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{883}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.11993/j.issn.2096-3920.2025-0120
+      \endverb
+      \verb{file}
+      \verb J:\0_My_PC_NEW\J-平常不用\25-zotero-new-version-64bitwin\0-mydata\storage\MXYXQRFY\朱 - 2025 - 面向UUV集群应用的水下无线光通信关键技术.pdf
+      \endverb
+      \keyw{MianXiangUUVJiQunYingYongDeShuiXiaWuXianGuangTongXinGuanJianJiShu2025}
+    \endentry
+    \entry{fernandesDigitallyMitigatingDoppler2023}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=d6852788b6d8a7641bf3e888919667fc}{%
+           family={Fernandes},
+           familyi={F\bibinitperiod},
+           given={Marco\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=a88b33c1a9c947b28a0f71a158adca20}{%
+           family={Loureiro},
+           familyi={L\bibinitperiod},
+           given={Pedro\bibnamedelima A.},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=e033b6c902e2193d76894084fc59ca6c}{%
+           family={Fernandes},
+           familyi={F\bibinitperiod},
+           given={Gil\bibnamedelima M.},
+           giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=db2229925cbd272304e827288e6479e0}{%
+           family={Monteiro},
+           familyi={M\bibinitperiod},
+           given={Paulo\bibnamedelima P.},
+           giveni={P\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=0ea15ba707c5e82ca04211d27348348a}{%
+           family={Guiomar},
+           familyi={G\bibinitperiod},
+           given={Fernando\bibnamedelima P.},
+           giveni={F\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \name{namea}{5}{}{%
+        {{hash=d6852788b6d8a7641bf3e888919667fc}{%
+           family={Fernandes},
+           familyi={F\bibinitperiod},
+           given={Marco\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=a88b33c1a9c947b28a0f71a158adca20}{%
+           family={Loureiro},
+           familyi={L\bibinitperiod},
+           given={Pedro\bibnamedelima A.},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=e033b6c902e2193d76894084fc59ca6c}{%
+           family={Fernandes},
+           familyi={F\bibinitperiod},
+           given={Gil\bibnamedelima M.},
+           giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=db2229925cbd272304e827288e6479e0}{%
+           family={Monteiro},
+           familyi={M\bibinitperiod},
+           given={Paulo\bibnamedelima P.},
+           giveni={P\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=0ea15ba707c5e82ca04211d27348348a}{%
+           family={Guiomar},
+           familyi={G\bibinitperiod},
+           given={Fernando\bibnamedelima P.},
+           giveni={F\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{b42bbe4e81c3495234842f6d13b836a2}
+      \strng{fullhash}{de13c136896a73976debd13ded0ce325}
+      \strng{fullhashraw}{de13c136896a73976debd13ded0ce325}
+      \strng{bibnamehash}{6c216a89c53a3084929db89052d208db}
+      \strng{authorbibnamehash}{6c216a89c53a3084929db89052d208db}
+      \strng{authornamehash}{b42bbe4e81c3495234842f6d13b836a2}
+      \strng{authorfullhash}{de13c136896a73976debd13ded0ce325}
+      \strng{authorfullhashraw}{de13c136896a73976debd13ded0ce325}
+      \strng{nameabibnamehash}{6c216a89c53a3084929db89052d208db}
+      \strng{nameanamehash}{b42bbe4e81c3495234842f6d13b836a2}
+      \strng{nameafullhash}{de13c136896a73976debd13ded0ce325}
+      \strng{nameafullhashraw}{de13c136896a73976debd13ded0ce325}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The range of applications enabled by the low-Earth orbit (LEO) constellations continues to increase, going from providing worldwide broadband internet access, to the transmission of enormous quantities of data gathered from space sensing and exploration. Therefore, it is imperative to find a technology for Earthsatellite and inter-satellite links that is able to provide ultra-high capacity and reliability. The alliance of coherent optical systems with free-space optics (FSO) can be considered a solution for these links, bringing the ultra-high capacity of fiber optic transmission systems to the wireless domain. However, the free-space channel brings some challenges to the telecommunication system, namely the atmospheric turbulence that can hinder data transmission, mainly when associated with typical satellite communication features such as the Doppler effect. Driven by this challenge, in this work, we propose a technique for mitigation of the impact of Doppler effect by dynamically adapting the transmitted signal symbol-rate while keeping the system bit-rate fixed through probabilistic constellation shaping (PCS). This methodology significantly increases the range of supported frequency shifts imposed by the Doppler effect in an experimental 600 Gbps transmission. Moreover, we address the reliability problem imposed by atmospheric turbulence, considering two different scenarios: i) a continuous transmission system with guaranteed reliability and ii) a bursty transmission without reliability constraints that solely aims at the maximization of the overall throughput of the system. In both scenarios, we show that the proposed methodology of adapting the system symbol-rate together with the transmitted constellation shaping can increase the supported bit-rate by more than 70 Gbps.}
+      \field{issn}{0733-8724, 1558-2213}
+      \field{journaltitle}{J. Lightw. Technol.}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{6}
+      \field{number}{12}
+      \field{title}{Digitally {{Mitigating Doppler Shift}} in {{High-Capacity Coherent FSO LEO-to-Earth Links}}}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{41}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{3993\bibrangedash 4001}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1109/JLT.2023.3281082
+      \endverb
+      \verb{file}
+      \verb J:\0_My_PC_NEW\J-平常不用\25-zotero-new-version-64bitwin\0-mydata\storage\3A4344XI\Fernandes 等 - 2023 - Digitally Mitigating Doppler Shift in High-Capacity Coherent FSO LEO-to-Earth Links.pdf
+      \endverb
+      \keyw{fernandesDigitallyMitigatingDoppler2023}
+    \endentry
+    \entry{guiomarCoherentFreeSpaceOptical2022}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=0ea15ba707c5e82ca04211d27348348a}{%
+           family={Guiomar},
+           familyi={G\bibinitperiod},
+           given={Fernando\bibnamedelima P.},
+           giveni={F\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=d6852788b6d8a7641bf3e888919667fc}{%
+           family={Fernandes},
+           familyi={F\bibinitperiod},
+           given={Marco\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=b46cc5087edd45281bafe8de1bb9ccfb}{%
+           family={Nascimento},
+           familyi={N\bibinitperiod},
+           given={José\bibnamedelima Leonardo},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=bf4902325ebb4c6a2b8a9db907da1127}{%
+           family={Rodrigues},
+           familyi={R\bibinitperiod},
+           given={Vera},
+           giveni={V\bibinitperiod}}}%
+        {{hash=db2229925cbd272304e827288e6479e0}{%
+           family={Monteiro},
+           familyi={M\bibinitperiod},
+           given={Paulo\bibnamedelima P.},
+           giveni={P\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \name{namea}{5}{}{%
+        {{hash=0ea15ba707c5e82ca04211d27348348a}{%
+           family={Guiomar},
+           familyi={G\bibinitperiod},
+           given={Fernando\bibnamedelima P.},
+           giveni={F\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=d6852788b6d8a7641bf3e888919667fc}{%
+           family={Fernandes},
+           familyi={F\bibinitperiod},
+           given={Marco\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=b46cc5087edd45281bafe8de1bb9ccfb}{%
+           family={Nascimento},
+           familyi={N\bibinitperiod},
+           given={José\bibnamedelima Leonardo},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=bf4902325ebb4c6a2b8a9db907da1127}{%
+           family={Rodrigues},
+           familyi={R\bibinitperiod},
+           given={Vera},
+           giveni={V\bibinitperiod}}}%
+        {{hash=db2229925cbd272304e827288e6479e0}{%
+           family={Monteiro},
+           familyi={M\bibinitperiod},
+           given={Paulo\bibnamedelima P.},
+           giveni={P\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{77878c73cdf03ca7c6f12ca75180af59}
+      \strng{fullhash}{f11f5aada63993157734188631f039f8}
+      \strng{fullhashraw}{f11f5aada63993157734188631f039f8}
+      \strng{bibnamehash}{87d26c1d17cc3fba774d22689fdf8202}
+      \strng{authorbibnamehash}{87d26c1d17cc3fba774d22689fdf8202}
+      \strng{authornamehash}{77878c73cdf03ca7c6f12ca75180af59}
+      \strng{authorfullhash}{f11f5aada63993157734188631f039f8}
+      \strng{authorfullhashraw}{f11f5aada63993157734188631f039f8}
+      \strng{nameabibnamehash}{87d26c1d17cc3fba774d22689fdf8202}
+      \strng{nameanamehash}{77878c73cdf03ca7c6f12ca75180af59}
+      \strng{nameafullhash}{f11f5aada63993157734188631f039f8}
+      \strng{nameafullhashraw}{f11f5aada63993157734188631f039f8}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The ever-increasing data rate demand for wireless systems is pushing the physical limits of standalone radiofrequency communications, thus fostering the blooming of novel high-capacity optical wireless solutions. This imminent penetration of optical communication technologies into the wireless domain opens up a set of novel opportunities for the development of a new generation of wireless systems providing unprecedented capacity. Unlocking the full potential of free-space optics (FSO) transmission can only be achieved through a seamless convergence between the optical fiber and optical wireless domains. This will allow taking advantage of the staggering progress that has been made on fiber-based communications during the last decades, namely leveraging on the latest generation of Terabit-capable coherent optical transceivers. On the other hand, the development of these high-capacity optical wireless systems still faces a set of critical challenges, namely regarding the impact of atmospheric turbulence and pointing errors. In this work, we provide an in-depth experimental analysis of the main potentialities and criticalities associated with the development of ultra-high-capacity FSO communications, ultimately leading to the long-term (48-hours) demonstration of a coherent FSO transmission system delivering more than 800 Gbps over {$\sim$}42 m link length, in an outdoor deployment exposed to time-varying turbulence and meteorological conditions.}
+      \field{issn}{0733-8724, 1558-2213}
+      \field{journaltitle}{J. Lightw. Technol.}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{5}
+      \field{number}{10}
+      \field{shorttitle}{Coherent {{Free-Space Optical Communications}}}
+      \field{title}{Coherent {{Free-Space Optical Communications}}: {{Opportunities}} and {{Challenges}}}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{40}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{3173\bibrangedash 3186}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/JLT.2022.3164736
+      \endverb
+      \verb{file}
+      \verb J:\0_My_PC_NEW\J-平常不用\25-zotero-new-version-64bitwin\0-mydata\storage\2PYH7CAX\Guiomar 等 - 2022 - Coherent Free-Space Optical Communications Opportunities and Challenges.pdf
+      \endverb
+      \keyw{guiomarCoherentFreeSpaceOptical2022}
+    \endentry
+    \entry{huPerformanceCoherentOptical2025}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=d1dc19785a7cfa9db6e2a78c3b13d08a}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Jiashun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=52afc960a8fa0ed8de814e807e696b6c}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Yuexiang},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=43fbd044ca64c5345d8256adaa4aa0c7}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Sunan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=700ffe004b20a17fb37a9eb70856dcb9}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Weiqiang},
+           giveni={W\bibinitperiod}}}%
+        {{hash=f7722fd7b92934d7d9218d2403198be4}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Zaichen},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \name{namea}{5}{}{%
+        {{hash=d1dc19785a7cfa9db6e2a78c3b13d08a}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Jiashun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=52afc960a8fa0ed8de814e807e696b6c}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Yuexiang},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=43fbd044ca64c5345d8256adaa4aa0c7}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Sunan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=700ffe004b20a17fb37a9eb70856dcb9}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Weiqiang},
+           giveni={W\bibinitperiod}}}%
+        {{hash=f7722fd7b92934d7d9218d2403198be4}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Zaichen},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{96c79ea72d91d1dcaa8b187e0a0dbc3b}
+      \strng{fullhash}{c2c8122b08297b28830f05c28173effd}
+      \strng{fullhashraw}{c2c8122b08297b28830f05c28173effd}
+      \strng{bibnamehash}{d31480b5b0b8771f656a374c12dbd174}
+      \strng{authorbibnamehash}{d31480b5b0b8771f656a374c12dbd174}
+      \strng{authornamehash}{96c79ea72d91d1dcaa8b187e0a0dbc3b}
+      \strng{authorfullhash}{c2c8122b08297b28830f05c28173effd}
+      \strng{authorfullhashraw}{c2c8122b08297b28830f05c28173effd}
+      \strng{nameabibnamehash}{d31480b5b0b8771f656a374c12dbd174}
+      \strng{nameanamehash}{96c79ea72d91d1dcaa8b187e0a0dbc3b}
+      \strng{nameafullhash}{c2c8122b08297b28830f05c28173effd}
+      \strng{nameafullhashraw}{c2c8122b08297b28830f05c28173effd}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Compared to intensity modulation with direct detection, coherent detection offers superior receiver sensitivity, higher spectral efficiency, and better background noise suppression. However, research on coherent detection in underwater wireless optical communication (UWOC) systems is relatively limited. This paper investigates the average bit error rate (BER) performance of coherent UWOC systems employing different phase-shift keying schemes in the presence of phase errors. The underwater turbulent channel is characterized by the mixture exponential-generalized gamma distribution, taking into account the impact of pointing errors as well. Phase errors are modeled by a Gaussian distribution. Specifically, we first derive the average BER expressions for M -ary phase-shift keying (MPSK) under ideal carrier phase estimation. Then, we derive the exact average BER expressions for binary phase-shift keying and quadrature phase-shift keying, as well as tight approximations for MPSK, considering the influence of phase errors. Additionally, we provide asymptotic BER expressions in the high signal-to-noise ratio region and the BER floor expression. Finally, these expressions are validated through Monte Carlo simulations.}
+      \field{issn}{1943-0655, 1943-0647}
+      \field{journaltitle}{IEEE Photonics Journal}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{2}
+      \field{number}{1}
+      \field{title}{Performance of {{Coherent Optical MPSK}} in {{Underwater Turbulent Channels With Phase Errors}}}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{17}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 9}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1109/JPHOT.2025.3534258
+      \endverb
+      \verb{file}
+      \verb J:\0_My_PC_NEW\J-平常不用\25-zotero-new-version-64bitwin\0-mydata\storage\WQJL2B6P\Hu 等 - 2025 - Performance of Coherent Optical MPSK in Underwater Turbulent Channels With Phase Errors.pdf
+      \endverb
+      \keyw{huPerformanceCoherentOptical2025}
+    \endentry
+    \entry{tangUnderwaterCoherentOptical2021}{article}{}{}
+      \name{author}{8}{}{%
+        {{hash=997572dcc9ed2d5dea85bd92b81eedb2}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Xinke},
+           giveni={X\bibinitperiod}}}%
+        {{hash=1a949a83fb98189fbc477d55417b3dd7}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Rupesh},
+           giveni={R\bibinitperiod}}}%
+        {{hash=a3bf80bd5bd33ee7c563047ad00d0073}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Caiming},
+           giveni={C\bibinitperiod}}}%
+        {{hash=8d2d0761db1c77b16230643afdcfb13e}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Long},
+           giveni={L\bibinitperiod}}}%
+        {{hash=728c9cf45e8190b35164e3894bedfc16}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Zhen},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=64c2e9605c732d29eddb8c53a90cfb09}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Rui},
+           giveni={R\bibinitperiod}}}%
+        {{hash=a6af025ff65d627d47d4ed42f0aeaee4}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Hongjie},
+           giveni={H\bibinitperiod}}}%
+        {{hash=fa724c15ceb2e2648528b056220e04bd}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Aidong},
+           giveni={A\bibinitperiod}}}%
+      }
+      \name{namea}{8}{}{%
+        {{hash=997572dcc9ed2d5dea85bd92b81eedb2}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Xinke},
+           giveni={X\bibinitperiod}}}%
+        {{hash=1a949a83fb98189fbc477d55417b3dd7}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Rupesh},
+           giveni={R\bibinitperiod}}}%
+        {{hash=a3bf80bd5bd33ee7c563047ad00d0073}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Caiming},
+           giveni={C\bibinitperiod}}}%
+        {{hash=8d2d0761db1c77b16230643afdcfb13e}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Long},
+           giveni={L\bibinitperiod}}}%
+        {{hash=728c9cf45e8190b35164e3894bedfc16}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Zhen},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=64c2e9605c732d29eddb8c53a90cfb09}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Rui},
+           giveni={R\bibinitperiod}}}%
+        {{hash=a6af025ff65d627d47d4ed42f0aeaee4}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Hongjie},
+           giveni={H\bibinitperiod}}}%
+        {{hash=fa724c15ceb2e2648528b056220e04bd}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Aidong},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{f5c258d96ee2601531f460da14523164}
+      \strng{fullhash}{c6cc3d3dc8c4e619c5428e95e3c8566f}
+      \strng{fullhashraw}{c6cc3d3dc8c4e619c5428e95e3c8566f}
+      \strng{bibnamehash}{d65c19ed908396b8cd9fcff100ce9047}
+      \strng{authorbibnamehash}{d65c19ed908396b8cd9fcff100ce9047}
+      \strng{authornamehash}{f5c258d96ee2601531f460da14523164}
+      \strng{authorfullhash}{c6cc3d3dc8c4e619c5428e95e3c8566f}
+      \strng{authorfullhashraw}{c6cc3d3dc8c4e619c5428e95e3c8566f}
+      \strng{nameabibnamehash}{d65c19ed908396b8cd9fcff100ce9047}
+      \strng{nameanamehash}{f5c258d96ee2601531f460da14523164}
+      \strng{nameafullhash}{c6cc3d3dc8c4e619c5428e95e3c8566f}
+      \strng{nameafullhashraw}{c6cc3d3dc8c4e619c5428e95e3c8566f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper, an effective method of underwater coherent optical wireless communication (UCOWC) with a simplified detection scheme is proposed. The proof-of-concept experiments with M-ary PSK have been conducted with a common laser used for the signal source and local oscillator (LO). The BER performance has been evaluated at different underwater channel attenuations and the maximum achievable attenuation length (AL) with a BER below the forward error correction (FEC) limit of 3.8\texttimes 10-3 is investigated. The tested system offers data rates of 500 Mbps, 1 Gbps, and 1.5 Gbps with the BPSK, QPSK and 8PSK modulated signals, respectively. The corresponding maximum achievable attenuation lengths are measured as 13.4 AL 12.5 AL, and 10.7 AL. In addition, the performance degradation of the practical system with separate free running lasers for the signal and LO is also estimated. To the best of our knowledge, the UCOWC system is proposed and experimentally studied for the first time. This work provides a simple and effective approach to take advantages of coherent detection in underwater wireless optical communication, opening a promising path toward the development of practical UCOWC with next-generation underwater data transmission requirements on the capacity and transmission distance.}
+      \field{issn}{1094-4087}
+      \field{journaltitle}{Opt. Express}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{6}
+      \field{number}{13}
+      \field{title}{Towards Underwater Coherent Optical Wireless Communications Using a Simplified Detection Scheme}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{29}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{19340}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1364/OE.426820
+      \endverb
+      \verb{file}
+      \verb J:\0_My_PC_NEW\J-平常不用\25-zotero-new-version-64bitwin\0-mydata\storage\QFQMJQWA\Tang 等 - 2021 - Towards underwater coherent optical wireless communications using a simplified detection scheme.pdf
+      \endverb
+      \keyw{tangUnderwaterCoherentOptical2021}
+    \endentry
+    \entry{basarOrthogonalFrequencyDivision2013}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=e5a79ffd7726779d1975e4bec82a9cf9}{%
+           family={Basar},
+           familyi={B\bibinitperiod},
+           given={Ertugrul},
+           giveni={E\bibinitperiod}}}%
+        {{hash=39ca6956286791e2692f27eba7873908}{%
+           family={Aygolu},
+           familyi={A\bibinitperiod},
+           given={Umit},
+           giveni={U\bibinitperiod}}}%
+        {{hash=a28c633016439a078b78d6ce5ac9c647}{%
+           family={Panayirci},
+           familyi={P\bibinitperiod},
+           given={Erdal},
+           giveni={E\bibinitperiod}}}%
+        {{hash=de7b0e512fcdd087f5750837f7c7cb9f}{%
+           family={Poor},
+           familyi={P\bibinitperiod},
+           given={H.\bibnamedelimi Vincent},
+           giveni={H\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \name{namea}{4}{}{%
+        {{hash=e5a79ffd7726779d1975e4bec82a9cf9}{%
+           family={Basar},
+           familyi={B\bibinitperiod},
+           given={Ertugrul},
+           giveni={E\bibinitperiod}}}%
+        {{hash=39ca6956286791e2692f27eba7873908}{%
+           family={Aygolu},
+           familyi={A\bibinitperiod},
+           given={Umit},
+           giveni={U\bibinitperiod}}}%
+        {{hash=a28c633016439a078b78d6ce5ac9c647}{%
+           family={Panayirci},
+           familyi={P\bibinitperiod},
+           given={Erdal},
+           giveni={E\bibinitperiod}}}%
+        {{hash=de7b0e512fcdd087f5750837f7c7cb9f}{%
+           family={Poor},
+           familyi={P\bibinitperiod},
+           given={H.\bibnamedelimi Vincent},
+           giveni={H\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{b030cc4bd9eb88c66fcec88fde2e326a}
+      \strng{fullhash}{5719501fdb202610c5e0ad3792396c87}
+      \strng{fullhashraw}{5719501fdb202610c5e0ad3792396c87}
+      \strng{bibnamehash}{0269cf207b188e4ea2fbd66f5a0b65d6}
+      \strng{authorbibnamehash}{0269cf207b188e4ea2fbd66f5a0b65d6}
+      \strng{authornamehash}{b030cc4bd9eb88c66fcec88fde2e326a}
+      \strng{authorfullhash}{5719501fdb202610c5e0ad3792396c87}
+      \strng{authorfullhashraw}{5719501fdb202610c5e0ad3792396c87}
+      \strng{nameabibnamehash}{0269cf207b188e4ea2fbd66f5a0b65d6}
+      \strng{nameanamehash}{b030cc4bd9eb88c66fcec88fde2e326a}
+      \strng{nameafullhash}{5719501fdb202610c5e0ad3792396c87}
+      \strng{nameafullhashraw}{5719501fdb202610c5e0ad3792396c87}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper, a novel orthogonal frequency division multiplexing (OFDM) scheme, called OFDM with index modulation (OFDM-IM), is proposed for operation over frequency-selective and rapidly time-varying fading channels. In this scheme, the information is conveyed not only by -ary signal constellations as in classical OFDM, but also by the indices of the subcarriers, which are activated according to the incoming bit stream. Different low complexity transceiver structures based on maximum likelihood detection or log-likelihood ratio calculation are proposed and a theoretical error performance analysis is provided for the new scheme operating under ideal channel conditions. Then, the proposed scheme is adapted to realistic channel conditions such as imperfect channel state information and very high mobility cases by modifying the receiver structure. The approximate pairwise error probability of OFDM-IM is derived under channel estimation errors. For the mobility case, several interference unaware/aware detection methods are proposed for the new scheme. It is shown via computer simulations that the proposed scheme achieves significantly better error performance than classical OFDM due to the information bits carried by the indices of OFDM subcarriers under both ideal and realistic channel conditions.}
+      \field{issn}{1053-587X, 1941-0476}
+      \field{journaltitle}{IEEE Trans. Signal Process.}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{11}
+      \field{number}{22}
+      \field{title}{Orthogonal {{Frequency Division Multiplexing With Index Modulation}}}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{61}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{5536\bibrangedash 5549}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/TSP.2013.2279771
+      \endverb
+      \verb{file}
+      \verb J:\0_My_PC_NEW\J-平常不用\25-zotero-new-version-64bitwin\0-mydata\storage\Z7VXRSDP\Basar 等 - 2013 - Orthogonal Frequency Division Multiplexing With Index Modulation.pdf
+      \endverb
+      \keyw{basarOrthogonalFrequencyDivision2013}
+    \endentry
+    \entry{zhangDualIndexModulation2026}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=343527c6929cc9a6f785e43f5ad14c88}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Yuzhi},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=29f9e419d0e15b8f81c007a44997efd4}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Qingyuan},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=acc6b8a77002de053d37c6ccefb6c5f1}{%
+           family={Ge},
+           familyi={G\bibinitperiod},
+           given={Yao},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=cb03af4cfc17800e9475f6e64d65b7ff}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Yin},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=0fa86ce76f38abb4293116ef56b787fa}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Cheng},
+           giveni={C\bibinitperiod}}}%
+        {{hash=b23dd6ebd140c4097399a2b64d1d7893}{%
+           family={Guan},
+           familyi={G\bibinitperiod},
+           given={Yong\bibnamedelima Liang},
+           giveni={Y\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \name{namea}{6}{}{%
+        {{hash=343527c6929cc9a6f785e43f5ad14c88}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Yuzhi},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=29f9e419d0e15b8f81c007a44997efd4}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Qingyuan},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=acc6b8a77002de053d37c6ccefb6c5f1}{%
+           family={Ge},
+           familyi={G\bibinitperiod},
+           given={Yao},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=cb03af4cfc17800e9475f6e64d65b7ff}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Yin},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=0fa86ce76f38abb4293116ef56b787fa}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Cheng},
+           giveni={C\bibinitperiod}}}%
+        {{hash=b23dd6ebd140c4097399a2b64d1d7893}{%
+           family={Guan},
+           familyi={G\bibinitperiod},
+           given={Yong\bibnamedelima Liang},
+           giveni={Y\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{ecb49429b74d7d50a63126e9bbdafa4f}
+      \strng{fullhash}{91b37aa5d99b348fd7367ac08067da70}
+      \strng{fullhashraw}{91b37aa5d99b348fd7367ac08067da70}
+      \strng{bibnamehash}{3b0c5130d93dea8184f06de79be125ac}
+      \strng{authorbibnamehash}{3b0c5130d93dea8184f06de79be125ac}
+      \strng{authornamehash}{ecb49429b74d7d50a63126e9bbdafa4f}
+      \strng{authorfullhash}{91b37aa5d99b348fd7367ac08067da70}
+      \strng{authorfullhashraw}{91b37aa5d99b348fd7367ac08067da70}
+      \strng{nameabibnamehash}{3b0c5130d93dea8184f06de79be125ac}
+      \strng{nameanamehash}{ecb49429b74d7d50a63126e9bbdafa4f}
+      \strng{nameafullhash}{91b37aa5d99b348fd7367ac08067da70}
+      \strng{nameafullhashraw}{91b37aa5d99b348fd7367ac08067da70}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Affine frequency division multiplexing (AFDM) is an emerging multicarrier modulation technique that processes signals in the discrete affine Fourier domain, enabling reliability for high-mobility communications. In order to further improve spectral efficiency (SE), this letter proposes an AFDM scheme with dual index modulation (DIM), referred to as AFDM-DIM. Specifically, information bits are transmitted not only by the traditional symbol constellation, but also jointly through the active states of subcarriers and the corresponding pre-chirp parameter configurations, which can enhance SE and improve robustness against doubly selective fading channels. We also develop two detector algorithms, i.e., maximum likelihood (ML) and joint minimum mean square error--ML (MMSE--ML) for the proposed AFDM-DIM system. We further derive an upper bound on the average bit error rate via pairwise error probability analysis based on ML detection, and compare the SE between the proposed AFDM-DIM scheme with the existing AFDM-index modulation (IM) systems. Simulation results demonstrate that the proposed AFDM-DIM scheme achieves superior performance compared to other existing AFDM-IM schemes.}
+      \field{issn}{2162-2337, 2162-2345}
+      \field{journaltitle}{IEEE Wireless Commun. Lett.}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Dual {{Index Modulation}} for {{Affine Frequency Division Multiplexing Communications}}}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{15}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1469\bibrangedash 1473}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1109/LWC.2026.3655180
+      \endverb
+      \verb{file}
+      \verb J:\0_My_PC_NEW\J-平常不用\25-zotero-new-version-64bitwin\0-mydata\storage\U668JDE6\Zhang 等 - 2026 - Dual Index Modulation for Affine Frequency Division Multiplexing Communications.pdf
+      \endverb
+      \keyw{zhangDualIndexModulation2026}
+    \endentry
+    \entry{zediniEvaluationUnderwaterOptical2025}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=9f64683892a4c1e4b0c5c682ddaebda5}{%
+           family={Zedini},
+           familyi={Z\bibinitperiod},
+           given={Emna},
+           giveni={E\bibinitperiod}}}%
+        {{hash=748be27fb729f42bddc70bf96c8c465c}{%
+           family={Ata},
+           familyi={A\bibinitperiod},
+           given={Yalç{ı}n},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=2d8b39cafc1513435a55caceb5030bbd}{%
+           family={{Mahdi Al-Sallami}},
+           familyi={M\bibinitperiod},
+           given={Farah},
+           giveni={F\bibinitperiod}}}%
+        {{hash=324a503f291bea5699e6e10025d90eba}{%
+           family={Rajbhandari},
+           familyi={R\bibinitperiod},
+           given={Sujan},
+           giveni={S\bibinitperiod}}}%
+      }
+      \name{namea}{4}{}{%
+        {{hash=9f64683892a4c1e4b0c5c682ddaebda5}{%
+           family={Zedini},
+           familyi={Z\bibinitperiod},
+           given={Emna},
+           giveni={E\bibinitperiod}}}%
+        {{hash=748be27fb729f42bddc70bf96c8c465c}{%
+           family={Ata},
+           familyi={A\bibinitperiod},
+           given={Yalç{ı}n},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=2d8b39cafc1513435a55caceb5030bbd}{%
+           family={{Mahdi Al-Sallami}},
+           familyi={M\bibinitperiod},
+           given={Farah},
+           giveni={F\bibinitperiod}}}%
+        {{hash=324a503f291bea5699e6e10025d90eba}{%
+           family={Rajbhandari},
+           familyi={R\bibinitperiod},
+           given={Sujan},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{d3c04da3d97aa2a25e1ce5a39e26d8bf}
+      \strng{fullhash}{21e275abc2745332c490a088776cec4d}
+      \strng{fullhashraw}{21e275abc2745332c490a088776cec4d}
+      \strng{bibnamehash}{9e396dc56bf3ae716c8f4e1bdfc09a5e}
+      \strng{authorbibnamehash}{9e396dc56bf3ae716c8f4e1bdfc09a5e}
+      \strng{authornamehash}{d3c04da3d97aa2a25e1ce5a39e26d8bf}
+      \strng{authorfullhash}{21e275abc2745332c490a088776cec4d}
+      \strng{authorfullhashraw}{21e275abc2745332c490a088776cec4d}
+      \strng{nameabibnamehash}{9e396dc56bf3ae716c8f4e1bdfc09a5e}
+      \strng{nameanamehash}{d3c04da3d97aa2a25e1ce5a39e26d8bf}
+      \strng{nameafullhash}{21e275abc2745332c490a088776cec4d}
+      \strng{nameafullhashraw}{21e275abc2745332c490a088776cec4d}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper presents a comprehensive performance study for the underwater optical wireless communication (UOWC) channel, accounting for the effects of attenuation, turbulence, pointing errors, and fluctuations in the angleof-arrival (AOA), modeled by the Beer-Lambert model, the Fisher-Snedecor F turbulence, Hoyt, and Rayleigh distributions, respectively. Considering the stochastic nature of UOWC, closed-form expressions for outage probability, average biterror-rate (BER), and ergodic capacity are derived. The results revealed that increasing the field-of-view (FoV) reduces the impact of AOA fluctuations. Asymmetric two-dimensional beam misalignment exhibits better outage probability performance compared to symmetric misalignment. Furthermore, heterodyne detection consistently outperforms direct detection. When employing heterodyne detection, M-quadrature amplitude modulation (M-QAM) achieves superior BER performance. Additionally, as absorption increases with longer wavelengths, BER performance deteriorates. Narrower beamwidths improve ergodic capacity by enhancing received signal power.}
+      \field{issn}{0090-6778, 1558-0857}
+      \field{journaltitle}{IEEE Trans. Commun.}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{3}
+      \field{number}{3}
+      \field{title}{Evaluation of {{Underwater Optical Wireless Channels Over F Turbulence}} for {{Different Detection Types}}}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{french}
+      \field{volume}{73}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1925\bibrangedash 1937}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1109/TCOMM.2024.3454696
+      \endverb
+      \verb{file}
+      \verb J:\0_My_PC_NEW\J-平常不用\25-zotero-new-version-64bitwin\0-mydata\storage\KQXMCIZY\Zedini 等 - 2025 - Evaluation of Underwater Optical Wireless Channels Over F Turbulence for Different Detection Types.pdf
+      \endverb
+      \keyw{zediniEvaluationUnderwaterOptical2025}
+    \endentry
+    \entry{armstrongPowerEfficientOptical2006}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=7292f6aacea80d0644dd06023cb1963b}{%
+           family={Armstrong},
+           familyi={A\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=7799b4d611fa21749272d6df31885de3}{%
+           family={Lowery},
+           familyi={L\bibinitperiod},
+           given={A.J.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \name{namea}{2}{}{%
+        {{hash=7292f6aacea80d0644dd06023cb1963b}{%
+           family={Armstrong},
+           familyi={A\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=7799b4d611fa21749272d6df31885de3}{%
+           family={Lowery},
+           familyi={L\bibinitperiod},
+           given={A.J.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{1720064e546cdfdffd163dead1ccbabc}
+      \strng{fullhash}{793194e138ac88e4c298abcb88ba8cff}
+      \strng{fullhashraw}{793194e138ac88e4c298abcb88ba8cff}
+      \strng{bibnamehash}{793194e138ac88e4c298abcb88ba8cff}
+      \strng{authorbibnamehash}{793194e138ac88e4c298abcb88ba8cff}
+      \strng{authornamehash}{1720064e546cdfdffd163dead1ccbabc}
+      \strng{authorfullhash}{793194e138ac88e4c298abcb88ba8cff}
+      \strng{authorfullhashraw}{793194e138ac88e4c298abcb88ba8cff}
+      \strng{nameabibnamehash}{793194e138ac88e4c298abcb88ba8cff}
+      \strng{nameanamehash}{1720064e546cdfdffd163dead1ccbabc}
+      \strng{nameafullhash}{793194e138ac88e4c298abcb88ba8cff}
+      \strng{nameafullhashraw}{793194e138ac88e4c298abcb88ba8cff}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0013-5194, 1350-911X}
+      \field{journaltitle}{Electron. Lett.}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{3}
+      \field{number}{6}
+      \field{title}{Power efficient optical {{OFDM}}}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{42}
+      \field{year}{2006}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{370\bibrangedash 372}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1049/el:20063636
+      \endverb
+      \verb{file}
+      \verb J:\0_My_PC_NEW\J-平常不用\25-zotero-new-version-64bitwin\0-mydata\storage\CXNND7ZJ\Armstrong和Lowery - 2006 - Power efficient optical OFDM.pdf
+      \endverb
+      \keyw{armstrongPowerEfficientOptical2006}
+    \endentry
+    \entry{liuMultiDegreeofFreedomUnderwaterOptical2022}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=9406f2dcff74e9b419df100bb92a3c9b}{%
+           family={{Anliang Liu}},
+           familyi={A\bibinitperiod}}}%
+        {{hash=1254ad05d179432b1b9acf4791d6b747}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Bin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=766322efe46d8f3836e42cb2ddb2c2d7}{%
+           family={Yin},
+           familyi={Y\bibinitperiod},
+           given={Hongxi},
+           giveni={H\bibinitperiod}}}%
+      }
+      \name{namea}{3}{}{%
+        {{hash=9406f2dcff74e9b419df100bb92a3c9b}{%
+           family={{Anliang Liu}},
+           familyi={A\bibinitperiod}}}%
+        {{hash=1254ad05d179432b1b9acf4791d6b747}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Bin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=766322efe46d8f3836e42cb2ddb2c2d7}{%
+           family={Yin},
+           familyi={Y\bibinitperiod},
+           given={Hongxi},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{aa735970cc7bf7ee7238b48b4289e979}
+      \strng{fullhash}{05f138ebfd3338616270253b2ce4da04}
+      \strng{fullhashraw}{05f138ebfd3338616270253b2ce4da04}
+      \strng{bibnamehash}{05f138ebfd3338616270253b2ce4da04}
+      \strng{authorbibnamehash}{05f138ebfd3338616270253b2ce4da04}
+      \strng{authornamehash}{aa735970cc7bf7ee7238b48b4289e979}
+      \strng{authorfullhash}{05f138ebfd3338616270253b2ce4da04}
+      \strng{authorfullhashraw}{05f138ebfd3338616270253b2ce4da04}
+      \strng{nameabibnamehash}{05f138ebfd3338616270253b2ce4da04}
+      \strng{nameanamehash}{aa735970cc7bf7ee7238b48b4289e979}
+      \strng{nameafullhash}{05f138ebfd3338616270253b2ce4da04}
+      \strng{nameafullhashraw}{05f138ebfd3338616270253b2ce4da04}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Underwater optical wireless communication (UOWC) has great potential to provide highspeed and intensive communications over short ranges underwater. However, the mobility of the UOWC system is limited by the strict alignment requirements between the transceivers. In this paper, a multi-degree-of-freedom (MDOF) UOWC system with high flexibility and improved transmission performance is proposed and experimentally demonstrated based on the off-the-shelf light-emitting diode (LED) source. A hardware pre-equalization circuit is employed at the transmitter to extend the modulation bandwidth from 5.03 MHz to 50 MHz. At the receiving end, a Fresnel lens array is constructed to achieve efficient convergence of multiple incident optical signals from different directions. To improve the underwater signal transmission quality, we designed an additional digital signal recovery module after the trans-impedance amplifier. Finally, an experimental system is established with a 460 nm blue LED. The communication reliability of the system is verified by the measurement of the eye diagram and the bit error rate of the recovered signal at the receiving end. The experimental results show that optical signals from three different incident directions with a maximum data rate of 100 Mbps are reliably transmitted over a 1.2-m-long water tank using the non-return-to-zero on-off-keying modulation format.}
+      \field{issn}{2077-1312}
+      \field{journaltitle}{Journal of Marine Science and Engineering}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{month}{12}
+      \field{number}{1}
+      \field{title}{Multi-{{Degree-of-Freedom}} for {{Underwater Optical Wireless Communication}} with {{Improved Transmission Performance}}}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{11}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{48}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/jmse11010048
+      \endverb
+      \verb{file}
+      \verb J:\0_My_PC_NEW\J-平常不用\25-zotero-new-version-64bitwin\0-mydata\storage\RIWSZ6RZ\Liu 等 - 2022 - Multi-Degree-of-Freedom for Underwater Optical Wireless Communication with Improved Transmission Per.pdf
+      \endverb
+      \keyw{liuMultiDegreeofFreedomUnderwaterOptical2022}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

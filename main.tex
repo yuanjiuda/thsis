@@ -1,0 +1,244 @@
+%%
+% BIThesis 研究生学位论文模板 The BIThesis Template for Graduate Thesis
+% This file has no copyright assigned and is placed in the Public Domain.
+% Compile with: xelatex -> biber -> xelatex -> xelatex
+%%
+
+% 请勿删除下面两行注释，以免影响编译。
+% !TeX program = xelatex
+% !BIB program = biber
+    
+% 为方便您填写内容，模板注释会引用《撰写规范》。该文件是指研函〔2026〕024 号《北京理工大学研究生学位论文撰写规范》，可从以下链接下载。
+% https://grd.bit.edu.cn/xwgz/xwgz2/wjxz_xwgz/b117825.htm
+
+\documentclass[type=master,twoside=false]{bithesis}
+% 硕士论文模板 type=master
+% 博士论文模板 type=doctor
+% 开启盲审格式 blindPeerReview=true (如：[type=master,blindPeerReview=true])
+% 开启双面打印模式 twoside=true (如：[type=master,twoside=true]）
+%   《撰写规范》：“论文稿件……双面打印，其中摘要之前部分使用单页打印。”这种效果有以下两种方法实现。
+%   - 保持 twoside=false，让打印店帮你操作
+%   - 设置 twoside=true，让 LaTeX 自动加若干空白页，然后统一双面打印
+%   二者价格差异可忽略不计——校内几家实体打印店（菜市场、国防科技园）都是双面每页￥0.1，很便宜。（截至2024年6月）
+%   此外，提交电子版时，一般请保持 twoside=false。
+%
+% 在 Linux、macOS、Overleaf/TeXPage 等平台，LaTeX 默认使用的中文字体和 Windows 下的字体不同。
+% 如果想要获得与 Word 文档相同的效果，请参阅在线帮助 https://bithesis.bitnp.net/faq/word-font.html
+%
+% 更多使用说明请参考 bithesis.pdf https://mirrors.ctan.org/macros/unicodetex/latex/bithesis/bithesis.pdf
+
+% 以下仅列出常用的配置。全部配置用法请见「bithesis.pdf」手册。
+\BITSetup{
+  cover = {
+    % 使用 date 参数设置封面日期。按《撰写规范》第3页，此处填写论文提交日期、答辩日期或终版论文提交日期，三种均可。
+    date = 2026年5月,
+    autoWidthPadding = 0.25em,
+    % 关闭学生类型勾选框（非工程硕博/交叉/留学生时不需要显示）
+    showSpecialTypeBox = false,
+  },
+  info = {
+    % 想要删除某项封面信息，直接删除该项即可。
+    % 想要让某项封面信息留空（但是保留下划线），请传入空白符组成的字符串，如"{~}"。
+    % 如需要换行，则用 “\\” 符号分割。
+    classification = TN929.1,
+    UDC = 621.391,
+title = 面向复杂水下环境的\\AFDM无线光通信\\关键技术研究,
+    % 加上下面这一行：
+verticalTitle = {面向复杂水下环境的ＡＦＤＭ无线光通信关键技术研究},    % 下面的例子展示了如何在竖排标题中使用垂直或者旋转的英文。
+    % verticalTitle = {形状记忆聚氨酯{L } {T } {X }的合成 \rotatebox[origin=c]{-90}{Feng Kaiyu} 及其在纺织中的应用},
+    titleEn = {Research on Key Technologies of\\AFDM-based Wireless Optical Communication\\in Complex Underwater Environments},
+    author = 袁久达,
+    authorEn = Yuan Jiuda,
+    studentId = 3220230857,
+    school = 信息与电子学院,
+    schoolEn = School of Information and Electronics,
+    supervisor = 郑德智教授,  % 指导教师
+    supervisorEn = Prof. Dezhi Zheng,
+    chairman = {~},  % 答辩委员会主席
+    chairmanEn = {~},
+    % -------------
+    % 请按自身研究生类型填写以下项目
+    %
+    % --- 学术型 ---
+    % degreeType = academic,
+    % degree = 工学博士,  % 申请学位
+    % degreeEn = Doctor of Engineering,
+    % major = 材料科学与工程,  % 一级学科
+    % majorEn = Materials Science and Engineering,
+    %
+    % --- 专业型 --- 
+    degreeType = professional, 
+    industrialMentor = {~},  % 行业合作导师
+    industrialMentorEn = {~},
+    degree = 电子信息硕士,  % 申请类别
+    degreeEn = {Master of Electronic Information},
+    major = 电子信息,  % 学位领域
+    majorEn = Electronic Information,
+    % -------------
+    %
+    % 如果想要手动控制盲审模式下的隐藏信息，可以使用宏 \SecretInfo{}。使用方式有两种，如：
+    % major = \SecretInfo{材料科学与工程} 可以得到 ******* （用等量的替换符号替代）
+    % major = \SecretInfo{材料科学与工程}[ABCDEF] 可以得到 ABCDEF （用你自定义的内容替代）
+    %
+    submissionDate = 2026年5月,
+    submissionDateEn = {May, 2026},
+    keywords = {水下无线光通信；仿射频分复用；非对称限幅光仿射频分复用；相干接收；索引调制},
+    keywordsEn = {underwater wireless optical communication; affine frequency division multiplexing; asymmetrically clipped optical affine frequency division multiplexing; coherent detection; index modulation},
+    %
+    % 特别类型——工程硕博士专项
+    % 工程硕博士专项 = true,
+    % 特别类型——交叉研究方向（一般不用勾选）
+    % crossResearch = true,
+    % 特别类型——政府项目留学生（一般不用勾选）
+    % internationalStudentUGP = true,
+    %
+    % 必要时置于封面右上角，并按照国家规定进行标记（一般不用标记）
+    % classifiedLevel = 密级\BigStar 保密期限,
+  },
+  % 在目录页中不显示摘要和主要符号对照表的标题。
+  TOC = {
+    abstract = false,
+    abstractEn = false,
+    symbols = false,
+  },
+  style = {
+    pageVerticalAlign = top,
+    % 开启 Windows 平台下的中易宋体伪粗体。
+    % windowsSimSunFakeBold = true,
+    % 开启该选项后，将用 Times New Roman 的开源字体 TeX Gyre Termes 作为正文字体。
+    % 这个选项适用于以下情况：
+    % 1. 不想在系统中安装 Times New Roman。
+    % 2. 在 Linux/macOS 下遇到 `\textsc` 无法正常显示的问题。
+    % betterTimesNewRoman = true,
+  },
+  publications = {
+    % 以下两个选项将影响「攻读学位期间发表论文与研究成果清单」中名称列表的省略阈值。
+    % 一般来说，如果你在全部文献中最低排在第四位，建议你将两个值都设置为大于等于 4 的值。
+    % 更详细的说明请见手册。
+    maxbibnames = 10,
+    minbibnames = 10,
+    % 「攻读学位期间发表论文与研究成果清单」默认按学校要求，“按发表的时间顺序列出”。
+    % 如需调整，可修改以下选项，详见 https://bithesis.bitnp.net/faq/bib-sort.html
+    % sorting = false
+  },
+  % 采用章节标题级别的附录格式
+  appendices / chapterLevel = true,
+  misc = {
+    % 关闭后，链接会用多种颜色表示，便于检查。
+    % 无论是否开启，都不会影响打印效果。
+    hideLinks = true,
+    % 微调表格行间距
+    tabularRowSeparation = 1.6,
+  },
+}
+
+% 配置参考文献样式
+% 现行国标为 GB/T 7714—2015，但其 2025 版将从 2026-07-01 起实施；2026年3月，研究生院老师表示按两版国标均可。
+% 以下主要按 2015 版配置，但 gbnamefmt 更接近 2025 版。
+% 如果课题组或盲审老师另有特殊要求，您也可修改配置。详情请参考 biblatex-gb7714-2015 的 PDF 文档。
+% https://www.ctan.org/pkg/biblatex-gb7714-2015
+\usepackage[
+  defernumbers=true,
+  backend=biber,
+  style=gb7714-2015,
+  gbalign=gb7714-2015,
+  gbnamefmt=lowercase,
+  gbpub=false,
+  gbannote=true,
+  gbpunctin=false,
+  doi=false,
+  url=false,
+  eprint=false,
+  isbn=false,
+]{biblatex}
+
+\DeclareSourcemap{
+  \maps[datatype=bibtex]{
+    \map{
+      \step[fieldsource=journal, match=\regexp{^Journal of Lightwave Technology$}, replace={J. Lightw. Technol.}]
+      \step[fieldsource=journal, match=\regexp{^Electronics Letters$}, replace={Electron. Lett.}]
+      \step[fieldsource=journal, match=\regexp{^IEEE Transactions on Wireless Communications$}, replace={IEEE Trans. Wireless Commun.}]
+      \step[fieldsource=journal, match=\regexp{^IEEE Wireless Communications Letters$}, replace={IEEE Wireless Commun. Lett.}]
+      \step[fieldsource=journal, match=\regexp{^IEEE Communications Letters$}, replace={IEEE Commun. Lett.}]
+      \step[fieldsource=journal, match=\regexp{^IEEE Journal on Selected Areas in Communications$}, replace={IEEE J. Sel. Areas Commun.}]
+      \step[fieldsource=journal, match=\regexp{^IEEE Transactions on Communications$}, replace={IEEE Trans. Commun.}]
+      \step[fieldsource=journal, match=\regexp{^IEEE Transactions on Signal Processing$}, replace={IEEE Trans. Signal Process.}]
+      \step[fieldsource=journal, match=\regexp{^Optics Communications$}, replace={Opt. Commun.}]
+      \step[fieldsource=journal, match=\regexp{^Optics Express$}, replace={Opt. Express}]
+    }
+  }
+}
+
+% 添加参考文献
+\addbibresource{reference/mybib.bib}
+\nocite{*}  % 显示 bib 文件中的全部文献条目，包括未在正文中显式引用的
+
+
+\usepackage{graphicx}
+
+\tracinglostchars=0
+
+% 修正页眉线粗度与页码字体以符合学校撰写规范表2要求
+\AtBeginDocument{%
+  \renewcommand{\headrulewidth}{0.5pt}%  学校要求0.5磅
+  \fancyfoot[C]{\zihao{-5}\rmfamily \thepage}%  Times New Roman 小五号页码
+}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 前置部分
+
+\MakeCover % 封面
+\MakePaperBack % 书脊
+\MakeTitle % 中英文题名页
+
+% 论文原创性声明和使用授权：盲审结束前无需改动
+\MakeOriginality
+% 后续添加签名时，可考虑先用 Word 制作再导出到 misc/originality.pdf，
+% 同时注释以上`\MakeOriginality`，解除注释以下几行代码。
+% \begin{blindPeerReview}
+%   \cleardoublepage
+%   \includepdf[pages=-]{misc/originality.pdf}\newpage
+%   % 以上“pages=-”表示插入所有页面。如果你开启了 twoside 双面打印模式，可修改这一参数，例如依次插入第一页、空白页、第二页、空白页：
+%   % \includepdf[pages={1, {}, 2, {}}]{misc/originality.pdf}\newpage
+% \end{blindPeerReview}
+
+\input{./misc/acknowledgements.tex} % 致谢
+
+\frontmatter % 前置部分有两种页面样式，从此切换到第二种
+
+\input{./chapters/abstract.tex} % 摘要
+
+\MakeTOC % 目次
+\listoffigures % 插图清单
+% \listoftables % 附表清单（当前版本无表格，暂不保留）
+\input{./misc/0_symbols.tex} % 主要符号对照表
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 正文部分
+
+\mainmatter
+
+% 请根据论文内容，按照顺序添加章节。
+\input{./chapters/chapter1.tex}
+\input{./chapters/chapter2.tex}
+\input{./chapters/chapter3.tex}
+\input{./chapters/chapter4.tex}
+\input{./chapters/chapter5.tex}
+
+\backmatter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 后置部分
+
+\input{./misc/2_reference.tex} % 参考文献
+% \input{./misc/3_appendices.tex} % 附录（当前版本不保留）
+\input{./misc/4_pub.tex} % 攻读学位期间发表论文与研究成果清单
+% \input{./misc/5_resume.tex} % 作者简介（硕士一般不需要）
+
+
+% 在全文最后，博士附《博士学位论文答辩表》前2页决议含签字的扫描版，硕士不用附。
+% 建议用 Word 模板填写该表，扫描后拼接 PDF。
+
+\end{document}  

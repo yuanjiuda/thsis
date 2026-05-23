@@ -1,0 +1,21 @@
+\chapter{绪论}
+\label{chap:intro}
+
+\section{研究背景与意义}
+\label{sec:background}
+
+随着人类对海洋资源开发与国家海洋战略的不断推进，海洋物联网（Internet of Underwater Things, IoUT）已成为未来通信网络向深蓝延伸的核心基础设施。在复杂的水下作业任务中，无人潜航器（Unmanned Underwater Vehicle, UUV）与自主水下航行器（Autonomous Underwater Vehicle, AUV）集群凭借其灵活的部署能力和强大的协同探测优势，正逐步取代单体作业模式，成为海洋勘探与防卫的主力军\cite{ShuiXiaWuRenQianHangQiJiQunFaZhanXianZhuangJiGuanJianJiShuZongShuZhongGuoZhiWang, hoeherUnderwaterOpticalWireless2021}。然而，UUV 集群的高效协同高度依赖于节点间实时、高带宽的信息交互。传统的水声通信（Underwater Acoustic Communication, UAC）虽然传输距离远，但受限于极窄的可用频带与极高的传播延迟，无法满足集群网络中实时视频流回传与高速协同控制的严苛要求\cite{liRecentProgressUnderwater2025, jungControlRealTimeMonitoring2025}。与此同时，传统的射频（Radio Frequency, RF）通信在海水中则面临极高的趋肤效应，引发指数级的信号衰减，难以实现中远距离的高速水下传输\cite{wangEvolutionShortRangeOptical2023}。
+
+在此背景下，水下无线光通信（Underwater Optical Wireless Communication, UWOC）技术应运而生。研究表明，在电磁波谱中存在一段 450 nm 至 550 nm 的“蓝绿光窗口”（Blue-Green Window），该波段的光信号在海水中的衰减率相对较低\cite{kaushalUnderwaterOpticalWireless2016a}。依托这一物理特性，UWOC 技术能够突破传统 UAC 的带宽瓶颈，为水下节点提供具有极高数据速率、极低传输延迟以及强抗截获能力的高质量通信链路，是执行关键水下任务的紧迫先决条件\cite{departmentofphysicsfacultyofscienceskingabdulazizuniversityjeddah-21589kingdomofsaudiarabiaUnderwaterOpticalCommunications2021a}。
+
+尽管 UWOC 技术展现出了巨大的应用潜力，但其在实际复杂水下环境中的大规模部署仍面临极其严峻的挑战。光束在水下信道传播时，不仅会遭受严重的水体吸收与悬浮颗粒散射效应引起的能量衰减\cite{zengSurveyUnderwaterOptical2017}，还会受到洋流波动引发的光学湍流干扰。更为致命的是，水下环境中的多重散射效应会引发严重的信号时延扩展，进而导致剧烈的频率选择性衰落（Frequency Selective Fading）与符号间干扰（Inter-Symbol Interference, ISI）\cite{hamdullahModelingOptimizationNLOS2026, jaruwatanadilokUnderwaterWirelessOptical2008}。
+
+针对水下频率选择性衰落问题，正交频分复用（Orthogonal Frequency Division Multiplexing, OFDM）技术被广泛引入 UWOC 系统中。特别是对于低动态水下平台，为了兼容传统的强度调制/直接检测（Intensity Modulation/Direct Detection, IM/DD）架构，非对称限幅光 OFDM（Asymmetrically Clipped Optical OFDM, ACO-OFDM）等单极性多载波方案成为了主流选择。ACO-OFDM 巧妙地利用了奇数子载波调制特性，使得所有非线性限幅噪声精准地落在偶数子载波上，在不牺牲带外频谱的前提下展现出了显著的光功率效率优势\cite{dissanayakeComparisonACOOFDMDCOOFDM2013, essalihOpticalOFDMSiPMBased2020}。然而，这类基于 IM/DD 架构的光 OFDM 技术通常仅利用信号的实数强度维度，无法承载复数域信息，且不可避免地受到峰均功率比（Peak-to-Average Power Ratio, PAPR）较高以及非对称限幅带来的频谱效率损失等瓶颈制约\cite{armstrongOFDMOpticalCommunications2009, yangAdvancementsUnderwaterOptical2024}。
+
+面向未来高机动 UUV 集群的应用需求，水下通信网络正向着“动中通”（Communication on the Move, COTM）的高动态场景演进\cite{MianXiangUUVJiQunYingYongDeShuiXiaWuXianGuangTongXinGuanJianJiShu2025}。在这一趋势下，收发平台的高速相对运动将为通信链路引入极其严重的多普勒频移（Doppler Shift）\cite{zhuDopplerResistantOrthogonalChirp2022}。多普勒频移会彻底破坏传统 OFDM 系统子载波间的严格正交性，导致灾难性的载波间干扰（Inter-Carrier Interference, ICI），使得整个通信链路在时变双选择性（Doubly Selective）信道下急剧恶化。此外，高动态特性还对光束的动态对准提出了极高的要求，进一步压缩了传统 IM/DD 系统的可用功率裕度\cite{liuMultiDegreeofFreedomUnderwaterOptical2022}。
+
+为破解高动态 UWOC 信道带来的多普勒危机与频率选择性衰落双重困境，亟需在波形设计与硬件架构上进行底层革新。近年来，仿射频分复用（Affine Frequency Division Multiplexing, AFDM）作为一种基于离散仿射傅里叶变换（Discrete Affine Fourier Transform, DAFT）的新型多载波波形，通过在时频域引入具有可调参数的啁啾信号（Chirp），能够将恶劣的时延-多普勒扩散信道转化为高度稀疏的等效信道矩阵，从而在双选择性信道下实现全分集增益并展现出极强的抗多普勒鲁棒性\cite{bemaniAFDMFullDiversity2021}。
+
+在此基础上，为了突破传统 IM/DD 体制在复数域传输与接收灵敏度上的根本限制，引入相干光通信（Coherent Optical Communication）硬件架构，并在调制域融合索引调制（Index Modulation, IM）技术，已成为水下高动态通信领域最具前沿性的演进方向\cite{guiomarCoherentFreeSpaceOptical2022, basarOrthogonalFrequencyDivision2013}。相干光体制不仅能够全面提取复数光场信号，还能大幅提升接收灵敏度；而 IM 技术则通过激活特定子载波的物理位置状态来隐式传输信息，有效提升了系统的频谱效率并降低了接收端检测复杂度\cite{taoAffineFrequencyDivision2025}。然而，相干体制的引入也必然面临水下湍流波前畸变以及独立激光器线宽带来的严峻相位噪声（Phase Noise）挑战\cite{tangUnderwaterCoherentOptical2021, huPerformanceCoherentOptical2025}。
+
+综上所述，本文以支撑未来高动态 UUV 集群通信需求为背景，立足于复杂的水下光学信道特性，针对低动态场景下的频率选择性衰落与非线性限幅噪声，以及高动态场景下严重的多普勒频移与相位噪声，系统性地开展面向 UWOC 的 AFDM 波形设计与检测技术研究。本研究不仅在理论上为抗御水下双选择性信道提供了全新的多维调制框架，在工程上也为构建高可靠、高速率的新一代高机动水下相干光传输网络提供了关键的技术支撑，具有重要的学术价值与现实意义。

@@ -1,0 +1,85 @@
+\chapter{绪论}
+\label{chap:intro}
+
+\section{研究背景与意义}
+\label{sec:background}
+
+随着海洋资源开发、海洋环境观测、水下装备协同作业以及海洋信息网络建设的持续推进，海洋空间中的信息获取、传输与共享需求不断增长。相比陆地通信系统，海洋环境具有传播介质复杂、节点分布分散、部署维护困难以及实时交互要求不断提升等特点，尤其在水下空间，稳定高效的信息链路仍然是制约海洋感知、控制与协同能力提升的关键环节。对于无人潜航器、水下传感器网络、海底作业平台以及移动观测节点而言，若缺乏可靠的高速传输手段，则状态信息、控制指令与大容量感知数据难以及时交换，进而影响整个系统的实时性、协同性和任务执行效率。因此，面向未来海洋信息网络乃至空天地海一体化网络的建设需求，研究适用于不同水下传播条件的高可靠通信技术具有重要的理论意义和应用价值\cite{ShuiXiaWuRenQianHangQiJiQunFaZhanXianZhuangJiGuanJianJiShuZongShuZhongGuoZhiWang, hoeherUnderwaterOpticalWireless2021}。
+
+在多种水下通信手段中，传统水声通信（Underwater Acoustic Communication，UAC）虽然具有传播距离远、技术基础较成熟等优势，但其可用带宽有限、传播时延较大，难以满足高速数据回传、低时延控制与大容量信息交互等需求\cite{liRecentProgressUnderwater2025, jungControlRealTimeMonitoring2025}。同时，射频（Radio Frequency，RF）信号在海水中的传播会受到显著衰减，通常难以支撑常规中远距离高速水下传输\cite{wangEvolutionShortRangeOptical2023}。相比之下，水下无线光通信（Underwater Wireless Optical Communication，UWOC）依托蓝绿光窗口在海水中的相对低衰减特性，具有高带宽、低时延和低截获概率等优势，可作为水下网络中的近距离高速链路、高容量补充链路或局部专用链路，为水下节点间宽带互联提供新的实现路径\cite{kaushalUnderwaterOpticalWireless2016a, departmentofphysicsfacultyofscienceskingabdulazizuniversityjeddah-21589kingdomofsaudiarabiaUnderwaterOpticalCommunications2021a}。
+
+然而，UWOC 的传播环境并不理想，其系统性能往往受到介质传播特性与平台运动特性的共同影响。若仅从“高速率”角度理解 UWOC 的优势，而忽略其在不同应用条件下所面临的主导失真机制差异，就难以构建真正具有针对性的物理层方案。就本文关注的代表性场景而言，UWOC 的关键挑战主要可归纳为两类。第一类是低动态浑浊多径场景。在此类环境中，尽管收发平台相对运动较弱，但悬浮颗粒引起的吸收与散射不仅会造成光功率衰减，还会形成多重散射传播和非视距分量，从而带来明显的时延扩展和频率选择性衰落。第二类是高动态移动场景。在平台高速机动、姿态持续变化或相对速度波动明显的条件下，链路除了面临多径传播外，还会受到多普勒频移、动态指向偏差以及相干接收架构中相位噪声等因素的共同影响，导致系统传输与检测难度显著增加\cite{zengSurveyUnderwaterOptical2017, hamdullahModelingOptimizationNLOS2026, jaruwatanadilokUnderwaterWirelessOptical2008, zhuDopplerResistantOrthogonalChirp2022}。
+
+针对上述两类典型场景，传统正交频分复用（Orthogonal Frequency Division Multiplexing，OFDM）及其光学扩展形式虽然具有较成熟的实现基础，但也存在明显局限。在低动态多径场景中，传统光 OFDM 体制对傅里叶域正交结构的依赖使其对频率选择性衰落较为敏感；在高动态场景中，多普勒扩展会破坏子载波间的正交关系并引入明显的载波间干扰（Inter-Carrier Interference，ICI），从而削弱 OFDM 借助子载波正交性实现低复杂度频域单抽头均衡的既有优势。对于强度调制/直接检测（Intensity Modulation/Direct Detection，IM/DD）架构而言，系统还需满足发射信号实值非负的物理约束；对于相干接收架构而言，则需进一步处理复数域调制、多普勒扩展与相位噪声共同作用下的复杂检测问题。因此，仅依赖传统 OFDM 框架进行局部修正，往往难以同时兼顾不同 UWOC 典型场景下的传播机理与系统约束\cite{armstrongOFDMOpticalCommunications2009, yangAdvancementsUnderwaterOptical2024, zhuDopplerResistantOrthogonalChirp2022}。
+
+近年来，仿射频分复用（Affine Frequency Division Multiplexing，AFDM）作为一种基于离散仿射傅里叶变换（Discrete Affine Fourier Transform，DAFT）的新型多载波波形，为复杂时延--多普勒耦合信道下的通信提供了新的思路。相关研究表明，AFDM 可通过啁啾参数设计改变信号在变换域中的耦合结构，使时延扩展与多普勒扩展在等效表示域中呈现更具规律性的形式，从而在双选择性信道中表现出较好的适应能力\cite{bemaniAFDMFullDiversity2021}。对本文研究的两类 UWOC 场景而言，AFDM 的价值并不在于简单替代 OFDM，而在于能够围绕不同场景中的主导失真机制进行有针对性的适配：在低动态浑浊多径场景中增强系统对多径扩展的适应能力，在高动态移动场景中提升系统对多普勒扩展和相位扰动的鲁棒性。这为本文建立统一而清晰的技术主线提供了基础。
+
+基于上述认识，本文围绕 UWOC 场景下的 AFDM 波形设计与检测方法展开研究。针对低动态浑浊多径场景，结合 IM/DD 架构的物理约束，提出一种非对称限幅光仿射频分复用（Asymmetrically Clipped Optical Affine Frequency Division Multiplexing，ACO-AFDM）传输方案，以提高系统在非负实信号约束下对频率选择性衰落的适应能力；针对高动态移动场景，结合相干接收与索引调制（Index Modulation，IM）机制，提出一种相干 AFDM-IM 传输方案，以提升系统在多普勒扩展和相位噪声共同作用下的传输可靠性。两类方案虽然面向不同场景，但均以 AFDM 为统一技术主线，体现了本文围绕典型 UWOC 传播条件进行波形适配与检测设计的总体思路。
+
+本文工作的价值主要体现在以下几个方面。第一，从理论层面，本文围绕水下光信道中的多径、多普勒及相位噪声等代表性失真机制，分析 AFDM 在不同动态条件下的适配方式，拓展了其在 UWOC 场景中的应用研究。第二，从方法层面，本文针对 IM/DD 与相干接收两种不同架构，分别构建 ACO-AFDM 与相干 AFDM-IM 两类方案，体现了同一技术主线在不同物理约束下的系统化设计思路。第三，从应用层面，本文研究可为未来近距离高速水下链路、局部高容量水下组网以及移动平台协同通信等场景提供一定的理论参考。
+
+\section{国内外研究现状}
+\label{sec:research_status}
+
+围绕 UWOC 的可靠传输问题，国内外研究已从早期的链路可行性验证逐步发展到对传播环境、接收架构、波形设计与检测算法的系统研究。总体而言，现有工作主要涉及水下光信道建模、面向多径失真的调制与检测方法、新型抗时延--多普勒波形设计，以及高动态场景下的相干传输与索引调制等方向。结合本文的研究主线，现有研究可概括为以下三个方面。
+
+\subsection{水下光信道及低动态多径场景相关研究}
+\label{subsec:status_modulation}
+
+准确描述水下光传播过程是开展 UWOC 系统设计的基础。Kaushal 等对水下无线光通信的关键问题进行了系统总结，指出不同海域类型下的吸收、散射与链路损耗差异会直接影响传输距离、链路稳定性和系统设计方式\cite{kaushalUnderwaterOpticalWireless2016a}。Zeng 等系统梳理了 UWOC 中吸收、散射、湍流与链路建模等问题，进一步说明了水下光通信在短距高速传输中的应用潜力\cite{zengSurveyUnderwaterOptical2017}。Jaruwatanadilok 基于矢量辐射传输理论分析了水下光传播特性，指出多重散射会导致明显的时延扩展，并在高速传输条件下引发频率选择性衰落与符号间干扰（Inter-Symbol Interference，ISI）\cite{jaruwatanadilokUnderwaterWirelessOptical2008}。这些研究表明，即使在低动态平台条件下，浑浊水体中的多径传播仍可能成为限制系统性能的重要因素。
+
+为减弱频率选择性衰落对系统性能的影响，OFDM 技术被引入光通信领域。Armstrong 系统阐述了光 OFDM 的基本原理及其在光链路中的适用性\cite{armstrongOFDMOpticalCommunications2009}。在 IM/DD 架构下，为满足发射信号非负实值约束，直流偏置光 OFDM（Direct Current Biased Optical OFDM，DCO-OFDM）与非对称限幅光 OFDM（Asymmetrically Clipped Optical OFDM，ACO-OFDM）得到了广泛研究。Dissanayake 等对 ACO-OFDM 与 DCO-OFDM 进行了对比分析，指出 ACO-OFDM 能够将限幅噪声限制在偶数子载波，从而保证奇数子载波上的有效信息恢复\cite{dissanayakeComparisonACOOFDMDCOOFDM2013}。Essalih 等进一步表明，在相同频谱效率条件下，ACO-OFDM 具有较好的光功率效率\cite{essalihOpticalOFDMSiPMBased2020}。Fernando 等提出 U-OFDM 等单极性光多载波方案，也从不同角度拓展了 IM/DD 系统中 OFDM 的实现方式\cite{fernandoFlipOFDMUnipolarCommunication2011}。
+
+尽管如此，现有 IM/DD 光 OFDM 方案总体上仍建立在傅里叶域正交结构基础上，当水下多径扩展较为显著时，系统对深度频率选择性衰落仍较为敏感。同时，IM/DD 体制只能利用光强维度进行传输，也在一定程度上限制了系统的调制灵活性与频谱效率。因此，面向低动态浑浊多径场景，仍有必要探索兼顾 IM/DD 约束与多径鲁棒性的改进波形设计。本文第三章所研究的 ACO-AFDM 方案，正是在这一背景下对传统光 OFDM 思路的进一步拓展。
+
+\subsection{AFDM 及抗时延--多普勒波形研究现状}
+\label{subsec:status_doppler}
+
+随着无线通信系统逐步面向更复杂的时变信道环境，传统 OFDM 在时延扩展与多普勒扩展共同作用下的性能瓶颈日益突出。为提高系统对双选择性信道的适应能力，研究重点逐渐从传统傅里叶域多载波体制转向新型时频耦合波形设计。
+
+Bemani 等提出了 AFDM 技术，并指出通过合理配置啁啾参数，可使离散线性时变信道在 DAFT 域中获得更具结构性的表示，从而提升系统对时延与多普勒扩展的适应能力\cite{bemaniAFDMFullDiversity2021}。与仅在频域上构建正交关系的传统 OFDM 相比，AFDM 能够更自然地表征时延--多普勒耦合信道，为双选择性环境下的信号检测与均衡提供新的实现基础。随后，围绕 AFDM 的研究不断拓展到参数设计、等效信道表示、低复杂度检测与扩展调制机制等方向。Tao 等从技术发展角度总结了 AFDM 的原理、研究进展及其在复杂时变信道中的应用前景，指出 AFDM 的结构优势不仅体现在抗多普勒能力上，也体现在其为后续检测算法设计提供了更具规律性的信道表示\cite{taoAffineFrequencyDivision2025}。
+
+值得注意的是，AFDM 的潜力并不局限于高动态场景。虽然其最初更多被用于处理双选择性信道，但从更一般的信号处理角度看，只要传播环境中存在可利用的结构化时移或时移--频移耦合特征，AFDM 就有可能比传统傅里叶体制提供更适配的表示方式。对于低动态多径场景，AFDM 可以增强系统对路径时延结构的描述能力；对于高动态场景，AFDM 则更直接体现出对多普勒扩展的适应性。因此，将 AFDM 作为贯穿全文的统一技术主线，不仅有助于连接低动态与高动态两类场景，也有助于构建具有一致理论基础的方案体系。
+
+不过，现有 AFDM 研究多集中于射频双选择性信道或一般复数基带系统，对 IM/DD 光学发射约束、相干光接收架构以及水下光链路传播特点的针对性研究仍较少。尤其在 UWOC 背景下，如何将 AFDM 与非负光发射结构、相干探测和索引调制机制有机结合，仍有较大的研究空间。本文正是在这一研究空缺下，将 AFDM 分别扩展到低动态 IM/DD 场景和高动态相干场景之中。
+
+\subsection{高动态 UWOC、相干接收与索引调制研究现状}
+\label{subsec:status_coherent}
+
+随着 UUV 集群协同、动态平台互联和实时水下感知等应用的发展，UWOC 链路正由低动态、准静态应用逐步向高动态场景拓展\cite{MianXiangUUVJiQunYingYongDeShuiXiaWuXianGuangTongXinGuanJianJiShu2025}。在此类条件下，平台相对运动引起的多普勒频移会破坏传统 OFDM 子载波间的正交关系，导致明显 ICI，并使系统性能迅速下降\cite{zhuDopplerResistantOrthogonalChirp2022, fernandesDigitallyMitigatingDoppler2023}。因此，面向高动态 UWOC 的抗多普勒传输技术已成为当前研究的重要方向。
+
+除波形鲁棒性外，接收架构也是影响高动态 UWOC 性能的重要因素。尽管 IM/DD 架构具有实现简单的优点，但其在接收灵敏度与复数域调制支持方面存在明显限制。为此，相干光接收逐渐受到关注。Guiomar 等指出，相干接收能够恢复光信号的幅度与相位信息，并结合数字信号处理提升系统性能\cite{guiomarCoherentFreeSpaceOptical2022}。Hu 等的理论分析表明，在复杂光信道条件下，相干探测在接收灵敏度与背景噪声抑制方面优于直接探测\cite{huPerformanceCoherentOptical2025}。然而，相干架构在带来性能增益的同时，也会引入由激光器有限线宽导致的相位噪声问题。Tang 等指出，组合线宽增大会显著削弱水下相干通信性能，因此相关系统设计需要同时考虑多普勒扩展与相位噪声影响\cite{tangUnderwaterCoherentOptical2021}。
+
+为进一步提高频谱效率与能量利用效率，索引调制也被引入多载波系统设计。Basar 等较早在 OFDM 中引入索引调制，证明了激活位置可作为附加信息维度承载比特\cite{basarOrthogonalFrequencyDivision2013}。随后，Tao 等与 Zhang 等分别提出 AFDM-IM 及相关扩展方案，表明 AFDM 与索引调制的结合可通过稀疏激活结构提高信息承载效率并改善检测性能\cite{taoAffineFrequencyDivision2025, zhangDualIndexModulation2026}。然而，现有 AFDM-IM 研究同样主要集中于射频场景，其在高动态 UWOC 中与相干接收架构相结合的研究仍相对有限。
+
+综合来看，现有研究已分别在水下光信道建模、IM/DD 光 OFDM、AFDM 波形设计以及高动态相干传输等方面取得一定进展，但仍缺乏一条围绕 UWOC 典型场景特征展开的统一研究主线。特别是，如何基于 AFDM 这一新型波形，同时面向低动态浑浊多径场景和高动态移动场景构建有针对性的水下光通信方案，仍有进一步研究空间。这正是本文工作的主要切入点。
+
+\section{本文主要研究内容与章节安排}
+\label{sec:research_contents}
+
+本文面向 UWOC 在两类典型场景下的可靠传输需求，围绕 AFDM 波形设计、参数配置与检测方法开展研究，力图建立一条从信道特性分析到场景化传输方案设计的完整技术链路。全文的研究目标不是分别解决两个彼此割裂的小问题，而是以 AFDM 为统一技术主线，探索其在低动态多径场景与高动态时变场景中的适配方式及性能优势。
+
+围绕这一总体目标，本文的主要研究内容包括以下两个方面。
+
+第一，针对低动态浑浊多径 UWOC 场景，研究面向 IM/DD 架构的 ACO-AFDM 传输方案。该部分工作从 IM/DD 系统中发射信号的实值非负约束出发，将 ACO 结构与 AFDM 波形相结合，构建适用于低动态多径传播条件的 ACO-AFDM 系统模型；在此基础上，围绕余弦型 DAFT 核分析参数设计中的奇异点规避和多径分离条件，给出兼顾逆变换稳定性与多径鲁棒性的啁啾参数设计准则；最后通过仿真验证所提方案在低动态多径场景下相对于传统光 OFDM 方案的误码率性能优势和多径适应能力。
+
+第二，针对高动态移动 UWOC 场景，研究面向相干接收的 AFDM-IM 传输方案。该部分工作从高动态条件下多普勒扩展和相位噪声共同作用的特点出发，建立包含多径、多普勒频移与维纳相位噪声的系统模型，并推导 DAFT 域下的等效输入输出关系；进一步利用 AFDM-IM 发送向量中未激活位置所对应的静默结构作为隐式参考，构造基于泄露能量最小化与稀疏度量驱动的盲搜方法，在无额外导频开销下精准补偿主导的残余载波频偏，并对维纳相位噪声实现鲁棒容忍；最后通过仿真分析所提方案在高动态条件和不同激光器线宽下的 BER 性能与鲁棒性。
+
+除上述两项核心工作外，本文还从统一理论基础出发，对水下光传播机理、双选择性信道模型、传统 OFDM 的局限性以及 AFDM 的基本原理进行了系统梳理，使第三章与第四章的场景化方案设计能够建立在一致的分析框架之上。综合而言，本文的研究内容覆盖了从低动态到高动态、从 IM/DD 到相干接收、从波形设计到检测算法的多个层面，但其内在逻辑始终围绕同一主线展开，即：针对 UWOC 不同代表性传播条件下的主导失真机制，对 AFDM 进行有针对性的系统适配与性能验证。
+
+\subsection{章节安排}
+\label{subsec:chapter_arrangement}
+
+本文共分为五章，各章内容安排如下。
+
+第一章为绪论，主要介绍论文的研究背景与意义，分析 UWOC 在未来海洋信息网络和近距离高速水下链路中的应用价值，梳理低动态浑浊多径场景与高动态移动场景下的代表性物理层挑战，综述国内外在相关方向上的研究进展，并给出本文的主要研究内容与章节安排。
+
+第二章为水下光通信系统模型与理论基础。该章从水下光传播机理出发，分析吸收、散射和湍流等因素对链路的影响，建立时变双选择性信道的数学模型，讨论传统 OFDM 在时变信道中的局限性，并介绍 AFDM 的基本原理、DAFT 结构及其对本文两类典型场景的支撑作用，为后续章节的方案设计奠定理论基础。
+
+第三章为面向低动态水下场景的 ACO-AFDM 传输方案。该章针对低动态浑浊多径条件下 IM/DD 系统面临的非负实值约束与频率选择性衰落问题，构建 ACO-AFDM 系统模型，研究其参数设计方法，并通过仿真验证方案在误码率性能和多径鲁棒性方面的优势。
+
+第四章为面向高动态水下场景的相干 AFDM-IM 传输方案。该章针对高动态 UWOC 中多径、多普勒扩展和相位噪声共同作用下的传输问题，建立相干 AFDM-IM 系统模型，推导 DAFT 域等效输入输出关系，并利用 AFDM-IM 静默位置作为隐式参考，围绕泄露能量最小化与稀疏度量构造盲搜方法，在无额外导频开销下精准补偿主导的残余载波频偏并对维纳相位噪声实现鲁棒容忍。
+
+第五章为总结与展望。该章对全文工作进行归纳总结，概括本文在低动态 ACO-AFDM 方案和高动态相干 AFDM-IM 方案方面的主要研究结论，分析当前工作的不足，并对 AFDM 在 UWOC 中的后续研究方向进行展望。
+
+通过上述章节安排，全文在结构上形成了“问题背景与研究定位—理论基础—低动态方案—高动态方案—总结展望”的递进逻辑，从而较为完整地体现出本文围绕 AFDM 在 UWOC 两类典型场景中应用展开研究的主线。
