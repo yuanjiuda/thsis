@@ -111,6 +111,95 @@ AFDM 的调制与解调分别通过离散逆仿射傅里叶变换（Inverse Disc
 
 对于本文关注的两个典型场景，DAFT 的意义也有所不同。在低动态浑浊多径场景中，DAFT 的结构优势主要体现在对多径分量的分离能力以及对频率选择性衰落的适应性上；而在高动态场景中，DAFT 则有助于将多径与多普勒扩展映射为更具规律性的耦合形式，为时变信道下的检测与均衡提供便利。因此，DAFT 不仅是 AFDM 的数学工具，也是连接本文两类场景设计的统一理论基础。
 
+\subsection{DAFT 的时移性质与频移性质}
+\label{subsec:daft_shift_properties}
+
+AFDM 系统对双选择性信道的适配能力，本质上来源于 DAFT 变换对时移（时延）和频移（多普勒）操作具有确定性的等效映射关系。本节从数学上严格推导这两条基本性质，并进一步论证啁啾参数 $c_1$ 如何将时域时延与多普勒频移在 DAFT 域中映射为离散循环移位。
+
+鉴于本文所研究的水下光通信系统需满足实值信号约束（第三章 ACO-AFDM 设定 $c_2=0$ 以保持半波反对称结构，第四章相干 AFDM-IM 的检测算法同样不依赖 $c_2$ 相位预编码），本节在推导中令第二啁啾参数 $c_2=0$，即 IDAFT 调制简化为 $\mathbf{s} = \boldsymbol{\Lambda}_{c_1} \mathbf{F}^{H} \mathbf{X}$。该设定不影响时移与频移性质的核心结论，且与后续各章的系统模型保持一致。
+
+\subsubsection{时移性质}
+
+设 $\mathbf{s} = \boldsymbol{\Lambda}_{c_1} \mathbf{F}^{H} \mathbf{X}$ 为 IDAFT 调制后的时域信号（$c_2=0$）。考虑该信号经历离散循环时移 $l$（对应一条传播路径的离散时延），即接收端观测到
+\begin{equation}
+    s_{\tau}[n] = s[(n-l)_N]
+    \label{eq:time_shift_signal}
+\end{equation}
+其中 $(\cdot)_N$ 表示模 $N$ 运算。对 $s_{\tau}[n]$ 执行 DAFT 解调，即计算
+\begin{equation}
+    Y_{\tau}[m] = \sum_{n=0}^{N-1} e^{-j2\pi c_1 n^2} s[(n-l)_N] \, e^{-j\frac{2\pi mn}{N}}
+    \label{eq:daft_of_shifted}
+\end{equation}
+令 $n' = (n-l)_N$，则 $n = (n'+l)_N$，代入式(\ref{eq:daft_of_shifted}) 并展开二次相位项：
+\begin{equation}
+    c_1 n^2 = c_1(n'+l)^2 = c_1 {n'}^2 + 2c_1 n' l + c_1 l^2
+    \label{eq:quadratic_expansion}
+\end{equation}
+将式(\ref{eq:quadratic_expansion}) 代入式(\ref{eq:daft_of_shifted})，注意 DFT 核中 $n=(n'+l)$ 的展开同时产生常数相位因子 $e^{-j\frac{2\pi ml}{N}}$，合并后可得
+\begin{equation}
+    Y_{\tau}[m] = e^{-j2\pi c_1 l^2} e^{-j\frac{2\pi ml}{N}} \sum_{n'=0}^{N-1} e^{-j2\pi c_1 {n'}^2} s[n'] \, e^{-j\frac{2\pi (m+2Nc_1 l) n'}{N}}
+    \label{eq:daft_shift_intermediate}
+\end{equation}
+式(\ref{eq:daft_shift_intermediate}) 表明，时域循环时移 $l$ 在 DAFT 域中产生三个效应：（1）一个与 $m$ 无关的全局相位因子 $e^{-j2\pi c_1 l^2}$；（2）一个由时延 $l$ 与索引 $m$ 共同决定的线性相位因子 $e^{-j\frac{2\pi ml}{N}}$；（3）DAFT 域索引从 $m$ 偏移至 $m + 2Nc_1 l$。由此可得 DAFT 时移性质的完整表述：
+
+\textbf{时移性质}：若时域信号 $s[n]$ 对应 DAFT 域表示 $X[m]$，则其循环时移 $l$ 后的信号 $s[(n-l)_N]$ 在 DAFT 域中对应
+\begin{equation}
+    Y_{\tau}[m] = e^{-j2\pi c_1 l^2} \cdot e^{-j\frac{2\pi l m}{N}} \cdot X\bigl[(m + 2Nc_1 l)_N\bigr]
+    \label{eq:daft_time_shift_property}
+\end{equation}
+即观测位置 $m$ 处恢复出的是原始 DAFT 域位置 $(m+2Nc_1 l)_N$ 上的符号，同时附带全局相位旋转与线性相位因子。等价地，原始位置 $q$ 上的符号 $X[q]$ 被时延映射至接收端 DAFT 域位置 $(q-2Nc_1 l)_N$，即符号的物理偏移量为 $\Delta m_{\tau} = (-2Nc_1 l)_N$。无论取哪种视角，不同路径在 DAFT 域中的间距均由 $2Nc_1 |l_i - l_j|$ 决定。
+
+该性质的物理含义十分清晰：由于 IDAFT 中 $\boldsymbol{\Lambda}_{c_1}$ 引入的二次相位结构，时域的线性时移通过交叉项 $2c_1 n' l$ 转化为 DAFT 域的频率偏移，进而表现为离散索引的循环移位。偏移量 $2Nc_1 l$ 与啁啾参数 $c_1$ 和时延 $l$ 均成正比——这正是 AFDM 能够在 DAFT 域中分离不同时延路径的数学根源。
+
+\subsubsection{频移性质}
+
+考虑时域信号受到归一化多普勒频移 $\alpha$ 的调制，即接收端观测到
+\begin{equation}
+    s_{\nu}[n] = e^{j\frac{2\pi \alpha n}{N}} s[n]
+    \label{eq:freq_shift_signal}
+\end{equation}
+对 $s_{\nu}[n]$ 执行 DAFT 解调：
+\begin{equation}
+    Y_{\nu}[m] = \sum_{n=0}^{N-1} e^{-j2\pi c_1 n^2} \cdot e^{j\frac{2\pi \alpha n}{N}} \cdot s[n] \cdot e^{-j\frac{2\pi mn}{N}}
+    \label{eq:daft_of_doppler}
+\end{equation}
+将多普勒引起的线性相位 $e^{j\frac{2\pi \alpha n}{N}}$ 与 DFT 核 $e^{-j\frac{2\pi mn}{N}}$ 合并，可得
+\begin{equation}
+    Y_{\nu}[m] = \sum_{n=0}^{N-1} e^{-j2\pi c_1 n^2} \cdot s[n] \cdot e^{-j\frac{2\pi (m-\alpha) n}{N}}
+    \label{eq:daft_doppler_combined}
+\end{equation}
+由式(\ref{eq:daft_doppler_combined}) 可见，多普勒频移 $\alpha$ 使求和核中的索引从 $m$ 变为 $m - \alpha$，即观测位置 $m$ 处恢复出的是 $X[(m-\alpha)_N]$。等价地，符号 $X[q]$ 被多普勒映射至位置 $(q+\alpha)_N$。当 $\alpha$ 恰好为整数时，该偏移表现为精确的循环移位；当 $\alpha$ 为非整数时，则表现为相邻位置间的能量扩散。由此可得 DAFT 频移性质：
+
+\textbf{频移性质}：时域归一化多普勒频移 $\alpha$ 在 DAFT 域中对应
+\begin{equation}
+    Y_{\nu}[m] = X\bigl[(m - \alpha)_N\bigr]
+    \label{eq:daft_freq_shift_property}
+\end{equation}
+即观测位置 $m$ 读出的是原始位置 $(m-\alpha)_N$ 上的符号，附带相位因子忽略不计时，多普勒频移直接映射为 DAFT 域的索引偏移。
+
+\subsubsection{时延--多普勒联合映射与路径分离条件}
+
+综合时移性质与频移性质，当信道中同时存在时延 $l_p$ 和归一化多普勒频移 $\alpha_p$ 时，观测位置 $m$ 处恢复出的符号来自原始 DAFT 域位置 $(m + 2Nc_1 l_p - \alpha_p)_N$。定义第 $p$ 条路径在 DAFT 域中引起的等效索引偏移量为
+\begin{equation}
+    \Delta m_p = (2Nc_1 l_p - \alpha_p)_N
+    \label{eq:total_daft_shift}
+\end{equation}
+式(\ref{eq:total_daft_shift}) 揭示了 AFDM 对双选择性信道的核心适配机理：啁啾参数 $c_1$ 通过二次相位构造，将时域时延在 DAFT 域中转化为由 $2Nc_1 l_p$ 控制的正向索引偏移；而多普勒频移则表现为反向偏移 $-\alpha_p$。两类失真效应在 DAFT 域中统一表现为沿索引轴的位置偏移，且不同路径之间的可分辨性完全由参数 $c_1$ 的选取决定。
+
+为保证所有路径在 DAFT 域中不发生位置重叠，需对任意 $p \neq q$ 满足
+\begin{equation}
+    \Delta m_p \neq \Delta m_q, \quad \forall\, p \neq q
+    \label{eq:path_separation_condition}
+\end{equation}
+即
+\begin{equation}
+    2Nc_1(l_p - l_q) - (\alpha_p - \alpha_q) \not\equiv 0 \pmod{N}
+    \label{eq:separation_explicit}
+\end{equation}
+当上述条件成立时，各路径在 DAFT 域中占据互不重叠的位置，接收端可联合利用所有路径分量的能量实现检测，从而获取全分集增益。式(\ref{eq:separation_explicit}) 也为后续第三章和第四章中具体的参数设计提供了统一的理论出发点。需要指出的是，对于本文第三章关注的低动态场景（$\alpha_p \approx 0$），路径分离条件简化为 $2Nc_1(l_p - l_q) \not\equiv 0 \pmod{N}$，此时不同路径间距仅由时延差决定，与第三章中 $\mathrm{loc}_i = (2Nc_1 l_i)_N$ 的定义完全一致。
+
+上述推导从数学上完整建立了"时延 $\to$ DAFT 域移位"与"多普勒 $\to$ DAFT 域移位"的映射关系，明确了 AFDM 相对于 OFDM 的本质区别：OFDM 中时延仅引起频域线性相位旋转而多普勒破坏正交性；AFDM 中时延与多普勒均转化为 DAFT 域的可控循环移位，二者的效应统一且可分离。这一性质是本文后续所有方案设计与检测算法的理论起点。
+
 \subsection{啁啾参数设计与全分集增益}
 
 AFDM 的一个主要特点在于其可通过合理参数设计提升系统对双选择性信道的适应能力。根据相关研究，当参数满足特定条件时，AFDM 可使离散线性时变信道在 DAFT 域中呈现更具结构性的表示形式，从而有利于后续均衡与检测\cite{bemaniAFDMFullDiversity2021, taoAffineFrequencyDivision2025}。
