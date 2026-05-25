@@ -383,34 +383,13 @@ AFDM-IM 向量在正确频偏补偿下应表现出更明显的块稀疏特征：
 
 下面对所提方法的计算复杂度进行分析。设每个子块长度为 $n$，子块个数为 $G$，每子块激活数为 $k$，星座调制阶数为 $M$，候选频偏网格大小为 $N_{\theta}=|\Theta|$，最大迭代次数为 $I_{\max}$。
 
-首先考虑第一阶段的粗搜索。对每个候选频偏参数，接收端需要完成一次补偿后能量集中度指标计算，并从长度为 $n$ 的子块中选取前 $k$ 个主导分量。若采用排序或部分选择方法，单个候选点的复杂度可写为 $\mathcal{O}(n\log n)$；因此，阶段一的总体复杂度约为
-\begin{equation}
-    \mathcal{O}(N_{\theta} n\log n).
-    \label{eq:complexity_coarse}
-\end{equation}
-其次考虑第二阶段的交替优化。固定频偏参数后，对每个子块执行分块最大似然检测时，其候选集合规模为 $\binom{n}{k}M^k$，故整帧检测复杂度约为
-\begin{equation}
-    \mathcal{O}\left(G\binom{n}{k}M^k\right).  
-    \label{eq:complexity_ml_subblock}
-\end{equation}
-在参数更新步骤中，若仍采用一维网格搜索，则每次更新的复杂度为
-\begin{equation}
-    \mathcal{O}(N_{\theta} n).
-    \label{eq:complexity_theta_update}
-\end{equation}
-因此，第二阶段在最多 $I_{\max}$ 次迭代下的总复杂度可表示为
-\begin{equation}
-    \mathcal{O}\left(I_{\max}\left[G\binom{n}{k}M^k + N_{\theta} n\right]\right).
-    \label{eq:complexity_total_proposed}
-\end{equation}
+首先考虑第一阶段的粗搜索。对每个候选频偏参数，接收端需要完成一次补偿后能量集中度指标计算，并从长度为 $n$ 的子块中选取前 $k$ 个主导分量。若采用排序或部分选择方法，单个候选点的复杂度可写为 $\mathcal{O}(n\log n)$；因此，阶段一的总体复杂度约为 $\mathcal{O}(N_{\theta} n\log n)$。
 
-作为对比，传统基于显式导频的 Pilot-LS 残余 CFO 估计通常需要在导频位置上完成频偏残差最小化，其复杂度近似为 $\mathcal{O}(N_{\theta}n_p)$，其中 $n_p$ 为导频数目；在此基础上，再执行标准 AFDM-IM 最大似然检测，其复杂度为 $\mathcal{O}\left(G\binom{n}{k}M^k\right)$。因此，传统方案的总复杂度可近似写为
-\begin{equation}
-    \mathcal{O}\left(N_{\theta}n_p + G\binom{n}{k}M^k\right).
-    \label{eq:complexity_conventional}
-\end{equation}
+其次考虑第二阶段的交替优化。固定频偏参数后，对每个子块执行分块最大似然检测时，其候选集合规模为 $\binom{n}{k}M^k$，故整帧检测复杂度约为 $\mathcal{O}\left(G\binom{n}{k}M^k\right)$。在参数更新步骤中，若仍采用一维网格搜索，则每次更新的复杂度为 $\mathcal{O}(N_{\theta} n)$。因此，第二阶段在最多 $I_{\max}$ 次迭代下的总复杂度可表示为 $\mathcal{O}\left(I_{\max}\left[G\binom{n}{k}M^k + N_{\theta} n\right]\right)$。
 
-由式(\ref{eq:complexity_total_proposed}) 与式(\ref{eq:complexity_conventional}) 可见，本文方法相较于传统 Pilot-LS 方案，确实引入了额外的粗搜索与交替迭代开销。然而，这一额外复杂度主要体现在一维频偏参数搜索与有限次结构更新上，其增长规律仍然是可控的。更为重要的是，所提方法避免或显著减少了传统显式导频对发送资源的占用，从而能够将更多有效维度用于信息承载。在高动态 UWOC 场景中，频谱资源通常比离线或可编程算力更为稀缺，因此这种以计算复杂度换取频谱效率与结构自适应能力的设计具有明确的工程合理性。
+作为对比，传统基于显式导频的 Pilot-LS 残余 CFO 估计通常需要在导频位置上完成频偏残差最小化，其复杂度近似为 $\mathcal{O}(N_{\theta}n_p)$，其中 $n_p$ 为导频数目；在此基础上，再执行标准 AFDM-IM 最大似然检测，其复杂度为 $\mathcal{O}\left(G\binom{n}{k}M^k\right)$。因此，传统方案的总复杂度可近似写为 $\mathcal{O}\left(N_{\theta}n_p + G\binom{n}{k}M^k\right)$。
+
+由上述分析可见，本文方法相较于传统 Pilot-LS 方案，确实引入了额外的粗搜索与交替迭代开销。然而，这一额外复杂度主要体现在一维频偏参数搜索与有限次结构更新上，其增长规律仍然是可控的。更为重要的是，所提方法避免或显著减少了传统显式导频对发送资源的占用，从而能够将更多有效维度用于信息承载。在高动态 UWOC 场景中，频谱资源通常比离线或可编程算力更为稀缺，因此这种以计算复杂度换取频谱效率与结构自适应能力的设计具有明确的工程合理性。
 
 综上，所提方法将 AFDM-IM 中原本仅用于承载索引信息的静默位置，进一步转化为残余 CFO 感知的结构资源。与传统显式导频驱动的频偏补偿不同，该方法通过挖掘 DAFT 域下的稀疏先验与能量泄露特征，实现了残余 CFO 估计与索引检测的一体化设计。该思路一方面保持了 AFDM 在双选择性信道中的结构优势，另一方面减少了高动态水下场景下的额外导频负担，从而为后续相干 AFDM-IM 的高频谱效率接收机设计提供了新的实现路径。
 
@@ -423,7 +402,7 @@ AFDM-IM 向量在正确频偏补偿下应表现出更明显的块稀疏特征：
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.85\linewidth]{figures/fig13_CostFunc_Convergence.eps}
-    \caption{静默位置泄露能量代价函数随试探频偏参数的变化曲线}
+    \caption{静默位置泄露能量代价函数随试探频偏参数的变化曲线} 
     \label{fig:cost_func_convergence}
 \end{figure}
 
@@ -466,7 +445,7 @@ AFDM-IM 向量在正确频偏补偿下应表现出更明显的块稀疏特征：
 
 需要指出的是，本章仿真所采用的信道模型与第~\ref{subsec:coherent_afdm_im_channel} 节推导的高动态水下相干光信道数学模型完全一致。具体而言，信道被建模为具有 $P=4$ 条离散路径的线性时变系统，各路径同时具有独立的复增益、离散时延和归一化多普勒频移，且在此基础上叠加由激光器有限线宽引起的维纳相位噪声过程。图~\ref{fig:high_dynamic_cir} 给出了上述参数设置下高动态水下信道冲激响应的三维演化示意，直观展示了信道在时间维度和多径时延维度上的双重起伏特征。
 
-\begin{figure}[htbp]
+\begin{figure}[htbp] 
     \centering
     \includegraphics[width=0.85\linewidth]{figures/fig9_Constellation_Comp.eps}
     \caption{高动态水下信道冲激响应三维演化图（$N=256$，$P=4$，$f_d=0.15$）}
@@ -478,7 +457,7 @@ AFDM-IM 向量在正确频偏补偿下应表现出更明显的块稀疏特征：
 为了更加清晰地刻画所提盲补偿策略的有效性，本文进一步设置三种对比方案：其一为理想下界（Ideal），即假设接收端已知准确残余 CFO 且无需任何额外开销，用于表征理论最佳性能；其二为传统显式导频方案（Conventional Pilot-LS），即强制占用 20\% 静默位置作为导频并采用最小二乘准则进行残余 CFO 估计，此时在总发射功率不变的条件下，有效数据维度与对应能量分配将受到惩罚；其三为本文所提零导频开销方案（Proposed），即利用一维频偏网格盲搜索，直接寻找使静默位置残余泄露能量最小的频偏补偿参数。通过这三种方案的并列比较，可以同时评估本文方法在性能逼近能力和频谱效率保持能力上的综合优势。
 
 \subsection{高动态场景下的 BER 性能对比}
-\label{subsec:high_mobility_ber}
+\label{subsec:high_mobility_ber} 
 
 首先考察高动态场景下系统 BER 随 SNR 的变化规律。设收发平台之间存在较大相对运动速度，使归一化最大多普勒频移达到高动态条件。图~\ref{fig:coherent_ber_high_mobility} 给出了相干 AFDM-IM 与基准 OFDM-IM 的 BER 对比结果。
 
@@ -523,7 +502,7 @@ AFDM-IM 向量在正确频偏补偿下应表现出更明显的块稀疏特征：
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.85\linewidth]{figures/fig11_Alloc_SNR_Penalty.eps}
-    \caption{不同方案的资源分配对比与导频开销引起的等效 SNR 惩罚}
+    \caption{不同方案的资源分配对比与导频开销引起的等效 SNR 惩罚} 
     \label{fig:alloc_snr_penalty}
 \end{figure}
 
