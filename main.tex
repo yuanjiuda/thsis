@@ -11,7 +11,7 @@
 % 为方便您填写内容，模板注释会引用《撰写规范》。该文件是指研函〔2026〕024 号《北京理工大学研究生学位论文撰写规范》，可从以下链接下载。
 % https://grd.bit.edu.cn/xwgz/xwgz2/wjxz_xwgz/b117825.htm
 
-\documentclass[type=master,twoside=false]{bithesis}
+\documentclass[type=master,twoside=false,sorting=false]{bithesis}
 % 硕士论文模板 type=master
 % 博士论文模板 type=doctor
 % 开启盲审格式 blindPeerReview=true (如：[type=master,blindPeerReview=true])
@@ -138,9 +138,10 @@ verticalTitle = {面向复杂水下环境的ＡＦＤＭ无线光通信关键技
 % 如果课题组或盲审老师另有特殊要求，您也可修改配置。详情请参考 biblatex-gb7714-2015 的 PDF 文档。
 % https://www.ctan.org/pkg/biblatex-gb7714-2015
 \usepackage[
-  defernumbers=true,
   backend=biber,
   style=gb7714-2015,
+  sorting=none,
+  sortcites=false,
   gbalign=gb7714-2015,
   gbnamefmt=lowercase,
   gbpub=false,
@@ -151,6 +152,9 @@ verticalTitle = {面向复杂水下环境的ＡＦＤＭ无线光通信关键技
   eprint=false,
   isbn=false,
 ]{biblatex}
+
+% 强制按引用顺序编号
+\ExecuteBibliographyOptions{sorting=none}
 
 \DeclareSourcemap{
   \maps[datatype=bibtex]{
