@@ -1,7 +1,7 @@
 \chapter{面向高动态水下场景的相干 AFDM-IM 传输方案}
 \label{chap:coherent_afdm_im}
 
-面向高动态水下通信需求，UWOC 链路正由低动态准静态应用逐步向高速机动、强时变场景扩展\cite{hoeherUnderwaterOpticalWireless2021, MianXiangUUVJiQunYingYongDeShuiXiaWuXianGuangTongXinGuanJianJiShu2025}。在此类条件下，平台相对运动引起的多普勒频移会破坏传统 OFDM 子载波正交关系，导致严重载波间干扰\cite{zhuDopplerResistantOrthogonalChirp2022, fernandesDigitallyMitigatingDoppler2023}；同时，相干接收架构中发射与本振激光器的有限线宽还将引入维纳相位噪声\cite{tangUnderwaterCoherentOptical2021, huPerformanceCoherentOptical2025}，使接收端面临多普勒扩展与相位漂移的联合失真。传统 IM/DD 多载波体制由于仅能利用光强维度，难以同时兼顾接收灵敏度、抗多普勒能力与高阶调制需求\cite{liuMultiDegreeofFreedomUnderwaterOptical2022}。
+面向高动态水下通信需求，UWOC 链路正由低动态准静态应用逐步向高速机动、强时变场景扩展\cite{hoeherUnderwaterOpticalWireless2021, MianXiangUUVJiQunYingYongDeShuiXiaWuXianGuangTongXinGuanJianJiShu2025}。在此类条件下，平台相对运动引起的多普勒频移会破坏传统 OFDM 子载波正交关系，导致严重载波间干扰\cite{zhuDopplerResistantOrthogonalChirp2022, fernandesDigitallyMitigatingDoppler2023}；同时，相干接收架构中发射与本振激光器的有限线宽还将引入维纳相位噪声\cite{tangUnderwaterCoherentOptical2021, huPerformanceCoherentOptical2025}，使接收端面临多普勒扩展与相位漂移的联合失真。传统 IM-DD 多载波体制由于仅能利用光强维度，难以同时兼顾接收灵敏度、抗多普勒能力与高阶调制需求\cite{liuMultiDegreeofFreedomUnderwaterOptical2022}。
 
 AFDM 基于 DAFT 构造正交啁啾基函数，使时延与多普勒扩展在等效表示域中呈现结构性耦合形式，在双选择性信道中具有显著的鲁棒性优势\cite{bemaniAFDMFullDiversity2021, taoAffineFrequencyDivision2025}。相干探测能够恢复信号的幅度与相位信息，在接收灵敏度与背景噪声抑制方面具有优势，更适合支撑复数域 AFDM 传输\cite{guiomarCoherentFreeSpaceOptical2022, huPerformanceCoherentOptical2025}。在此基础上引入索引调制机制，通过激活位置与星座符号联合承载信息，可在提高比特映射效率的同时引入块稀疏结构\cite{basarOrthogonalFrequencyDivision2013, taoAffineFrequencyDivision2025}。更重要的是，AFDM-IM 中天然存在的大量未激活位置在理想情况下应保持为零，这些静默位置不仅服务于索引信息传输，还能够在接收端转化为可用于残余频偏感知的隐式结构参考，使索引调制从单纯的频谱效率提升工具进一步演化为接收端结构自感知的波形设计资源。
 
@@ -69,7 +69,7 @@ AFDM 基于 DAFT 构造正交啁啾基函数，使时延与多普勒扩展在等
 \end{equation}
 为抑制多径引起的块间干扰，在每个 AFDM 符号前添加长度为 $L_{\mathrm{cp}}$ 的循环前缀。由于采用相干架构，发送端可直接加载复数包络信号，因此无需进行厄米特对称映射与非负限幅处理。
 
-相较于 IM/DD 架构下对实值非负性的严格约束，相干架构允许发送端直接处理复数域波形，因此 AFDM 的复数调制优势能够得到更充分体现。另一方面，循环前缀的引入使系统在面对有限时延扩展时仍可维持较稳定的块处理结构，为后续在 DAFT 域中建立等效输入输出关系提供了前提。由此可见，AFDM-IM 发射端并不是对 AFDM 和索引调制的简单叠加，而是在高动态相干场景下对波形、映射和接收架构进行联合适配的结果。
+相较于 IM-DD 架构下对实值非负性的严格约束，相干架构允许发送端直接处理复数域波形，因此 AFDM 的复数调制优势能够得到更充分体现。另一方面，循环前缀的引入使系统在面对有限时延扩展时仍可维持较稳定的块处理结构，为后续在 DAFT 域中建立等效输入输出关系提供了前提。由此可见，AFDM-IM 发射端并不是对 AFDM 和索引调制的简单叠加，而是在高动态相干场景下对波形、映射和接收架构进行联合适配的结果。
 
 \subsection{高动态水下相干光信道模型}
 \label{subsec:coherent_afdm_im_channel}
@@ -452,7 +452,7 @@ AFDM-IM 向量在正确频偏补偿下应表现出更明显的块稀疏特征：
     \label{fig:high_dynamic_cir}
 \end{figure}
 
-由图~\ref{fig:high_dynamic_cir} 可见，X 轴方向对应多径时延（Tap Index），反映了不同路径之间的到达时间差异；Y 轴方向对应符号时间维度（Sample Index），体现了信道随时间的快速变化特征；Z 轴幅度则反映了各路径在不同时刻的复增益起伏程度。从图中可以清晰观察到，在归一化多普勒频移 $f_d=0.15$ 的高动态条件下，各条路径的复增益沿时间轴呈现出剧烈波动，说明信道在符号周期内已不能近似为准静态，而是具有明显的时变特征。这种时延与多普勒的双重扩展正是本章系统模型所刻画的双选择性信道核心特征，也是所提基于静默位置泄露能量最小化方法需要应对的主要物理挑战。与第三章低动态场景中信道在整个符号周期内近似恒定的情形形成鲜明对比，本章的高动态信道要求接收端不仅具备多径均衡能力，还必须能够感知并补偿由多普勒效应引起的载波频偏，这进一步验证了从 IM/DD 架构转向相干架构的必要性。
+由图~\ref{fig:high_dynamic_cir} 可见，X 轴方向对应多径时延（Tap Index），反映了不同路径之间的到达时间差异；Y 轴方向对应符号时间维度（Sample Index），体现了信道随时间的快速变化特征；Z 轴幅度则反映了各路径在不同时刻的复增益起伏程度。从图中可以清晰观察到，在归一化多普勒频移 $f_d=0.15$ 的高动态条件下，各条路径的复增益沿时间轴呈现出剧烈波动，说明信道在符号周期内已不能近似为准静态，而是具有明显的时变特征。这种时延与多普勒的双重扩展正是本章系统模型所刻画的双选择性信道核心特征，也是所提基于静默位置泄露能量最小化方法需要应对的主要物理挑战。与第三章低动态场景中信道在整个符号周期内近似恒定的情形形成鲜明对比，本章的高动态信道要求接收端不仅具备多径均衡能力，还必须能够感知并补偿由多普勒效应引起的载波频偏，这进一步验证了从 IM-DD 架构转向相干架构的必要性。
 
 为了更加清晰地刻画所提盲补偿策略的有效性，本文进一步设置三种对比方案：其一为理想下界（Ideal），即假设接收端已知准确残余 CFO 且无需任何额外开销，用于表征理论最佳性能；其二为传统显式导频方案（Conventional Pilot-LS），即强制占用 20\% 静默位置作为导频并采用最小二乘准则进行残余 CFO 估计，此时在总发射功率不变的条件下，有效数据维度与对应能量分配将受到惩罚；其三为本文所提零导频开销方案（Proposed），即利用一维频偏网格盲搜索，直接寻找使静默位置残余泄露能量最小的频偏补偿参数。通过这三种方案的并列比较，可以同时评估本文方法在性能逼近能力和频谱效率保持能力上的综合优势。
 
