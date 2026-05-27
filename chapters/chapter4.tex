@@ -57,6 +57,31 @@ AFDM 基于 DAFT 构造正交啁啾基函数，使时延与多普勒扩展在等
 
 由上述结构可见，AFDM-IM 的信息承载由两部分共同组成：一部分由激活位置决定，对应索引比特；另一部分由激活位置上的复星座符号决定，对应星座比特。这种联合映射方式使系统在单位资源下可传输的信息量超过单纯依赖星座点的常规调制方式。同时，由于非激活位置保持为零，发送向量天然具有块稀疏特征，这也为后续最大似然检测提供了结构基础。
 
+\subsubsection{AFDM-IM 频谱效率分析}
+
+为定量衡量所提 AFDM-IM 方案的信息承载能力，本节对其频谱效率进行分析，并与常规 AFDM（不采用索引调制）和传统 OFDM-IM 进行对比。
+
+对于 AFDM-IM，系统每帧承载的总比特数为
+\begin{equation}
+    B_{\mathrm{AFDM\text{-}IM}} = G \cdot \left(\left\lfloor \log_2 \binom{n}{k} \right\rfloor + k\log_2 M\right)
+    \label{eq:afdm_im_total_bits}
+\end{equation}
+而对于不采用索引调制的常规 AFDM，全部 $N$ 个 DAFT 域位置均加载星座符号，每帧承载比特数为
+\begin{equation}
+    B_{\mathrm{AFDM}} = N \log_2 M
+    \label{eq:afdm_total_bits}
+\end{equation}
+
+以本章仿真参数为例（$N=256$，$G=32$，$n=8$，$k=2$，$M=4$），代入式(\ref{eq:afdm_im_total_bits}) 可得
+\begin{equation}
+    B_{\mathrm{AFDM\text{-}IM}} = 32 \times \left(\lfloor\log_2 28\rfloor + 2\times 2\right) = 32 \times (4+4) = 256 \text{ bit/帧}
+\end{equation}
+对应的归一化频谱效率为 $\eta_{\mathrm{AFDM\text{-}IM}} = 256/(256+L_{\mathrm{cp}}) \approx 0.96$ bit/s/Hz（取 $L_{\mathrm{cp}}=10$）。作为对比，常规 AFDM 的每帧比特数为 $B_{\mathrm{AFDM}} = 256 \times 2 = 512$ bit/帧，频谱效率约为 1.92 bit/s/Hz。
+
+从上述数值可以看出，AFDM-IM 的频谱效率约为常规 AFDM 的 50\%。然而，这一对比并不构成 AFDM-IM 的劣势，原因在于：索引调制以降低绝对频谱效率为代价，换取了以下三方面收益。一是接收端检测可靠性的提升——由于每个子块仅有 $k$ 个激活位置，ML 检测的候选空间从 $M^n$ 压缩为 $\binom{n}{k}M^k$，搜索范围显著缩小，判决可靠性在有限信噪比下得以改善。二是发射信号平均功率的降低——在每个子块的 $n$ 个位置中仅 $k$ 个承载非零符号，在总能量约束下单个激活位置可分配到更高的瞬时功率，从而提高单符号信噪比。三是静默位置为接收端提供了可利用的结构先验——这正是本章后续基于静默位置泄露能量最小化方法的物理基础。
+
+与传统 OFDM-IM 相比，AFDM-IM 在相同子块划分和激活参数下具有相同的索引比特数 $b_{\mathrm{I}}$ 和星座比特数 $b_{\mathrm{S}}$，因此两者的频谱效率完全相同。二者的性能差异完全来源于波形结构层面：AFDM 的啁啾映射使系统在高动态双选择性信道下保持更好的结构稳定性，而 OFDM 在同等多普勒条件下会因子载波正交性破坏导致严重的 ICI。
+
 发送向量经离散逆仿射傅里叶变换映射至时域。记 AFDM 调制矩阵为
 \begin{equation}
     \boldsymbol{\Psi} = \boldsymbol{\Lambda}_{c_1}^{H} \mathbf{F}^{H} \boldsymbol{\Lambda}_{c_2}^{H}
@@ -153,6 +178,82 @@ AFDM 基于 DAFT 构造正交啁啾基函数，使时延与多普勒扩展在等
     \label{eq:equivalent_daft_io_2}
 \end{equation}
 该式为后续检测算法推导奠定了基础，也表明检测问题可以统一表述为在等效 DAFT 域信道下对发送向量的估计问题。
+
+\subsection{维纳相位噪声的结构化分解}
+\label{subsec:phase_noise_decomposition}
+
+式(\ref{eq:equivalent_channel_matrix}) 中的相位噪声对角矩阵 $\boldsymbol{\Phi} = \mathrm{diag}(e^{j\phi[0]}, e^{j\phi[1]}, \ldots, e^{j\phi[N-1]})$ 将维纳相位过程的逐点效应引入了等效信道表达。为后续算法设计提供理论支撑，有必要对符号周期内的维纳相位过程进行结构化分解，明确其各分量对检测性能的影响机理。
+
+将维纳相位过程 $\phi[q]$（$q = 0, 1, \ldots, N-1$）在一个符号周期内进行正交分解：
+\begin{equation}
+    \phi[q] = \underbrace{\phi[0]}_{\text{常数相位}} + \underbrace{\frac{q}{N}\left(\phi[N-1]-\phi[0]\right)}_{\text{线性漂移}} + \underbrace{\epsilon[q]}_{\text{高阶随机残差}}
+    \label{eq:phase_noise_decomposition}
+\end{equation}
+其中，三个分量具有不同的物理含义与对检测的影响方式。
+
+常数相位分量 $\phi[0]$ 对整个符号块施加统一的相位旋转。由于最大似然检测中对发送向量的判决基于欧氏距离度量，而常数相位旋转等价于对接收信号向量进行全局旋转，不改变各候选向量与接收观测之间的距离排序，因此该分量对检测结果透明，无需显式补偿。
+
+线性漂移分量 $\frac{q}{N}(\phi[N-1]-\phi[0])$ 在时域上表现为线性相位斜坡，其效果等价于一个小量的频率偏移。设线性漂移对应的等效归一化频偏为
+\begin{equation}
+    \Delta f_{\mathrm{drift}} = \frac{\phi[N-1]-\phi[0]}{2\pi}
+    \label{eq:linear_drift_freq}
+\end{equation}
+由于 $\phi[N-1]-\phi[0] = \sum_{q=1}^{N-1}\Delta[q]$ 是 $N-1$ 个独立高斯增量的累加，其方差为 $(N-1)\sigma_\phi^2$。在典型参数条件下（$N=256$，$\Delta\nu T_s = 10^{-4}$），线性漂移分量的标准差约为 $\sqrt{(N-1) \cdot 2\pi \cdot 10^{-4}} \approx 0.40$ rad，对应的等效归一化频偏约为 $0.40/(2\pi) \approx 0.064$。该分量在形式上与残余 CFO 完全相同（均表现为时域线性相位），因此可被后续盲搜算法在搜索过程中自动吸收——算法所估计的"最优频偏补偿参数"实际上是真实 CFO 与线性漂移之和，二者无需分别处理。
+
+高阶随机残差 $\epsilon[q]$ 是维纳相位过程去除常数和线性分量后的剩余部分，表现为零均值、时间相关的随机波动。其方差可通过布朗桥模型给出上界：
+\begin{equation}
+    \mathrm{Var}[\epsilon[q]] \leq \frac{q(N-1-q)}{N-1} \sigma_\phi^2
+    \label{eq:residual_variance_bound}
+\end{equation}
+该上界在 $q = (N-1)/2$ 处取得最大值 $(N-1)\sigma_\phi^2/4$。在本文典型参数下，$\max_q \mathrm{Var}[\epsilon[q]] \approx 255 \times 2\pi \times 10^{-4}/4 \approx 0.040$ rad$^2$，对应的标准差约为 0.20 rad。
+
+当残差相位较小时（$|\epsilon[q]| \ll 1$），可对相位噪声指数进行线性化近似：
+\begin{equation}
+    e^{j\epsilon[q]} \approx 1 + j\epsilon[q]
+    \label{eq:phase_noise_linearization}
+\end{equation}
+该近似的有效条件为 $\mathrm{Var}[\epsilon[q]] \ll 1$ rad$^2$。在本文仿真条件下，最大残差方差为 0.040 rad$^2$，远小于 1，因此线性化近似成立。此时，高阶随机残差的效果等价于在接收信号上叠加一个功率受限的附加噪声项：
+\begin{equation}
+    e^{j\epsilon[q]} \cdot r_{\mathrm{comp}}[q] \approx r_{\mathrm{comp}}[q] + j\epsilon[q] \cdot r_{\mathrm{comp}}[q]
+    \label{eq:residual_as_noise}
+\end{equation}
+其中 $r_{\mathrm{comp}}[q]$ 为经 CFO 补偿后的接收信号。第二项可视为信号依赖型附加噪声，其功率与信号功率和残差方差的乘积成正比。
+
+上述分解的意义在于：维纳相位噪声中对检测性能影响最大的两个分量（常数相位和线性漂移）恰好分别被 ML 检测的距离度量不变性和盲搜算法的频偏吸收能力自动处理，而剩余的高阶随机残差在线性化近似下等效为功率受限的附加噪声。这一分析为后续将维纳相位噪声作为等效背景干扰纳入残余噪声项处理提供了严格的理论依据，也解释了为何所提算法能够在不显式估计完整维纳相位过程的情况下仍对相位噪声保持鲁棒容忍。
+
+\subsection{DAFT 域等效信道矩阵的结构特性}
+\label{subsec:daft_channel_structure}
+
+为深入理解 AFDM 在高动态场景中的性能优势来源，本节对式(\ref{eq:equivalent_channel_matrix}) 所定义的 DAFT 域等效信道矩阵 $\mathbf{H}_{\mathrm{eq}}$ 的结构特性进行分析。
+
+在不考虑相位噪声的理想条件下（即 $\boldsymbol{\Phi} = \mathbf{I}$），等效信道矩阵退化为
+\begin{equation}
+    \mathbf{H}_{\mathrm{eq}}^{(\mathrm{ideal})} = \boldsymbol{\Psi}^{H} \sum_{p=1}^{P} h_p \boldsymbol{\Lambda}(\alpha_p) \boldsymbol{\Pi}^{l_p} \boldsymbol{\Psi}
+    \label{eq:ideal_equiv_channel}
+\end{equation}
+
+对于单条路径（$P=1$，$h_1=1$，$l_1=l$，$\alpha_1=\alpha$），利用 DAFT 调制矩阵的解析形式，可将等效信道矩阵的第 $(m,k)$ 元素表示为
+\begin{equation}
+    [\mathbf{H}_{\mathrm{eq}}^{(\mathrm{ideal})}]_{m,k} = h_1 \cdot \delta\!\left[(m - k - 2Nc_1 l - 2Nc_2\alpha)_N\right] \cdot e^{j\varphi_{m,k}}
+    \label{eq:single_path_channel_element}
+\end{equation}
+其中 $\varphi_{m,k}$ 为与啁啾参数和路径参数相关的相位项，$\delta[\cdot]$ 为克罗内克 delta 函数。式(\ref{eq:single_path_channel_element}) 表明，单条路径在 DAFT 域中对应等效信道矩阵的一条对角线（偏移量为 $(2Nc_1 l + 2Nc_2\alpha)_N$）。
+
+当存在多条路径时，等效信道矩阵为各路径贡献的叠加：
+\begin{equation}
+    \mathbf{H}_{\mathrm{eq}}^{(\mathrm{ideal})} = \sum_{p=1}^{P} h_p \cdot \mathbf{D}_p
+    \label{eq:multipath_channel_superposition}
+\end{equation}
+其中 $\mathbf{D}_p$ 为第 $p$ 条路径对应的移位对角矩阵，其非零元素位于第 $(2Nc_1 l_p + 2Nc_2\alpha_p)_N$ 条对角线上。该结构具有以下重要性质。
+
+当啁啾参数 $c_1$ 和 $c_2$ 设计合理时，不同路径对应的对角线偏移量相互区分，使等效信道矩阵呈现稀疏的多对角线结构。在这种条件下，DAFT 域中每个接收位置仅与有限个发送位置耦合，检测算法可利用这种稀疏性降低计算复杂度。当路径的时延-多普勒参数对满足分离条件
+\begin{equation}
+    (2Nc_1 l_p + 2Nc_2\alpha_p)_N \neq (2Nc_1 l_q + 2Nc_2\alpha_q)_N, \quad \forall p \neq q
+    \label{eq:path_separation_condition}
+\end{equation}
+时，各路径在 DAFT 域中占据不同的对角线位置，接收端可通过结构化检测联合利用所有路径能量，获得满分集增益。
+
+与 OFDM 的等效信道矩阵进行对比可进一步揭示 AFDM 的优势。对于 OFDM 系统，在无多普勒条件下，等效信道为对角矩阵，各子载波独立经历频率选择性衰落；当存在多普勒时，等效信道变为满矩阵（非稀疏），每个接收位置与所有发送位置耦合，产生全局性的 ICI。AFDM 则通过啁啾参数的引入，将时延-多普勒耦合映射为 DAFT 域中的确定性位置偏移，使等效信道在双选择性条件下仍保持稀疏结构，这正是其抗多普勒能力优于 OFDM 的根本原因。
 
 \section{基于静默位置泄露能量最小化的残余 CFO 补偿与检测方法}
 \label{sec:silent_leakage_phase_comp}
@@ -391,7 +492,7 @@ AFDM-IM 向量在正确频偏补偿下应表现出更明显的块稀疏特征：
 
 由上述分析可见，本文方法相较于传统 Pilot-LS 方案，确实引入了额外的粗搜索与交替迭代开销。然而，这一额外复杂度主要体现在一维频偏参数搜索与有限次结构更新上，其增长规律仍然是可控的。更为重要的是，所提方法避免或显著减少了传统显式导频对发送资源的占用，从而能够将更多有效维度用于信息承载。在高动态 UWOC 场景中，频谱资源通常比离线或可编程算力更为稀缺，因此这种以计算复杂度换取频谱效率与结构自适应能力的设计具有明确的工程合理性。
 
-综上，所提方法将 AFDM-IM 中原本仅用于承载索引信息的静默位置，进一步转化为残余 CFO 感知的结构资源。与传统显式导频驱动的频偏补偿不同，该方法通过挖掘 DAFT 域下的稀疏先验与能量泄露特征，实现了残余 CFO 估计与索引检测的一体化设计。该思路一方面保持了 AFDM 在双选择性信道中的结构优势，另一方面减少了高动态水下场景下的额外导频负担，从而为后续相干 AFDM-IM 的高频谱效率接收机设计提供了新的实现路径。
+所提方法将 AFDM-IM 中原本仅用于承载索引信息的静默位置，进一步转化为残余 CFO 感知的结构资源。与传统显式导频驱动的频偏补偿不同，该方法通过挖掘 DAFT 域下的稀疏先验与能量泄露特征，实现了残余 CFO 估计与索引检测的一体化设计。该思路一方面保持了 AFDM 在双选择性信道中的结构优势，另一方面减少了高动态水下场景下的额外导频负担，从而为后续相干 AFDM-IM 的高频谱效率接收机设计提供了新的实现路径。
 
 进一步从工程实现角度看，静默位置在本文方案中扮演了隐式零参考的角色。传统导频辅助频偏跟踪需要显式预留若干资源单元，并在总发射功率固定的条件下将一部分能量分配给导频，从而不可避免地压缩有效数据传输维度；而本文方法则直接复用 AFDM-IM 原本就存在的未激活位置，在不额外牺牲频谱资源的情况下完成残余 CFO 估计。由此，索引调制结构不再只是提升频谱效率的附加机制，而是进一步演化为接收端盲补偿算法可直接调用的结构先验。
 
@@ -417,23 +518,9 @@ AFDM-IM 向量在正确频偏补偿下应表现出更明显的块稀疏特征：
 
 在实际有噪声和维纳相位噪声条件下，代价函数曲面会叠加小尺度随机起伏。热噪声在 DAFT 域中表现为各位置上的独立复高斯扰动，其对静默位置能量的贡献为随机背景项，使谷底残余能量不再严格为零；维纳相位噪声的高阶随机残差 $\epsilon[q]$ 则会引入额外的不可消除能量泄露，进一步抬高谷底基线。然而，在中高 SNR 区间且组合线宽适中的条件下，CFO 引起的系统性泄露功率仍远强于噪声与相位噪声残差的随机贡献。从图~\ref{fig:cost_func_convergence} 可以看到，即使在 $\mathrm{SNR}=15\,\mathrm{dB}$ 的有限信噪比条件下，谷底结构仍然清晰尖锐，两侧斜坡平滑单调，不存在可能导致搜索误判的竞争性局部极小值。这验证了一维网格盲搜索能够以较高置信度定位真实频偏参数，而不会因噪声扰动陷入伪极值。
 
-综上所述，代价函数的全局单峰性、深 V 型谷底结构以及对噪声扰动的鲁棒性，共同保证了所提盲搜准则在实际工作条件下的可靠收敛性。这为后续仿真验证提供了理论支撑，也说明基于静默位置泄露能量最小化的残余 CFO 估计方法具有明确的数学基础和工程可行性。
+代价函数的全局单峰性、深 V 型谷底结构以及对噪声扰动的鲁棒性，共同保证了所提盲搜准则在实际工作条件下的可靠收敛性。这为后续仿真验证提供了理论支撑，也说明基于静默位置泄露能量最小化的残余 CFO 估计方法具有明确的数学基础和工程可行性。
 
-\section{仿真结果与分析}
-\label{sec:coherent_afdm_im_sim}
-
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.85\linewidth]{figures/fig13_CostFunc_Convergence.eps}
-    \caption{静默位置泄露能量代价函数随试探频偏参数的变化曲线} 
-    \label{fig:cost_func_convergence}
-\end{figure}
-
-由图~\ref{fig:cost_func_convergence} 可以清晰观察到，代价函数呈现出典型的深 V 型谷底结构：当试探参数 $\theta$ 远离真实频偏 $\theta_0$ 时，未被正确补偿的线性相位斜坡导致大量能量从激活位置泄露至静默位置，代价函数值维持在较高水平；随着 $\theta$ 逐渐逼近 $\theta_0$，泄露能量被持续压缩，代价函数单调下降；当 $\theta=\theta_0$ 时，线性相位斜坡被完全消除，静默位置上的残余能量降至最低，代价函数取得尖锐的全局极小值。谷底的残余非零能量主要来自维纳相位噪声高阶随机残差 $\epsilon[q]$ 引起的不可消除扰动与热噪声贡献。
-
-该全局收敛特性可从以下理论角度加以理解。在无噪声且无维纳相位噪声的理想条件下，当且仅当频偏补偿参数等于真实频偏时，DAFT 域的正交性被完全恢复，所有能量严格集中在激活位置上，代价函数恰好为零。对于任何 $\theta \neq \theta_0$，残余频偏 $\delta=\theta-\theta_0$ 所引起的线性相位失配会通过 DAFT 变换在全部子载波上产生系统性能量扩散，其扩散程度随 $|\delta|$ 的增大而单调递增——这一特性源自 DAFT 变换的酉性（能量守恒）与线性相位对正交基的破坏效应之间的确定性关系。因此，在理想条件下代价函数具有唯一全局极小点且无伪极值。在实际有噪声和维纳相位噪声条件下，噪声与随机相位扰动会在代价函数曲面上叠加小尺度随机起伏，但由于 CFO 引起的系统性泄露功率远强于噪声与相位噪声残差的随机贡献（尤其在中高 SNR 区间），全局极小点的位置和唯一性仍能得到可靠保持。从图~\ref{fig:cost_func_convergence} 也可以看到，即使在 $\mathrm{SNR}=15\,\mathrm{dB}$ 的有限信噪比条件下，谷底结构仍然清晰尖锐，不存在可能导致搜索误判的竞争性局部极小值，从而验证了一维网格盲搜索能够以较高置信度定位真实频偏参数。
-
-\section{仿真结果与分析}
+\section{仿真验证与性能分析}
 \label{sec:coherent_afdm_im_sim}
 
 为验证所提相干 AFDM-IM 方案在高动态 UWOC 场景中的性能，本节采用蒙特卡罗方法对系统误码率进行评估，并分析多普勒频移与激光器相位噪声对系统性能的影响。接收端采用上一节推导的最大似然检测方法。为保证对比公平，基准方案选取具有相同子块划分、相同调制阶数和相近频谱效率的相干 OFDM-IM 系统。
@@ -482,7 +569,7 @@ AFDM-IM 向量在正确频偏补偿下应表现出更明显的块稀疏特征：
 \subsection{高动态场景下的 BER 性能对比}
 \label{subsec:high_mobility_ber} 
 
-首先考察高动态场景下系统 BER 随 SNR 的变化规律。设收发平台之间存在较大相对运动速度，使归一化最大多普勒频移达到高动态条件。图~\ref{fig:coherent_ber_high_mobility} 给出了相干 AFDM-IM 与基准 OFDM-IM 的 BER 对比结果。
+图~\ref{fig:coherent_ber_high_mobility} 给出了高动态场景下相干 AFDM-IM 与基准 OFDM-IM 的 BER 随 SNR 变化的对比结果。设收发平台之间存在较大相对运动速度，使归一化最大多普勒频移达到高动态条件。
 
 \begin{figure}[htbp]
     \centering
@@ -593,4 +680,4 @@ Y_{\mathrm{AFDM}}[k] \approx \sum_{p=1}^{P} h_p e^{j\phi_p} X[(k - \Delta k_p)_N
 
 仿真结果表明，相较于基准 OFDM-IM 方案，所提相干 AFDM-IM 在高动态场景下具有更优的 BER 性能，说明 AFDM 波形与相干接收、索引调制相结合后，能够更好地适应时延--多普勒耦合信道。在不同残余 CFO 补偿策略对比中，本文方法在不额外占用导频资源的条件下，使系统性能逼近理想残余 CFO 已知下界；在不同激光器线宽条件下，系统整体表现出充分的稳健性。这说明本文方案的优势不仅体现在波形层抗多普勒能力上，也体现在通过挖掘静默位置零结构先验来降低显式导频负担、提升有效频谱利用率的接收机设计思路上。
 
-总体而言，本章的研究表明，相干 AFDM-IM 并不是 AFDM 与 IM 的简单叠加，而是一种围绕高动态 UWOC 主导失真机理所构建的系统化方案：AFDM 提供双选择性信道下的波形适配能力，索引调制提供可利用的结构先验，相干接收提供复数域高灵敏度处理基础，而基于静默位置的残余 CFO 感知与检测机制则进一步把发送结构资源转化为接收端低开销自感知能力。上述设计共同构成了面向高动态水下光通信的完整技术链路。
+本章的研究表明，相干 AFDM-IM 并不是 AFDM 与 IM 的简单叠加，而是一种围绕高动态 UWOC 主导失真机理所构建的系统化方案：AFDM 提供双选择性信道下的波形适配能力，索引调制提供可利用的结构先验，相干接收提供复数域高灵敏度处理基础，而基于静默位置的残余 CFO 感知与检测机制则进一步把发送结构资源转化为接收端低开销自感知能力。上述设计共同构成了面向高动态水下光通信的完整技术链路。
