@@ -573,7 +573,7 @@ AFDM-IM 向量在正确频偏补偿下应表现出更明显的块稀疏特征：
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.85\linewidth]{figures/fig6_coherent_ber_high_mobility.eps}
+    \includegraphics[width=1\linewidth]{figures/fig6_coherent_ber_high_mobility.eps}
     \caption{高动态场景下不同相干索引调制方案的 BER 性能对比}  
     \label{fig:coherent_ber_high_mobility}
 \end{figure}
@@ -609,7 +609,7 @@ Y_{\mathrm{AFDM}}[k] \approx \sum_{p=1}^{P} h_p e^{j\phi_p} X[(k - \Delta k_p)_N
 
 \begin{figure}[htbp] 
     \centering
-    \includegraphics[width=0.85\linewidth]{figures/fig8_BER_COMPARE.eps} 
+    \includegraphics[width=1\linewidth]{figures/fig8_BER_COMPARE.eps} 
     \caption{不同残余 CFO 补偿策略下相干 AFDM-IM 系统的 BER 性能对比}
     \label{fig:blind_phase_ber_compare}
 \end{figure}
@@ -672,7 +672,9 @@ Y_{\mathrm{AFDM}}[k] \approx \sum_{p=1}^{P} h_p e^{j\phi_p} X[(k - \Delta k_p)_N
 
 相比之下，图~\ref{fig:ber_doppler_heatmap}(b) 中本文所提 AFDM-IM 方案展现出截然不同的特征。在相同的多普勒频移与 SNR 参数空间中，可靠通信区域（深蓝色区域）占据了显著更大的范围。即使在归一化多普勒频移达到 0.15$\sim$0.20 的极端高动态条件下，系统在中高 SNR 区间仍能维持较低的 BER 水平，对应的深蓝色区域持续延伸至热力图的上部。这说明 AFDM 波形通过啁啾参数对时延与多普勒扩展的结构化映射，有效抑制了多普勒增大时的能量扩散效应，使系统在宽泛的动态范围内都能保持可靠传输能力。
 
+
 从工程应用角度看，上述对比结果具有明确的指导意义。在实际高动态 UWOC 场景中，收发平台之间的相对速度往往不是恒定值，而是随任务状态和机动条件持续变化的。若系统仅在某一固定多普勒条件下表现良好，而在多普勒波动时迅速崩溃，则其工程适用性将受到严重限制。图~\ref{fig:ber_doppler_heatmap} 的二维全景对比表明，所提 AFDM-IM 方案在归一化多普勒频移从 0 到 0.20 的宽泛范围内均保持了比传统方案显著更强的鲁棒性，这意味着该方案能够更好地适应实际水下高动态链路中多普勒频移的不确定性和波动性。
+\section{本章小结}
 
 本章围绕高动态 UWOC 场景下的多普勒扩展、残余频偏以及维纳相位噪声等关键失真因素，提出了相干 AFDM-IM 传输方案，并完成了从系统建模、接收方法设计到误码性能验证的完整分析。在相干接收架构下引入 AFDM 波形与索引调制机制，建立了包含多径、多普勒频移和维纳相位噪声的统一时域与 DAFT 域系统模型，说明了高动态场景中的检测问题本质上是一个围绕双选择性信道与器件非理想共同展开的联合恢复问题。
 
