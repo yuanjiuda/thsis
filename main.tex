@@ -179,7 +179,6 @@ verticalTitle = {面向复杂水下环境的ＡＦＤＭ无线光通信关键技
 
 % 添加参考文献
 \addbibresource{reference/mybib.bib}
-\nocite{*}  % 显示 bib 文件中的全部文献条目，包括未在正文中显式引用的
 
 
 \usepackage{graphicx}
@@ -249,6 +248,7 @@ verticalTitle = {面向复杂水下环境的ＡＦＤＭ无线光通信关键技
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 后置部分
 
+\nocite{*} % 使未在正文中显式引用的条目排在已引用文献之后统一输出
 \input{./misc/2_reference.tex} % 参考文献
 % \input{./misc/3_appendices.tex} % 附录（当前版本不保留）
 \input{./misc/4_pub.tex} % 攻读学位期间发表论文与研究成果清单
