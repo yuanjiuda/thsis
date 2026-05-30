@@ -1,12 +1,29 @@
 \chapter{绪论}
 \label{chap:intro}
 
-\section{研究背景与意义}
+\section{研究背景与意义} 
 \label{sec:background}
 
 随着海洋资源开发、海洋环境观测、水下装备协同作业以及海洋信息网络建设的持续推进，海洋空间中的信息获取、传输与共享需求不断增长。相比陆地通信系统，海洋环境具有传播介质复杂、节点分布分散、部署维护困难以及实时交互要求不断提升等特点，尤其在水下空间，稳定高效的信息链路仍然是制约海洋感知、控制与协同能力提升的关键环节。对于无人潜航器、水下传感器网络、海底作业平台以及移动观测节点而言，若缺乏可靠的高速传输手段，则状态信息、控制指令与大容量感知数据难以及时交换，进而影响整个系统的实时性、协同性和任务执行效率。因此，面向未来海洋信息网络乃至空天地海一体化网络的建设需求，研究适用于不同水下传播条件的高可靠通信技术具有重要的理论意义和应用价值\cite{ShuiXiaWuRenQianHangQiJiQunFaZhanXianZhuangJiGuanJianJiShuZongShuZhongGuoZhiWang, hoeherUnderwaterOpticalWireless2021}。
 
 在多种水下通信手段中，传统水声通信（Underwater Acoustic Communication，UAC）虽然具有传播距离远、技术基础较成熟等优势，但其可用带宽有限、传播时延较大，难以满足高速数据回传、低时延控制与大容量信息交互等需求\cite{liRecentProgressUnderwater2025, jungControlRealTimeMonitoring2025}。同时，射频（Radio Frequency，RF）信号在海水中的传播会受到显著衰减，通常只适用于极短距离或特殊浅水场景，难以支撑常规中远距离高速水下传输\cite{wangEvolutionShortRangeOptical2023}。相比之下，水下无线光通信（Underwater Wireless Optical Communication，UWOC）依托蓝绿光窗口在海水中的相对低衰减特性，具有高带宽、低时延和低截获概率等优势，可作为水下网络中的近距离高速链路、高容量补充链路或局部专用链路，为水下节点间宽带互联提供新的实现路径\cite{kaushalUnderwaterOpticalWireless2016a, departmentofphysicsfacultyofscienceskingabdulazizuniversityjeddah-21589kingdomofsaudiarabiaUnderwaterOpticalCommunications2021a}。已有研究表明，随着 AUV/UUV 集群协同、实时视频回传、近海设施巡检和局部高密度感知任务的发展，水下链路的评价指标已经不再局限于能否连通，而是进一步转向吞吐率、链路恢复速度、控制回路时延与平台机动条件下的可维持性\cite{hoeherUnderwaterOpticalWireless2021, liRecentProgressUnderwater2025, jungControlRealTimeMonitoring2025}。这意味着仅依赖单一载波体制或单一接收架构，往往难以同时覆盖低动态和高动态两类具有代表性的水下应用环境。
+
+为更直观地比较不同水下通信手段的结构性差异，表~\ref{tab:underwater_comm_comparison} 给出了主流水下通信技术在传播介质、速率潜力、时延特征及适用场景等方面的横向对比。该表所体现的结论是：水声、射频与水下光并非简单的替代关系，而是面向不同距离尺度、实时性需求和部署条件的互补性技术路线。
+
+\begin{table}[htbp] 
+    \centering
+    \caption{主流水下通信技术特性横向对比表}
+    \label{tab:underwater_comm_comparison}
+    \begin{tabular}{p{1.6cm}p{1.7cm}p{1.6cm}p{1.7cm}p{1.6cm}p{2.0cm}p{2.0cm}p{1.9cm}}
+        \toprule
+        通信方式 & 主要载体/波段 & 典型作用距离 & 可用带宽/速率水平 & 时延特性 & 主要优势 & 主要局限 & 适用场景 \\
+        \midrule
+        水声通信 & 声波（kHz 量级） & 中远距离至超远距离 & 带宽较窄，速率较低 & 传播时延大 & 覆盖范围大、技术成熟度较高 & 速率受限，实时交互能力弱 & 远距离控制、低速监测、稀疏组网 \\
+        射频通信 & 电磁波（低频/超低频） & 极短距离 & 带宽有限，速率受限 & 时延较低 & 体制成熟、接口方便 & 海水中衰减极强，常规场景覆盖不足 & 特殊浅水、极短距应急链路 \\
+        水下无线光通信 & 蓝绿光窗口 & 短距离至中短距离 & 带宽高，速率潜力大 & 传播时延低 & 低时延、高速率、低截获概率 & 对准敏感，受散射/湍流/浑浊度影响明显 & 近距离高速互联、视频回传、局部宽带组网 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
 
 需要指出的是，UWOC 的优势并不意味着其传播环境简单。光波在水中传播时会同时受到吸收、散射、湍流、气泡扰动、环境光噪声以及平台姿态变化的影响，不同机理在不同水体类型、链路距离和收发结构下的主导程度并不相同\cite{kaushalUnderwaterOpticalWireless2016a, zengSurveyUnderwaterOptical2017, zayed2026comprehensive}。从系统设计角度看，真正困难的部分并不是单纯追求更高标称速率，而是在复杂损伤机制下构建与场景特征匹配的调制、检测和补偿方法。若忽略主导失真机制随场景变化而切换的事实，就容易把问题抽象得过于理想化，进而削弱方案的物理针对性。
 
@@ -66,7 +83,24 @@ AFDM 的潜力并不局限于高动态场景。虽然其最初更多被用于处
 
 为进一步提高频谱效率与能量利用效率，索引调制也被引入多载波系统设计。Basar 等较早在 OFDM 中引入索引调制，证明了激活位置可作为附加信息维度承载比特\cite{basarOrthogonalFrequencyDivision2013}。Li 等进一步将索引映射扩展到能量和星座等多域结构，说明索引调制不仅能够提高频谱效率，还可以改变多载波系统的信息承载方式\cite{li2022composite}。随后，Tao 等与 Zhang 等分别提出 AFDM-IM 及相关扩展方案，表明 AFDM 与索引调制的结合可通过稀疏激活结构提高信息承载效率并改善检测性能\cite{taoAffineFrequencyDivision2025, zhangDualIndexModulation2026}。不过，现有 AFDM-IM 研究同样主要集中于射频场景，其在高动态 UWOC 中与相干接收架构相结合的研究仍相对有限。对于水下光链路而言，未激活位置除了可以承载索引信息外，还有可能作为隐式结构参考参与频偏感知和检测过程，这也是本文第四章进一步展开的关键思路。
 
-综合来看，现有研究已分别在水下光信道建模、IM-DD 光 OFDM、AFDM 波形设计以及高动态相干传输等方面取得一定进展，但仍缺乏一条围绕 UWOC 典型场景特征展开的统一研究主线。特别是，如何基于 AFDM 这一新型波形，同时面向低动态浑浊多径场景和高动态移动场景构建有针对性的水下光通信方案，仍有进一步研究空间。这正是本文工作的主要切入点。
+综合来看，现有研究已分别在水下光信道建模、IM-DD 光 OFDM、AFDM 波形设计以及高动态相干传输等方面取得一定进展，但仍缺乏一条围绕 UWOC 典型场景特征展开的统一研究主线。表~\ref{tab:waveform_evolution_comparison} 对典型水下多载波波形从传统 OFDM 系列到 AFDM 及其索引调制扩展的关键特征进行了归纳。可以看到，技术演进的核心并不是单纯引入更多结构，而是围绕非负约束、多径鲁棒性、多普勒适应能力以及频谱/功率效率之间的平衡不断调整设计重心。特别是，如何将 AFDM 与光学接收架构和索引结构进一步结合，仍有待结合具体场景进行深化研究。这正是本文工作的主要切入点。
+
+\begin{table}[htbp]
+    \centering
+    \caption{典型水下多载波波形技术演进与关键指标对比表}
+    \label{tab:waveform_evolution_comparison}
+    \begin{tabular}{p{1.9cm}p{1.6cm}p{2.1cm}p{1.7cm}p{1.4cm}p{1.4cm}p{1.8cm}p{1.9cm}}
+        \toprule
+        波形/方案 & 典型接收架构 & 核心结构特征 & 主要适应场景 & 抗多径能力 & 抗多普勒能力 & 频谱/功率效率特点 & 当前局限 \\
+        \midrule
+        OFDM & 直接检测/相干接收 & 傅里叶正交子载波、循环前缀 & 准静态或低动态多径环境 & 中等 & 较弱 & 频谱效率较高，但对前缀和同步敏感 & 高动态下 ICI 明显，深衰落位置敏感 \\
+        ACO-OFDM / DCO-OFDM / U-OFDM & IM-DD & 面向非负实信号约束的单极性扩展 & 低动态 IM-DD 光链路 & 中等 & 较弱 & ACO 功率效率高，DCO 频谱效率较高 & 仍依赖傅里叶域结构，对多径和多普勒适应性有限 \\
+        AFDM & 以复数域接收为主 & 基于 DAFT 的啁啾多载波映射 & 时延--多普勒耦合信道 & 较强 & 较强 & 在结构可调性和分集利用方面更灵活 & 参数设计和检测复杂度高于传统 OFDM \\
+        AFDM-IM & 相干接收/复数域检测 & AFDM 与稀疏激活索引联合设计 & 高动态、高可靠传输 & 较强 & 较强 & 可提升频谱利用方式并降低平均激活能量 & 发送结构与检测算法耦合更强 \\
+        相干 AFDM-IM & 相干接收 & AFDM、索引调制与残余 CFO 补偿联合设计 & 高动态 UWOC 场景 & 较强 & 很强 & 在保持有效数据维度的同时提升高动态鲁棒性 & 需处理相位噪声、频偏估计与实现复杂度问题 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
 
 \section{本文主要研究内容与章节安排}
 \label{sec:research_contents}
