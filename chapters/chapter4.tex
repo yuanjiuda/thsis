@@ -55,7 +55,14 @@ AFDM 基于 DAFT 构造正交啁啾基函数，使时延与多普勒扩展在等
 \end{equation}
 其满足块稀疏约束 $\|\mathbf{x}_g\|_0=k$。
 
-由上述结构可见，AFDM-IM 的信息承载由两部分共同组成：一部分由激活位置决定，对应索引比特；另一部分由激活位置上的复星座符号决定，对应星座比特。这种联合映射方式使系统在单位资源下可传输的信息量超过单纯依赖星座点的常规调制方式。同时，由于非激活位置保持为零，发送向量天然具有块稀疏特征，这也为后续最大似然检测提供了结构基础。
+由上述结构可见，AFDM-IM 的信息承载由两部分共同组成：一部分由激活位置决定，对应索引比特；另一部分由激活位置上的复星座符号决定，对应星座比特。这种联合映射方式使系统在单位资源下可传输的信息量超过单纯依赖星座点的常规调制方式。同时，由于非激活位置保持为零，发送向量天然具有块稀疏特征，这也为后续最大似然检测提供了结构基础。图~\ref{fig:sim_bit_mapping_structure} 从比特分流与子块激活结构两个角度，对 AFDM-IM 的发送向量构造过程进行了直观说明。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.82\linewidth]{figures/fig4_1_sim_bit_mapping_structure.png.png}
+    \caption{AFDM-IM 子块比特映射与静默位置结构示意图}
+    \label{fig:sim_bit_mapping_structure}
+\end{figure}
 
 \subsubsection{AFDM-IM 频谱效率分析}
 
@@ -80,7 +87,14 @@ AFDM 基于 DAFT 构造正交啁啾基函数，使时延与多普勒扩展在等
 
 从上述数值可以看出，AFDM-IM 的频谱效率约为常规 AFDM 的 50\%。然而，这一对比并不构成 AFDM-IM 的劣势，原因在于：索引调制以降低绝对频谱效率为代价，换取了以下三方面收益。一是接收端检测可靠性的提升——由于每个子块仅有 $k$ 个激活位置，ML 检测的候选空间从 $M^n$ 压缩为 $\binom{n}{k}M^k$，搜索范围显著缩小，判决可靠性在有限信噪比下得以改善。二是发射信号平均功率的降低——在每个子块的 $n$ 个位置中仅 $k$ 个承载非零符号，在总能量约束下单个激活位置可分配到更高的瞬时功率，从而提高单符号信噪比。三是静默位置为接收端提供了可利用的结构先验——这正是本章后续基于静默位置泄露能量最小化方法的物理基础。
 
-与传统 OFDM-IM 相比，AFDM-IM 在相同子块划分和激活参数下具有相同的索引比特数 $b_{\mathrm{I}}$ 和星座比特数 $b_{\mathrm{S}}$，因此两者的频谱效率完全相同。二者的性能差异完全来源于波形结构层面：AFDM 的啁啾映射使系统在高动态双选择性信道下保持更好的结构稳定性，而 OFDM 在同等多普勒条件下会因子载波正交性破坏导致严重的 ICI。
+与传统 OFDM-IM 相比，AFDM-IM 在相同子块划分和激活参数下具有相同的索引比特数 $b_{\mathrm{I}}$ 和星座比特数 $b_{\mathrm{S}}$，因此两者的频谱效率完全相同。二者的性能差异完全来源于波形结构层面：AFDM 的啁啾映射使系统在高动态双选择性信道下保持更好的结构稳定性，而 OFDM 在同等多普勒条件下会因子载波正交性破坏导致严重的 ICI。进一步地，不同子块映射模式 $(n,k)$ 还会影响索引效率、平均激活能量和检测鲁棒性之间的权衡。图~\ref{fig:sim_subblock_modes} 给出了若干典型映射模式下的 BER 对比结果，可用于说明本章后续仿真中采用固定子块结构的设计依据。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.85\linewidth]{figures/fig4_4_ber_sim_subblock_modes.eps}
+    \caption{不同子块映射模式 $(n,k)$ 下相干 AFDM-IM 系统的 BER 性能对比}
+    \label{fig:sim_subblock_modes}
+\end{figure}
 
 发送向量经离散逆仿射傅里叶变换映射至时域。记 AFDM 调制矩阵为
 \begin{equation}
@@ -292,7 +306,14 @@ AFDM 基于 DAFT 构造正交啁啾基函数，使时延与多普勒扩展在等
     \left|z_g^{(m)}(\theta)\right|^2.
     \label{eq:silent_energy_direct}
 \end{equation}
-式(\ref{eq:silent_energy_direct}) 的物理含义明确：在候选频偏参数空间中搜索使静默位置残余能量最小的补偿值，即为对主导多普勒频偏的最优估计。当补偿值 $\theta$ 接近真实频偏时，被频偏推散到静默位置的能量将被最大程度地压缩回激活位置。
+式(\ref{eq:silent_energy_direct}) 的物理含义明确：在候选频偏参数空间中搜索使静默位置残余能量最小的补偿值，即为对主导多普勒频偏的最优估计。当补偿值 $\theta$ 接近真实频偏时，被频偏推散到静默位置的能量将被最大程度地压缩回激活位置。图~\ref{fig:residual_cfo_sensitivity} 进一步给出了系统 BER 随残余 CFO 失配程度变化的趋势，可以看到即便在固定 SNR 条件下，若不对主导残余频偏进行有效补偿，误码性能也会迅速恶化，这正是后续盲补偿算法必须解决的核心问题。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.85\linewidth]{figures/fig4_3_ber_residual_cfo_sensitivity.eps}
+    \caption{不同残余 CFO 失配程度下相干 AFDM-IM 系统的 BER 敏感性曲线}
+    \label{fig:residual_cfo_sensitivity}
+\end{figure}
 
 维纳相位噪声作为叠加在频偏之上的逐点随机扰动，会在补偿后引入无法被单一参数 $\theta$ 消除的残余干扰。然而，在典型系统配置下（$N=256$，中等组合线宽），单符号内的维纳累积相位方差 $N\sigma_\phi^2 = 2\pi\Delta\nu T_{\mathrm{sym}}$ 仍保持在较小水平，其引起的附加能量泄露远弱于未补偿频偏的贡献。因此，所提准则在实际工作条件下仍能有效捕获主导频偏分量，使系统 BER 显著优于传统方案。残余维纳相位噪声的影响则体现为系统相对于理想下界存在极小的性能折损，这一现象将在仿真分析中得到进一步验证。
 
@@ -328,7 +349,7 @@ AFDM 基于 DAFT 构造正交啁啾基函数，使时延与多普勒扩展在等
 
 \begin{figure}[htbp]    
     \centering
-    \includegraphics[width=1.0\linewidth]{figures/fig10_HighDynamic_CIR.eps}
+    \includegraphics[width=1.0\linewidth]{figures/fig9_Constellation_Comp.eps}
     \caption{接收端星座图演化对比：(a) 补偿前；(b) 本文算法补偿后；(c) 理想补偿}
     \label{fig:constellation_comp}
 \end{figure} 
@@ -591,7 +612,7 @@ AFDM-IM 向量在正确频偏补偿下应表现出更明显的块稀疏特征：
 
 \begin{figure}[htbp] 
     \centering
-    \includegraphics[width=0.85\linewidth]{figures/fig9_Constellation_Comp.eps}
+    \includegraphics[width=0.85\linewidth]{figures/fig10_HighDynamic_CIR.eps}
     \caption{高动态水下信道冲激响应三维演化图（$N=256$，$P=4$，$f_d=0.15$）} 
     \label{fig:high_dynamic_cir}
 \end{figure}
