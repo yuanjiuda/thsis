@@ -265,7 +265,7 @@ AFDM 的性能在较大程度上取决于啁啾参数设计。对于本文所提
     \{ \mathrm{loc}_i, \mathrm{loc}_i^{\prime} \} \cap \{ \mathrm{loc}_j, \mathrm{loc}_j^{\prime} \} = \emptyset
 \end{equation}
 若最大时延扩展为 $l_{\max}$，则为保证全部偏移范围不超过 DAFT 域长度 $N$，应满足
-\begin{equation}
+\begin{equation} 
     4N c_1 l_{\max} \leq N
 \end{equation}
 由此得到参数边界
@@ -344,6 +344,9 @@ SNR 定义 & — & $E_b/N_0$ \\
 \centering
 \caption{低动态 IM-DD 多载波方案特性对比表}
 \label{tab:low_dynamic_scheme_comparison}
+\footnotesize
+\setlength{\tabcolsep}{2.8pt}
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{p{1.8cm}p{2.4cm}p{1.6cm}p{1.6cm}p{1.7cm}p{1.7cm}p{2.0cm}}
 \toprule
 方案 & 非负约束实现方式 & 光功率效率 & 频谱效率 & 多径鲁棒性 & 接收复杂度 & 适用说明 \\
@@ -353,7 +356,8 @@ ACO-OFDM & 奇数子载波映射 + 非对称限幅 & 高 & 中等 & 中等 & 中
 U-OFDM & 正负半轴分帧发送形成单极性信号 & 中等 & 较低 & 中等偏弱 & 中等 & 结构较直观，但资源利用率受分帧方式制约 \\
 DCO-OFDM & 直流偏置 + 全子载波调制 & 较低 & 较高 & 中等偏弱 & 较低 & 适合频谱效率优先但可接受偏置功耗的场景 \\
 \bottomrule
-\end{tabular}
+\end{tabular}%
+}
 \end{table}
 
 \begin{figure}[htbp]

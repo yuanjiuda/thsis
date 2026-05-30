@@ -10,10 +10,13 @@
 
 为更直观地比较不同水下通信手段的结构性差异，表~\ref{tab:underwater_comm_comparison} 给出了主流水下通信技术在传播介质、速率潜力、时延特征及适用场景等方面的横向对比。该表所体现的结论是：水声、射频与水下光并非简单的替代关系，而是面向不同距离尺度、实时性需求和部署条件的互补性技术路线。
 
-\begin{table}[htbp] 
+\begin{table}[htbp]
     \centering
     \caption{主流水下通信技术特性横向对比表}
     \label{tab:underwater_comm_comparison}
+    \footnotesize
+    \setlength{\tabcolsep}{2.6pt}
+    \resizebox{\textwidth}{!}{%
     \begin{tabular}{p{1.6cm}p{1.7cm}p{1.6cm}p{1.7cm}p{1.6cm}p{2.0cm}p{2.0cm}p{1.9cm}}
         \toprule
         通信方式 & 主要载体/波段 & 典型作用距离 & 可用带宽/速率水平 & 时延特性 & 主要优势 & 主要局限 & 适用场景 \\
@@ -22,7 +25,8 @@
         射频通信 & 电磁波（低频/超低频） & 极短距离 & 带宽有限，速率受限 & 时延较低 & 体制成熟、接口方便 & 海水中衰减极强，常规场景覆盖不足 & 特殊浅水、极短距应急链路 \\
         水下无线光通信 & 蓝绿光窗口 & 短距离至中短距离 & 带宽高，速率潜力大 & 传播时延低 & 低时延、高速率、低截获概率 & 对准敏感，受散射/湍流/浑浊度影响明显 & 近距离高速互联、视频回传、局部宽带组网 \\
         \bottomrule
-    \end{tabular}
+    \end{tabular}%
+    }
 \end{table}
 
 需要指出的是，UWOC 的优势并不意味着其传播环境简单。光波在水中传播时会同时受到吸收、散射、湍流、气泡扰动、环境光噪声以及平台姿态变化的影响，不同机理在不同水体类型、链路距离和收发结构下的主导程度并不相同\cite{kaushalUnderwaterOpticalWireless2016a, zengSurveyUnderwaterOptical2017, zayed2026comprehensive}。从系统设计角度看，真正困难的部分并不是单纯追求更高标称速率，而是在复杂损伤机制下构建与场景特征匹配的调制、检测和补偿方法。若忽略主导失真机制随场景变化而切换的事实，就容易把问题抽象得过于理想化，进而削弱方案的物理针对性。
@@ -96,6 +100,9 @@ AFDM 的潜力并不局限于高动态场景。虽然其最初更多被用于处
     \centering
     \caption{典型水下多载波波形技术演进与关键指标对比表}
     \label{tab:waveform_evolution_comparison}
+    \footnotesize
+    \setlength{\tabcolsep}{2.5pt}
+    \resizebox{\textwidth}{!}{%
     \begin{tabular}{p{1.9cm}p{1.6cm}p{2.1cm}p{1.7cm}p{1.4cm}p{1.4cm}p{1.8cm}p{1.9cm}}
         \toprule
         波形/方案 & 典型接收架构 & 核心结构特征 & 主要适应场景 & 抗多径能力 & 抗多普勒能力 & 频谱/功率效率特点 & 当前局限 \\
@@ -106,7 +113,8 @@ AFDM 的潜力并不局限于高动态场景。虽然其最初更多被用于处
         AFDM-IM & 相干接收/复数域检测 & AFDM 与稀疏激活索引联合设计 & 高动态、高可靠传输 & 较强 & 较强 & 可提升频谱利用方式并降低平均激活能量 & 发送结构与检测算法耦合更强 \\
         相干 AFDM-IM & 相干接收 & AFDM、索引调制与残余 CFO 补偿联合设计 & 高动态 UWOC 场景 & 较强 & 很强 & 在保持有效数据维度的同时提升高动态鲁棒性 & 需处理相位噪声、频偏估计与实现复杂度问题 \\
         \bottomrule
-    \end{tabular}
+    \end{tabular}%
+    }
 \end{table}
 
 \section{本文主要研究内容与章节安排}
