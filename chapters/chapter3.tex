@@ -288,7 +288,7 @@ AFDM 的性能在较大程度上取决于啁啾参数设计。对于本文所提
 
 从实现角度看，本文采用的参数设计强调”可实现、可解释、与场景相适配”的选择原则。这种基于物理约束和结构分析得到的参数准则具有明确的理论完整性与工程合理性，也为后续仿真设置提供了依据。表~\ref{tab:c1_design_tradeoff} 对啁啾参数 $c_1$ 在不同取值倾向下的主要收益与风险进行了概括，有助于把奇异点规避、多径分离与工程裕量之间的关系表达得更紧凑。
 
-\begin{table}[htbp]
+\begin{table}[H]
 \centering
 \caption{ACO-AFDM 啁啾参数 $c_1$ 设计权衡总结表}
 \label{tab:c1_design_tradeoff}
@@ -309,7 +309,7 @@ AFDM 的性能在较大程度上取决于啁啾参数设计。对于本文所提
 
 为验证所提 ACO-AFDM 方案在低动态多径水下场景中的性能，本节采用蒙特卡罗方法开展仿真，并与 ACO-OFDM、U-OFDM 以及 DCO-OFDM 进行对比\cite{dissanayakeComparisonACOOFDMDCOOFDM2013, fernandoFlipOFDMUnipolarCommunication2011}。表~\ref{tab:ch3_sim_params} 汇总了本章仿真所采用的全部系统参数。
 
-\begin{table}[htbp]
+\begin{table}[H]
 \centering
 \caption{ACO-AFDM 系统仿真参数设置}
 \label{tab:ch3_sim_params}
@@ -340,7 +340,7 @@ SNR 定义 & — & $E_b/N_0$ \\
 
 在仿真设置中，各方案均采用相同的子载波配置、调制方式和检测算法，以保证性能差异完全来源于波形结构本身。针对所提 ACO-AFDM 方案，依据参数设计准则取 $c_1 = 1/(8l_{\max})$。为避免参数表与结果表功能重复，表~\ref{tab:low_dynamic_scheme_comparison} 进一步从非负约束实现方式、功率与频谱效率以及多径适应性等维度，对本章涉及的四类低动态 IM-DD 多载波方案进行结构性对比。
 
-\begin{table}[htbp]
+\begin{table}[H]
 \centering
 \caption{低动态 IM-DD 多载波方案特性对比表}
 \label{tab:low_dynamic_scheme_comparison}
