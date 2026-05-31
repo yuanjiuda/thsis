@@ -14,8 +14,8 @@ AFDM 基于 DAFT 构造正交啁啾基函数，使时延与多普勒扩展在等
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.85\linewidth]{figures/fig5_coherent_system.pdf}
-    \caption{相干 AFDM-IM 系统完整框图}
+    \includegraphics[width=0.85\linewidth]{figures/fig5_coherent_system.pdf} 
+    \caption{相干 AFDM-IM 系统完整框图} 
     \label{fig:coherent_afdm_im_system}
 \end{figure}
 
@@ -59,7 +59,7 @@ AFDM 基于 DAFT 构造正交啁啾基函数，使时延与多普勒扩展在等
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.82\linewidth]{figures/fig4_1_sim_bit_mapping_structure.png.png}
+    \includegraphics[width=0.88\linewidth]{figures/fig4_1_sim_bit_mapping_structure.pdf} 
     \caption{AFDM-IM 子块比特映射与静默位置结构示意图}
     \label{fig:sim_bit_mapping_structure}
 \end{figure}
@@ -349,8 +349,8 @@ AFDM 基于 DAFT 构造正交啁啾基函数，使时延与多普勒扩展在等
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.78\linewidth]{figures/fig9_Constellation_Comp.eps}
-    \caption{接收端星座图演化对比：(a) 补偿前；(b) 本文算法补偿后；(c) 理想补偿}
+    \includegraphics[width=1\linewidth]{figures/fig9_Constellation_Comp.png}
+    \caption{接收端星座图演化对比} 
     \label{fig:constellation_comp}
 \end{figure} 
 
@@ -545,7 +545,7 @@ AFDM-IM 向量在正确频偏补偿下应表现出更明显的块稀疏特征：
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.85\linewidth]{figures/fig13_CostFunc_Convergence.png} 
+    \includegraphics[width=1\linewidth]{figures/Constellation_Comp.png}
     \caption{静默位置泄露能量代价函数随试探频偏参数的变化曲线}
     \label{fig:cost_func_convergence}
 \end{figure}
@@ -595,12 +595,12 @@ AFDM-IM 向量在正确频偏补偿下应表现出更明显的块稀疏特征：
 
 \begin{figure}[htbp] 
     \centering
-    \includegraphics[width=0.85\linewidth]{figures/fig10_HighDynamic_CIR.eps}
-    \caption{高动态水下信道冲激响应三维演化图（$N=256$，$P=4$，$f_d=0.15$）} 
+    \includegraphics[width=0.85\linewidth]{figures/fig4_7_Three.png}
+    \caption{高动态水下信道冲激响应三维演化图}
     \label{fig:high_dynamic_cir}
 \end{figure}
 
-由图~\ref{fig:high_dynamic_cir} 可见，X 轴方向对应多径时延，反映了不同路径之间的到达时间差异；Y 轴方向对应符号时间维度（Sample Index），体现了信道随时间的快速变化特征；Z 轴幅度则反映了各路径在不同时刻的复增益起伏程度。从图中可以清晰观察到，在归一化多普勒频移 $f_d=0.15$ 的高动态条件下，各条路径的复增益沿时间轴呈现出剧烈波动，说明信道在符号周期内已不能近似为准静态，而是具有明显的时变特征。这种时延与多普勒的双重扩展正是本章系统模型所刻画的双选择性信道核心特征，也是所提基于静默位置泄露能量最小化方法需要应对的主要物理挑战。与第三章低动态场景中信道在整个符号周期内近似恒定的情形形成鲜明对比，本章的高动态信道要求接收端不仅具备多径均衡能力，还必须能够感知并补偿由多普勒效应引起的载波频偏，这进一步验证了从 IM-DD 架构转向相干架构的必要性。
+由图~\ref{fig:high_dynamic_cir} 可见，X 轴方向对应多径时延，反映了不同路径之间的到达时间差异；Y 轴方向对应符号时间维度，体现了信道随时间的快速变化特征；Z 轴幅度则反映了各路径在不同时刻的复增益起伏程度。从图中可以清晰观察到，在归一化多普勒频移 $f_d=0.15$ 的高动态条件下，各条路径的复增益沿时间轴呈现出剧烈波动，说明信道在符号周期内已不能近似为准静态，而是具有明显的时变特征。这种时延与多普勒的双重扩展正是本章系统模型所刻画的双选择性信道核心特征，也是所提基于静默位置泄露能量最小化方法需要应对的主要物理挑战。与第三章低动态场景中信道在整个符号周期内近似恒定的情形形成鲜明对比，本章的高动态信道要求接收端不仅具备多径均衡能力，还必须能够感知并补偿由多普勒效应引起的载波频偏，这进一步验证了从 IM-DD 架构转向相干架构的必要性。
 
 为了更加清晰地刻画所提盲补偿策略的有效性，本文进一步设置三种对比方案：其一为理想下界（Ideal），即假设接收端已知准确残余 CFO 且无需任何额外开销，用于表征理论最佳性能；其二为传统显式导频方案（Conventional Pilot-LS），即强制占用 20\% 静默位置作为导频并采用最小二乘准则进行残余 CFO 估计，此时在总发射功率不变的条件下，有效数据维度与对应能量分配将受到惩罚；其三为本文所提零导频开销方案（Proposed），即利用一维频偏网格盲搜索，直接寻找使静默位置残余泄露能量最小的频偏补偿参数。通过这三种方案的并列比较，可以同时评估本文方法在性能逼近能力和频谱效率保持能力上的综合优势。为便于读者在后续 BER、导频开销和线宽鲁棒性结果之间建立对应关系，表~\ref{tab:cfo_strategy_comparison} 对三类残余 CFO 补偿策略的资源占用与性能特性进行了归纳。
 
@@ -626,8 +626,8 @@ Proposed & 静默先验 & 无开销 & 能量最小化 & 接近理想 \\
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=1\linewidth]{figures/fig6_coherent_ber_high_mobility.eps}
-    \caption{高动态场景下不同相干索引调制方案的 BER 性能对比}  
+    \includegraphics[width=1\linewidth]{figures/fig6_coherent_ber_high_mobility.png}
+    \caption{高动态场景下不同相干索引调制方案的 BER 性能对比}
     \label{fig:coherent_ber_high_mobility}
 \end{figure}
 
@@ -662,7 +662,7 @@ Y_{\mathrm{AFDM}}[k] \approx \sum_{p=1}^{P} h_p e^{j\phi_p} X[(k - \Delta k_p)_N
 
 \begin{figure}[htbp] 
     \centering
-    \includegraphics[width=1\linewidth]{figures/fig8_BER_COMPARE.eps} 
+    \includegraphics[width=1\linewidth]{figures/fig8_BER_COMPARE.png} 
     \caption{不同残余 CFO 补偿策略下相干 AFDM-IM 系统的 BER 性能对比}
     \label{fig:blind_phase_ber_compare}
 \end{figure}
@@ -680,7 +680,7 @@ Y_{\mathrm{AFDM}}[k] \approx \sum_{p=1}^{P} h_p e^{j\phi_p} X[(k - \Delta k_p)_N
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.85\linewidth]{figures/fig11_Alloc_SNR_Penalty.eps}
+    \includegraphics[width=0.85\linewidth]{figures/fig11_Alloc_SNR_Penalty.png}
     \caption{不同方案的资源分配对比与导频开销引起的等效 SNR 惩罚} 
     \label{fig:alloc_snr_penalty}
 \end{figure}
@@ -698,7 +698,7 @@ Y_{\mathrm{AFDM}}[k] \approx \sum_{p=1}^{P} h_p e^{j\phi_p} X[(k - \Delta k_p)_N
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.85\linewidth]{figures/fig7_coherent_phase_noise.eps}
+    \includegraphics[width=0.85\linewidth]{figures/fig7_coherent_phase_noise.png}
     \caption{不同激光器线宽条件下相干 AFDM-IM 系统的 BER 性能}
     \label{fig:coherent_phase_noise}
 \end{figure}
@@ -716,8 +716,8 @@ Y_{\mathrm{AFDM}}[k] \approx \sum_{p=1}^{P} h_p e^{j\phi_p} X[(k - \Delta k_p)_N
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=1.0\linewidth]{figures/fig12_BER_Doppler_Heatmap.eps}
-    \caption{不同归一化多普勒频移与 SNR 条件下的 BER 二维热力图对比}
+    \includegraphics[width=1.0\linewidth]{figures/fig12_BER_Doppler_Heatmap.png}
+    \caption{不同归一化多普勒频移与 SNR 条件下的 BER 二维热力图对比} 
     \label{fig:ber_doppler_heatmap}
 \end{figure}
 
